@@ -1,0 +1,64 @@
+:root {
+  --accentColor: #ff6d00;
+  --primaryTextColor: #454545;
+  --secondaryTextColor: #0A0A0A;
+  --lightTextColor: #FFFFFF;
+  --linkActiveColor: #0b70E1;
+  --buttonColor: #0A2FA6;
+  --messangerButtonColor: #25D366;
+  --primaryBackgroundColor: #FFFFFF;
+  --secondaryBackgroundColor: #F5F7FC;
+  --darkBackgroundColor: #000000;
+  --primaryborderRadius: 20px;
+
+  --mainDuration: 250ms;
+  --mainTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+  --buttonShadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --firstShadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  --secondShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --thirdShadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  // padding-top: 80px;
+  font-family: var(--sora);
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primaryTextColor);
+  background-color: var(--primaryBackgroundColor);
+
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 0px;
+  // }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
