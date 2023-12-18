@@ -25,6 +25,7 @@ const roboto = Roboto({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <meta name="robots" content="noindex, nofollow"/>
       <body className={`${sora.variable} ${roboto.variable}`}>
         <Header />
         <main>{children}</main>
