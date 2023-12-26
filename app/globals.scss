@@ -1,28 +1,40 @@
 :root {
-  --accentColor: #ff6d00;
+  --accentColor: #D7A86E;
   --primaryTextColor: #454545;
   --secondaryTextColor: #0A0A0A;
+  --primaryNavColor: #101010;
   --lightTextColor: #FFFFFF;
   --linkActiveColor: #0b70E1;
-  --buttonColor: #0A2FA6;
+  --buttonColor: #A64B2A;
+  --buttonAccentColor:#8E3200;
   --messangerButtonColor: #25D366;
   --primaryBackgroundColor: #FFFFFF;
-  --secondaryBackgroundColor: #F5F7FC;
+  --secondaryBackgroundColor: ##FFEBC1;
+  --lightContactsBackgroundColor: #f7f9ff;
+  --darkContactsBackgroundColor: #3F2305;
   --darkBackgroundColor: #000000;
-  --primaryborderRadius: 20px;
+  --projectModalCloseButton: #ff0000;
+  --errorColor: #ff0000;
+  --backdropColor: rgba(11, 11, 11, 0.8);
+  --primaryBorderRadius: 20px;
+  --navBorderColor: rgba(0, 0, 0, 0.06);
 
   --mainDuration: 250ms;
   --mainTimingFunction: cubic-bezier(0.4, 0, 0.2, 1);
   --buttonShadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  --firstShadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
+  --firstShadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   --secondShadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --thirdShadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 p,
@@ -45,6 +57,14 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   // padding-top: 80px;
   font-family: var(--sora);
@@ -61,4 +81,19 @@ body {
 
 body.modal-open {
   overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.slick-slide {
+  & > div {
+    margin-right: 10px;
+  }
 }
