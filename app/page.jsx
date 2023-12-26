@@ -4,8 +4,8 @@ import PageTitle from "@/components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
 
 export const metadata = {
-  title: "G2S",
-  description: "G2S home page",
+  title: "PROCINEMA",
+  description: "Procinema studio home page",
 };
 
 const HomePage = () => {
