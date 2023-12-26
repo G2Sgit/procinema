@@ -14,28 +14,25 @@ const Navigation = () => {
             className={`${css["nav-link"]} ${
               pathname === "/" ? css["active-link"] : null
             }`}
-            href="/"
-          >
+            href="/">
             Home
           </Link>
         </li>
         <li className={css["nav-item"]}>
           <Link
             className={`${css["nav-link"]} ${
-              pathname === "/portfolio" ? css["active-link"] : null
+              pathname === "/postServices" ? css["active-link"] : null
             }`}
-            href="/post-services"
-          >
+            href="/postServices">
             Post services
           </Link>
         </li>
         <li className={css["nav-item"]}>
           <Link
             className={`${css["nav-link"]} ${
-              pathname === "/contacts" ? css["active-link"] : null
+              pathname === "/works" ? css["active-link"] : null
             }`}
-            href="/works"
-          >
+            href="/works">
             Works
           </Link>
         </li>
@@ -43,20 +40,18 @@ const Navigation = () => {
         <li className={css["nav-item"]}>
           <Link
             className={`${css["nav-link"]} ${
-              pathname === "/contacts" ? css["active-link"] : null
+              pathname === "/pricing" ? css["active-link"] : null
             }`}
-            href="/pricing"
-          >
+            href="/pricing">
             Pricing
           </Link>
         </li>
         <li className={css["nav-item"]}>
           <Link
             className={`${css["nav-link"]} ${
-              pathname === "/contacts" ? css["active-link"] : null
+              pathname === "/contact" ? css["active-link"] : null
             }`}
-            href="/contact"
-          >
+            href="/contact">
             Contact
           </Link>
         </li>

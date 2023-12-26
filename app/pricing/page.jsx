@@ -4,17 +4,17 @@ import PageTitle from "../../components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
 
 export const metadata = {
-  title: "Contact",
-  description: "Procinema contact page",
+  title: "Pricing",
+  description: "Procinema pricing page",
 };
 
-const ContactPage = () => {
+const PricingPage = () => {
   return (
     <Section>
       <Container>
-        <PageTitle text="Contact Page" />
+        <PageTitle text="Pricing Page" />
         <Paragraph
-          content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+          content="PRICING Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
@@ -24,4 +24,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default PricingPage;
