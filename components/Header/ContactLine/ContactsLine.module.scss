@@ -1,0 +1,28 @@
+.contactsLine {
+    color: var(--lightTextColor);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  
+    & a {
+      transition: all 0.8s ease;
+      &:hover,
+      &:focus {
+        color: var(--accentColor);
+      }
+    }
+  }
+  .contactsLineWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pageContactsLine {
+    border: none;
+    // background-color: var(--accentColor);
+    color: white;
+    & li {
+      &:not(:last-of-type) {
+        border-right: none;
+      }
+    }
+  }
+  

@@ -1,0 +1,41 @@
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: 14px;
+    padding: 20px;
+  
+    @media screen and (max-width: 767px) {
+      padding: 0;
+    }
+    @media screen and (min-width: 768px) {
+      &:not(:last-of-type) {
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+  
+    & svg {
+      margin-right: 10px;
+      font-size: 16px;
+    }
+  }
+  
+  %contactsLine {
+    display: flex;
+  
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 10px 0 10px;
+    }
+  }
+  
+  .primary-contactsLine {
+    @extend %contactsLine;
+  }
+  
+  .secondary-contactsLine {
+    @extend %contactsLine;
+  }
+  
