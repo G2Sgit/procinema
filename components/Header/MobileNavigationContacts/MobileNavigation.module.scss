@@ -1,0 +1,29 @@
+.adress_wrapper {
+    margin-top: 40px;
+    display: flex;
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  .item {
+    display: flex;
+    gap: 20px;
+    & svg {
+      width: 30px;
+      height: 30px;
+      color: var(--accentColor);
+    }
+  }
+  
+  .title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  

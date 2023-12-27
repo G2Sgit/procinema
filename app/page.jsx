@@ -2,6 +2,9 @@ import Section from "@/components/Section/Section";
 import Container from "@/components/Container/Container";
 import PageTitle from "@/components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
+// import Header from "@/components/Header/Header";
+import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
+
 
 export const metadata = {
   title: "PROCINEMA",
@@ -11,6 +14,8 @@ export const metadata = {
 const HomePage = () => {
   return (
     <>
+            {/* <Header /> */}
+            <MainHero />
       <Section>
         <Container>
           <PageTitle text="Home Page" />
