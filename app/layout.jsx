@@ -1,4 +1,4 @@
-import { Sora, Roboto } from "next/font/google";
+import { Six_Caps, Open_Sans } from "next/font/google";
 import "./globals.scss";
 
 import Header from "@/components/Header/Header";
@@ -6,18 +6,18 @@ import Footer from "@/components/Footer/Footer";
 
 //============================================ Fonts =====================================================
 
-// to use Google Font "Sora" type in CSS-rule:   font-family: var(--sora)
-const sora = Sora({
+// to use Google Font "six caps" type in CSS-rule:   font-family: var(--six_caps)
+const sixCaps = Six_Caps({
   subsets: ["latin"],
-  variable: "--sora",
-  weight: ["400", "500", "600", "700", "800"]
+  variable: "--six_caps",
+  weight: ["400"],
 });
 
-// to use Google Font "Roboto" type in CSS-rule:   font-family: var(--roboto)
-const roboto = Roboto({ 
+// to use Google Font "open sans" type in CSS-rule:   font-family: var(--open_sans)
+const openSans = Open_Sans({
   subsets: ["latin"],
-  variable: "--roboto",
-  weight: ["400", "500", "700", "900"]
+  variable: "--open_sans",
+  weight: ["300", "400", "500", "700"],
 });
 
 //=======================================================================================================
@@ -25,8 +25,8 @@ const roboto = Roboto({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta name="robots" content="noindex, nofollow"/>
-      <body className={`${sora.variable} ${roboto.variable}`}>
+      <meta name="robots" content="noindex, nofollow" />
+      <body className={`${sixCaps.variable}  ${openSans.variable}`}>
         <Header />
         <main>{children}</main>
         <Footer />

@@ -13,12 +13,6 @@
   font-size: 30px;
   font-weight: 700;
   color: var(--accentColor);
-
-  transition: transform var(--mainDuration) var(--mainTimingFunction);
-
-  &:hover {
-    transform: scaleX(2);
-  }
 }
 
 .active-link {
