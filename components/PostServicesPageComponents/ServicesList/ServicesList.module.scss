@@ -1,0 +1,57 @@
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// .page_main_title {
+//   @extend %visually-hidden;
+// }
+
+.page_title {
+  text-align: center;
+
+  font-size: 60px;
+  font-family: var(--six_caps);
+  color: var(--secondaryTextColor);
+  line-height: calc(66 / 60);
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.page_secondary_title {
+  position: relative;
+
+  text-align: center;
+
+  font-size: 15px;
+  color: var(--accentColor);
+  font-weight: 700;
+  line-height: calc(20 / 15);
+  letter-spacing: 2px;
+
+  margin-bottom: 45px;
+
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -22px;
+    transform: translateX(-50%);
+
+    width: 79px;
+    height: 2px;
+
+    background-color: var(--buttonColor);
+  }
+}

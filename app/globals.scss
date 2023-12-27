@@ -67,7 +67,7 @@ a {
 
 body {
   // padding-top: 80px;
-  font-family: var(--sora);
+  font-family: var(--open_sans);
   font-style: normal;
   font-size: 14px;
   font-weight: 400;
@@ -97,3 +97,14 @@ a {
     margin-right: 10px;
   }
 }
+
+// .visually_hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
