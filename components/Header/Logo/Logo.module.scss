@@ -1,0 +1,33 @@
+%logoTemplate {
+    display: flex;
+    // padding: 10px;
+    align-items: center;
+    font-weight: 700;
+    color: white;
+    font-style: italic;
+    font-size: 12px;
+    z-index: 30;
+    & svg {
+      fill: var(--lightTextColor);
+      width: 200px;
+      height: 100px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 8px;
+  
+      & svg {
+        width: 180px;
+        height: 100px;
+      }
+    }
+  }
+  .logo {
+    @extend %logoTemplate;
+  }
+  
+  .pageLogo {
+    @extend %logoTemplate;
+  
+    color: black;
+  }
+  

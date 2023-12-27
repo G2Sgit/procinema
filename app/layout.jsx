@@ -3,7 +3,7 @@ import "./globals.scss";
 
 import localFont from "next/font/local";
 
-// import Header from "@/components/Header/Header";
+import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 //============================================ Fonts =====================================================
@@ -54,7 +54,7 @@ export default function RootLayout({ children }) {
       <meta name="robots" content="noindex, nofollow" />
       <body
         className={`${sixCaps.variable}  ${openSans.variable} ${contaxSans.className}`}>
-        {/* <Header /> */}
+        <Header />
         <main>{children}</main>
         <Footer />
       </body>
