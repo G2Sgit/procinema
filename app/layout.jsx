@@ -1,7 +1,9 @@
 import { Six_Caps, Open_Sans } from "next/font/google";
 import "./globals.scss";
 
-import Header from "@/components/Header/Header";
+import localFont from "next/font/local";
+
+// import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 //============================================ Fonts =====================================================
@@ -20,14 +22,39 @@ const openSans = Open_Sans({
   weight: ["300", "400", "500", "700"],
 });
 
+// to use Local Font "Contax Sans" type in CSS-rule:   font-family: var(--contax-sans)
+const contaxSans = localFont({
+  src: [
+    {
+      path: "./localFonts/contaxSans/Contax Sans 55.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./localFonts/contaxSans/Contax Sans 65 Medium.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./localFonts/contaxSans/Contax Sans 75 Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  // subsets: ["latin"],
+  // variable: "--open_sans",
+  // weight: ["300", "400", "500", "700"],
+});
+
 //=======================================================================================================
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <meta name="robots" content="noindex, nofollow" />
-      <body className={`${sixCaps.variable}  ${openSans.variable}`}>
-        <Header />
+      <body
+        className={`${sixCaps.variable}  ${openSans.variable} ${contaxSans.className}`}>
+        {/* <Header /> */}
         <main>{children}</main>
         <Footer />
       </body>
