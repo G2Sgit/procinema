@@ -1,5 +1,4 @@
 import { IoMdClose } from "react-icons/io";
-import { PiWavesLight } from "react-icons/pi";
 import css from "./BurgerBtn.module.scss";
 
 const BurgerBtn = ({ setIsOpen, isOpen }) => {

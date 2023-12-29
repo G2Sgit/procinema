@@ -3,25 +3,28 @@ import NavigationLine from "./NavigationLine/NavigationLine";
 import Logo from "./Logo/Logo";
 import css from "./Header.module.scss";
 import { useState, useEffect, useMemo } from "react";
-import BurgerBtn from "./BurgerBtn/BurgerBtn";
+// import BurgerBtn from "./BurgerBtn/BurgerBtn";
 import ContactsLine from "./ContactLine/ContactsLine";
 import Container from "@/components/Container/Container";
 const Header = ({ isHomePage }) => {
-  const { scrollY } = window;
-  const [position, setPosition] = useState(scrollY);
+  
+  
+  // if (typeof window !== 'undefined'){const { scrollY } = window;}
+
+  // const [position, setPosition] = useState(scrollY);
   const [visible, setVisible] = useState(true);
   const [isFixed, setIsFixed] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      let moving = scrollY;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     let moving = scrollY;
 
-      setIsFixed(moving > 300);
-      setVisible(position > moving);
-      setPosition(moving);
-    };
-    window.addEventListener("scroll", handleScroll);
-  });
+  //     setIsFixed(moving > 300);
+  //     setVisible(position > moving);
+  //     setPosition(moving);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  // });
   const [isOpen, setIsOpen] = useState(false);
 
   const classList = useMemo(() => {
@@ -42,7 +45,7 @@ const Header = ({ isHomePage }) => {
   return (
     <header className={css.header}>
     <div className={classList}>
-      <BurgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />
+      {/* <BurgerBtn setIsOpen={setIsOpen} isOpen={isOpen} /> */}
       <Container>
         <div className={css.fixedNav}>
           <ContactsLine/>
