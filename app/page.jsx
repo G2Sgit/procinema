@@ -3,6 +3,8 @@ import Container from "@/components/Container/Container";
 import PageTitle from "@/components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
 
+import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
+
 export const metadata = {
   title: "G2S",
   description: "G2S home page",
@@ -11,6 +13,9 @@ export const metadata = {
 const HomePage = () => {
   return (
     <>
+      <Section>
+        <AboutStatisticSection/>
+      </Section>
       <Section>
         <Container>
           <PageTitle text="Home Page" />
