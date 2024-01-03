@@ -4,6 +4,8 @@ import PageTitle from "@/components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
 import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
 
+import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
+
 export const metadata = {
   title: "PROCINEMA",
   description: "Procinema studio home page",
@@ -13,6 +15,9 @@ const HomePage = () => {
   return (
     <>
     <MainHero/>
+      <Section>
+        <AboutStatisticSection/>
+      </Section>
       <Section>
         <Container>
           <PageTitle text="Home Page" />
