@@ -9,14 +9,22 @@
   overflow: hidden;
 }
 
-// .page_main_title {
-//   @extend %visually-hidden;
-// }
+.top_container {
+  padding: 0 25px;
 
-.page_title {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
+}
+
+.page_title,
+.unit_title {
   text-align: center;
 
   font-size: 60px;
+  font-weight: 300;
   font-family: var(--six_caps);
   color: var(--secondaryTextColor);
   line-height: calc(66 / 60);
@@ -25,33 +33,85 @@
   text-transform: uppercase;
 }
 
-.page_secondary_title {
-  position: relative;
+.unit_title {
+  text-align: start;
+}
+
+.description_text,
+.page_description_text {
+  font-weight: 300;
+  line-height: calc(27 / 14);
+}
+
+.page_description_text {
+  text-align: center;
+}
+
+.service_unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.service_unit_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: auto;
+
+  padding: 30px 30px;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+
+    padding: 50px 80px;
+  }
+}
+
+.unit_picture_thumb {
+  width: 100%;
+  height: 296px;
+  overflow: hidden;
+
+  background-color: var(--lightContactsBackgroundColor);
+
+  @media screen and (min-width: 768px) {
+    height: 486px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+    height: 385px;
+  }
+}
+
+.item_link {
+  margin-top: 21px;
 
   text-align: center;
 
-  font-size: 15px;
-  color: var(--accentColor);
+  font-family: var(--open_sans);
+  font-size: 19px;
+  line-height: calc(23 / 19);
   font-weight: 700;
-  line-height: calc(20 / 15);
   letter-spacing: 2px;
+  color: var(--accentColor);
 
-  margin-bottom: 45px;
-
-  text-transform: uppercase;
-
-  &::after {
-    content: "";
-
-    position: absolute;
-
-    left: 50%;
-    bottom: -22px;
-    transform: translateX(-50%);
-
-    width: 79px;
-    height: 2px;
-
-    background-color: var(--buttonColor);
-  }
+  background-color: var(--linkBackgroundColor);
 }
