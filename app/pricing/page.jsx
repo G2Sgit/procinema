@@ -2,6 +2,7 @@ import Section from "@/components/Section/Section";
 import Container from "../../components/Container/Container";
 import PageTitle from "../../components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
+import Header from "@/components/Header/Header";
 
 export const metadata = {
   title: "Pricing",
@@ -9,7 +10,8 @@ export const metadata = {
 };
 
 const PricingPage = () => {
-  return (
+  return (<>
+    <Header />
     <Section>
       <Container>
         <PageTitle text="Pricing Page" />
@@ -21,6 +23,7 @@ const PricingPage = () => {
         />
       </Container>
     </Section>
+    </>
   );
 };
 

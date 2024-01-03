@@ -1,0 +1,17 @@
+.logoText{
+    position: absolute;
+    top:65%;
+    font-family: var(--contax-sans);
+    font-size: 12px;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.hidden{
+    opacity: 0;
+  }
+
+  .visible{
+    opacity: 100;
+  }
