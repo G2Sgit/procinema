@@ -7,8 +7,6 @@ import { useState, useEffect, useMemo } from "react";
 import ContactsLine from "./ContactLine/ContactsLine";
 import Container from "@/components/Container/Container";
 const Header = ({ isHomePage }) => {
-  
-  
   // if (typeof window !== 'undefined'){const { scrollY } = window;}
 
   // const [position, setPosition] = useState(scrollY);
@@ -44,23 +42,22 @@ const Header = ({ isHomePage }) => {
 
   return (
     <header className={css.header}>
-    <div className={classList}>
-      {/* <BurgerBtn setIsOpen={setIsOpen} isOpen={isOpen} /> */}
-      <Container>
-        <div className={css.fixedNav}>
-          <ContactsLine/>
-          <Logo isHomePage={isHomePage} />
-          <NavigationLine
-            isHomePage={isHomePage}
-            setIsOpen={setIsOpen}
-            isOpen={isOpen}
-          />
-        </div>
-      </Container>
-    </div>
+      <div className={classList}>
+        {/* <BurgerBtn setIsOpen={setIsOpen} isOpen={isOpen} /> */}
+        <Container>
+          <div className={css.fixedNav}>
+            <ContactsLine />
+            <Logo isHomePage={isHomePage} />
+            <NavigationLine
+              isHomePage={isHomePage}
+              setIsOpen={setIsOpen}
+              isOpen={isOpen}
+            />
+          </div>
+        </Container>
+      </div>
     </header>
   );
 };
 
 export default Header;
-

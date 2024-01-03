@@ -13,8 +13,6 @@ const PostServicesPage = () => {
   return (
     <Section>
       <Container>
-        {/* <PageTitle text="Post services" />
-        <Paragraph content="CINEMART MOTION PICTURE IS FULL SERVICE PRODUCTION COMPANY SPECIALIZED IN COMMERCIAL FILMS, DOCUMENTARIES, DRONE FILMING, CORPORATE FILMS, MUSIC VIDEOS AND MANY OTHERS." /> */}
         <ServicesList />
       </Container>
     </Section>

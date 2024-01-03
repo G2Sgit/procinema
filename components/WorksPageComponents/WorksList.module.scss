@@ -1,0 +1,29 @@
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.top_container {
+  padding: 0 25px;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
+}
+
+
+
+.page_description_text {
+  text-align: center;
+
+  font-weight: 300;
+  line-height: calc(27 / 14);
+}

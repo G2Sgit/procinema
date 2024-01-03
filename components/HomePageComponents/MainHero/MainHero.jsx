@@ -1,22 +1,22 @@
 "use client";
 
 import css from "./MainHero.module.scss";
-import "next-cloudinary/dist/cld-video-player.css";
-import { CldVideoPlayer } from "next-cloudinary";
+// import "next-cloudinary/dist/cld-video-player.css";
+// import { CldVideoPlayer } from "next-cloudinary";
 import Container from "@/components/Container/Container";
 
 const MainHero = () => {
   return (
     <div className={css.wrapper}>
       <div className={css.videoOverlay}></div>
-      <CldVideoPlayer
+      {/* <CldVideoPlayer
         src="pbtwqyilcpgpm0syzapm"
         autoPlay="always"
         loop={true}
         muted={true}
         controls={false}
         className={css.video}
-      />
+      /> */}
 
       {/* <div className={css.triangle}>
         <svg
