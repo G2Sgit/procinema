@@ -3,6 +3,7 @@ import Container from "../../components/Container/Container";
 // import PageTitle from "../../components/PageTitle/PageTitle";
 // import Paragraph from "@/components/Paragraph/Paragraph";
 import Pricing from "../../components/PricingPageComponents/Pricing";
+import Header from "@/components/Header/Header";
 
 export const metadata = {
   title: "Pricing",
@@ -10,12 +11,14 @@ export const metadata = {
 };
 
 const PricingPage = () => {
-  return (
+  return (<>
+    <Header />
     <Section>
       <Container>
         <Pricing />
       </Container>
     </Section>
+    </>
   );
 };
 

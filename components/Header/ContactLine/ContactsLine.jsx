@@ -18,6 +18,7 @@ const ContactsLine = ({ primary }) => {
           <SocialIcons
             fb={"https://www.facebook.com/"}
             insta={"http://www.instagram.com/"}
+            vimeo={"https://vimeo.com/"}
           />
         </div>
       </Container>

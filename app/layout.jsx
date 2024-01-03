@@ -3,7 +3,6 @@ import "./globals.scss";
 
 import localFont from "next/font/local";
 
-import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 //============================================ Fonts =====================================================
@@ -25,6 +24,11 @@ const openSans = Open_Sans({
 // to use Local Font "Contax Sans" type in CSS-rule:   font-family: var(--contax-sans)
 const contaxSans = localFont({
   src: [
+    {
+      path: "./localFonts/contaxSans/Contax Sans 35 Thin.otf",
+      weight: "100",
+      style: "normal",
+    },
     {
       path: "./localFonts/contaxSans/Contax Sans 55.otf",
       weight: "400",
@@ -54,7 +58,6 @@ export default function RootLayout({ children }) {
       <meta name="robots" content="noindex, nofollow" />
       <body
         className={`${sixCaps.variable}  ${openSans.variable} ${contaxSans.className}`}>
-        <Header />
         <main>{children}</main>
         <Footer />
       </body>

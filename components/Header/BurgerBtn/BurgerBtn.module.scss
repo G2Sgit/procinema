@@ -1,25 +1,27 @@
 .buttonWrapper {
-    display: flex;
-    justify-content: flex-end;
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
+  // display: flex;
+  // justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
-  
-  .button {
-    position: absolute;
-    border: none;
-    background: none;
-    & svg {
-      fill: white;
-      width: 30px;
-      height: 30px;
-    }
-    // position: absolute;
-    // top: 0;
-    // z-index: 120;
+}
+
+.button {
+  position: absolute;
+  border: none;
+  background: none;
+  & svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
   }
-  
-  .navBtn {
-  }
-  
+  // position: absolute;
+  // top: 0;
+  // z-index: 120;
+}
+
+.navBtn {
+}

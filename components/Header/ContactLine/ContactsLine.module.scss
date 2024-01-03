@@ -14,10 +14,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
   }
   .pageContactsLine {
     border: none;
-    // background-color: var(--accentColor);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
     & li {
       &:not(:last-of-type) {
