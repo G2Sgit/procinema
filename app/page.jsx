@@ -3,6 +3,7 @@ import Container from "@/components/Container/Container";
 import PageTitle from "@/components/PageTitle/PageTitle";
 import Paragraph from "@/components/Paragraph/Paragraph";
 import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
+import Header from "@/components/Header/Header";
 
 import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
 
@@ -14,6 +15,7 @@ export const metadata = {
 const HomePage = () => {
   return (
     <>
+     <Header isHomePage />
     <MainHero/>
       <Section>
         <AboutStatisticSection/>

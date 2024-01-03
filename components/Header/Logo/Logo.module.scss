@@ -1,6 +1,7 @@
 %logoTemplate {
     display: flex;
     // padding: 10px;
+    flex-direction: column;
     align-items: center;
     font-weight: 700;
     color: white;
@@ -17,17 +18,34 @@
   
       & svg {
         width: 180px;
-        height: 100px;
+        height: 50px;
       }
     }
   }
   .logo {
     @extend %logoTemplate;
+    position: absolute;
+    top: -5%;
+
+
+    @media screen and (max-width: 768px) {
+      position: relative;
+    }
   }
   
   .pageLogo {
     @extend %logoTemplate;
-  
-    color: black;
+    position: absolute;
+    top:-2%;
+    & svg {
+      fill: var(--lightTextColor);
+    }
   }
   
+  .hidden{
+    opacity: 0;
+  }
+
+  .visible{
+    opacity: 100;
+  }

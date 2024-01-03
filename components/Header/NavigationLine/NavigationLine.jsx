@@ -1,111 +1,59 @@
-// "use client";
-import React from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+"use client";
+import Navigation from "@/components/Navigation/Navigation";
+import Logo from "../Logo/Logo";
+import LogoText from "../Logo/LogoText/LogoText";
 import css from "./NavigationLine.module.scss";
+import { useState, useEffect, useMemo } from "react";
 import BurgerBtn from "../BurgerBtn/BurgerBtn";
-import MobileNavigationContacts from "../MobileNavigationContacts/MobileNavigationContacts";
+import Container from "@/components/Container/Container";
 
-const NavigationLine = ({ isOpen, setIsOpen }) => {
-  const pathname = usePathname();
+const NavigationLine = ({ isHomePage }) => {
+  const { scrollY } = window;
+  const [position, setPosition] = useState(scrollY);
+  const [visible, setVisible] = useState(true);
+  const [isFixed, setIsFixed] = useState(false);
 
-  const isMainPage = pathname === "/";
+  useEffect(() => {
+    const handleScroll = () => {
+      let moving = scrollY;
 
+      setIsFixed(moving > 300);
+      setVisible(position > moving);
+      setPosition(moving);
+    };
+    window.addEventListener("scroll", handleScroll);
+  });
+  const [isOpen, setIsOpen] = useState(false);
+
+  const classList = useMemo(() => {
+    const classes = [css.staticNav];
+    if (visible) {
+      classes.push(css.visible);
+    } else {
+      classes.push(css.hidden);
+    }
+
+    if (isFixed) {
+      classes.push(css.fixed);
+    }
+
+    return classes.join(" ");
+  }, [isFixed, visible]);
 
   return (
-    <>
-      <nav
-        className={
-          isOpen ? `${css.nav_container} ${css.isOpen}` : `${css.nav_container}`
-        }
-      >
-  <BurgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />
-
-        <ul className={css.nav_list}>
-          <li className={css.nav_item}>
-            <Link
-              //Home link color depending on whether it is a main page or some other page
-              className={`
-             ${pathname === "/" ? css.main_page_home_link : css.nav_link}`}
-              href="/"
-              // onClick={() => setIsOpen(!isOpen)}
-            >
-              Home
-            </Link>
-          </li>
-          <li className={css.nav_item}>
-            <Link
-              // Link color for current path and color behavior for this link on the main page
-              className={`${css.nav_link}
-            
-             ${
-               pathname === "/postServices" && pathname !== "/"
-                 ? css.active_link
-                 : null
-             } 
-             
-            ${pathname === "/" && css.nav_link_main}`}
-            
-            href="/postServices"
-            // onClick={() => setIsOpen(!isOpen)}
-            >
-            Post services
-          </Link>
-        </li>
-          <li className={css.nav_item}>
-            <Link
-              // Link color for current path and color behavior for this link on the main page
-              className={`${css.nav_link} ${
-                pathname === "/works" && pathname !== "/"
-                  ? css.active_link
-                  : null
-              } 
-            ${pathname === "/" && css.nav_link_main}`}
-              href="/works"
-              // onClick={() => setIsOpen(!isOpen)}
-            >
-              Works
-            </Link>
-          </li>
-          <li className={css.nav_item}>
-            <Link
-              // Link color for current path and color behavior for this link on the main page
-              className={`${css.nav_link} ${
-                pathname === "/pricing" && pathname !== "/" ? css.active_link : null
-              } 
-            ${pathname === "/" && css.nav_link_main}`}
-              href="/pricing"
-              // onClick={() => setIsOpen(!isOpen)}
-            >
-              Pricing
-            </Link>
-          </li>
-          <li className={css.nav_item}>
-            <Link
-              // Link color for current path and color behavior for this link on the main page
-              className={`${css.nav_link} ${
-                pathname === "/contact" && pathname !== "/"
-                  ? css.active_link
-                  : null
-              } 
-            ${pathname === "/" && css.nav_link_main}`}
-              href="/contact"
-              // onClick={() => setIsOpen(!isOpen)}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-
-        {isOpen && (
-          <MobileNavigationContacts
-            email={"procinemapost@gmail.com"}
-            phoneNumber={"380670000000"}
-            address={"Kyiv, Ukraine"}
+    <div className={classList}>
+      <Container>
+        <div className={css.fixedNav}>
+          <Logo isHomePage={isHomePage} isFixed={isFixed}/>
+          <BurgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />
+          <Navigation
+            isHomePage={isHomePage}
+            setIsOpen={setIsOpen}
+            isOpen={isOpen}
           />
-        )}
-      </nav>
-    </>
+        </div>
+      </Container>
+    </div>
   );
 };
 
