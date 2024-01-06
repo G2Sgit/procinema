@@ -5,7 +5,7 @@ import Container from "@/components/Container/Container";
 import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
 import HomePageContent from "../components/HomePageComponents/HomePage";
 import Header from "@/components/Header/Header";
-import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection"
+import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
 
 export const metadata = {
   title: "PROCINEMA",
@@ -15,17 +15,15 @@ export const metadata = {
 const HomePage = () => {
   return (
     <>
+      <Header isHomePage />
       <MainHero />
-     <Header isHomePage />
-    <MainHero/>
+      <Container>
+        <HomePageContent />
+      </Container>
       <Section>
-        <AboutStatisticSection/>
+        <AboutStatisticSection />
       </Section>
-      <Section>
-        <Container>
-          <HomePageContent />
-        </Container>
-      </Section>
+      <Section></Section>
     </>
   );
 };

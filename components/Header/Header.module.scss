@@ -7,16 +7,13 @@
   z-index: 999;
   transition: background-color 0.3s ease;
 
-
-
   @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
   }
 
-  &:hover{
-background-color: var(--accentColor);
-
+  &:hover {
+    background-color: var(--accentColor);
   }
 }
 
@@ -25,6 +22,6 @@ background-color: var(--accentColor);
   justify-content: space-between;
 }
 
-.pageHeader{
+.pageHeader {
   background-color: var(--accentColor);
 }
