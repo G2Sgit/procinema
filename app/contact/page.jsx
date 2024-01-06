@@ -10,19 +10,20 @@ export const metadata = {
 };
 
 const ContactPage = () => {
-  return (<>
-    <Header />
-    <Section>
-      <Container>
-        <PageTitle text="Contact Page" />
-        <Paragraph
-          content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
+  return (
+    <>
+      <Header />
+      <Section>
+        <Container>
+          <PageTitle text="Contact Page" />
+          <Paragraph
+            content="CONTACT Lorem ipsum dolor sit amet consectetur, adipisicing elit. A nesciunt
             amet expedita delectus mollitia ipsum, suscipit laboriosam similique
             voluptatibus placeat, molestiae nemo quisquam magnam! Deleniti
             aliquid voluptatibus sequi voluptates expedita."
-        />
-      </Container>
-    </Section>
+          />
+        </Container>
+      </Section>
     </>
   );
 };
