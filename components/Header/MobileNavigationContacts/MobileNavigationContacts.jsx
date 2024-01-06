@@ -6,7 +6,7 @@ import css from "./MobileNavigation.module.scss";
 
 const MobileNavigationContacts = ({ email, phoneNumber, address }) => {
   return (
-    <div className={css.adress_wrapper}>
+    <div className={css.address_wrapper}>
       <ul>
         <li className={css.item}>
           <MdOutlineMailOutline />

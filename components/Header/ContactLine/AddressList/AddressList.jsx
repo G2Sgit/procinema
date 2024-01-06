@@ -1,4 +1,4 @@
-import css from "./AdressList.module.scss";
+import css from "./AddressList.module.scss";
 import { RiMapPinLine } from "react-icons/ri";
 // import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineMailOutline } from "react-icons/md";
