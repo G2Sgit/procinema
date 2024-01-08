@@ -2,15 +2,20 @@
     display: flex;
     // align-items: center;
     // justify-content: center;
-    font-style: 14px;
-    padding: 10px;
+    font-style: 10px;
+    font-size: 14px;
+    padding: 4px;
+    font-family: var(--contax-sans);
+    font-weight: 200;
     justify-content: center;
   
     @media screen and (max-width: 767px) {
       padding: 0;
+      opacity: 0;
     }
     @media screen and (min-width: 768px) {
       justify-content: flex-start;
+      opacity: 100;
     }
   
 
