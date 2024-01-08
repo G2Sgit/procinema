@@ -1,7 +1,7 @@
 %flex {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
   @media screen and (max-width: 767px) {
     & div {
       flex-grow: 1;
@@ -14,7 +14,6 @@ align-items: center;
 }
 .staticNav {
   @extend %flex;
-
   transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   @media screen and (max-width: 767px) {
@@ -29,17 +28,25 @@ align-items: center;
 
   &.fixed {
     @extend %flex;
-
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    background-color: #fff;
+    background-color: var(--lightTextColor);
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
+
     & a,
     & p,
     & span {
       color: var(--primaryNavColor);
+
+      &:hover {
+        &:hover {
+          color: var(--primaryNavColor);
+          outline: 1px solid #000000;
+          border-radius: 30px;
+        }
+      }
     }
   }
 
@@ -56,7 +63,7 @@ align-items: center;
 
   width: 450px;
 
-  padding: 46px 40px 50px 50px;
+  // padding:46px 40px 50px 50px;
 
   background-color: var(--primaryBackgroundColor);
   z-index: 10;
@@ -109,12 +116,12 @@ align-items: center;
   }
 }
 
-.nav_dropdown_item {
-  position: relative;
+// .nav_dropdown_item {
+//   position: relative;
 
-  display: flex;
-  flex-direction: column;
-}
+//   display: flex;
+//   flex-direction: column;
+// }
 
 .nav_link {
   font-size: 15px;
@@ -153,25 +160,25 @@ align-items: center;
   color: var(--primaryNavColor);
 }
 
-.dropdown_unit {
-  display: flex;
+// .dropdown_unit {
+//   display: flex;
 
-  justify-content: space-between;
-  align-items: center;
+//   justify-content: space-between;
+//   align-items: center;
 
-  padding: 0;
+//   padding: 0;
 
-  border: none;
+//   border: none;
 
-  cursor: pointer;
-}
+//   cursor: pointer;
+// }
 
-.dropdown_btn_text {
-  padding-right: 6px;
+// .dropdown_btn_text {
+//   padding-right: 6px;
 
-  font-size: 15px;
-  font-weight: 600;
-}
+//   font-size: 15px;
+//   font-weight: 600;
+// }
 
 .nav_link_main ~ .plus {
   color: var(--lightTextColor);
