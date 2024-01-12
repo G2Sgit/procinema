@@ -1,0 +1,35 @@
+.list {
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    
+    &:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+.icon {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    fill: var(--accentColor);
+    color: var(--accentColor);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 2.11;
+    color: var(--secondaryTextColor);
+}
+
+.text {
+    font-size: 15px;
+    letter-spacing: normal;
+    line-height: 1.7;
+    color: var(--primaryTextColor);
+}

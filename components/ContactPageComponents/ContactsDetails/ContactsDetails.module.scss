@@ -1,0 +1,56 @@
+.section {
+    padding: 120px 20px;
+    background-color: var(--lightContactsBackgroundColor);
+}
+
+.title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--accentColor);
+
+    &Hid {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        -webkit-clip-path: inset(50%);
+                clip-path: inset(50%);
+        margin: -1px;
+    }
+}
+
+
+.thumb {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.left-column {
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+    width: 50%;
+    background-color: var(--primaryBackgroundColor);
+    border-top-left-radius: 150px;
+}
+
+.right-column {
+    padding-top: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 35px;
+    width: 50%;
+    border-bottom-right-radius: 150px;
+    background-color: var(--darkContactsBackgroundColor);
+}
