@@ -13,7 +13,9 @@
   }
 
   &:hover {
-    background-color: var(--accentColor);
+    // background-color: rgba(33,33,33,.8);
+    background-color: rgba(35, 83, 115, 0.191);
+    backdrop-filter: blur(15px);
   }
 }
 
@@ -23,5 +25,5 @@
 }
 
 .pageHeader {
-  background-color: var(--accentColor);
+  background-color: rgba(35, 83, 115, 0.9);
 }
