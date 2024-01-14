@@ -35,13 +35,14 @@
   }
   
   .pageLogo {
-    @extend %logoTemplate;
-    position: absolute;
-    top: -30px;
-    pointer-events: none;
-    & svg {
-      fill: var(--lightTextColor);
-    }
+    display: none;
+    // @extend %logoTemplate;
+    // position: absolute;
+    // top: -30px;
+    // pointer-events: none;
+    // & svg {
+    //   fill: var(--lightTextColor);
+    // }
   }
   
   .hidden{

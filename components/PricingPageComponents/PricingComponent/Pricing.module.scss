@@ -12,10 +12,8 @@
   .top_container {
     padding: 0 25px;
   
-    margin-bottom: 40px;
   
     @media screen and (min-width: 1200px) {
-      margin-bottom: 60px;
     }
   }
   
@@ -42,3 +40,42 @@
     }
 
   }
+
+
+  .pricingCardWrapper{
+    border-radius: 8px;
+    border: 1px solid gray;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    padding: 35px 20px 25px;
+    text-align: center;
+    height: 100%;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    background-color: var(--buttonAndHeaderAccentColor);
+  }
+
+  .cardTitle{
+    margin-bottom: 20px;
+  }
+
+  // .cardParagraph{
+  //   margin-bottom: 10px;
+  // }
+
+  .listOfDef{
+    margin-top:10px;
+  }
+
+  .serviceDef{
+    display: flex;
+    align-items: center;
+  }
+
+  .serviceDefText{
+    margin-left: 10px;
+  }
+

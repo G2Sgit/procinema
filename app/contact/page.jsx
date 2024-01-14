@@ -14,7 +14,7 @@ const ContactPage = () => {
       <Header />
       <main>
       <Section>
-        <Container>
+        <Container dark="dark">
           <ContactsDetails />
         </Container>
       </Section>

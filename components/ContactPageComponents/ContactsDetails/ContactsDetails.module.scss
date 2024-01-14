@@ -1,6 +1,7 @@
 .section {
-    padding: 120px 20px;
-    background-color: var(--lightContactsBackgroundColor);
+    padding: 20px 20px;
+
+    border-radius: 30px;
 }
 
 .title {
@@ -33,6 +34,7 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: stretch;
+
 }
 
 .left-column {
@@ -40,7 +42,7 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 35px;
-    width: 50%;
+max-width:500px;
     background-color: var(--primaryBackgroundColor);
     border-top-left-radius: 150px;
 }
@@ -50,7 +52,13 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 35px;
-    width: 50%;
+
     border-bottom-right-radius: 150px;
-    background-color: var(--darkContactsBackgroundColor);
+    background-color: var(--darkBackgroundColor);
+
+
+    @media screen and (min-width: 1200px) {
+     max-width: 500px;
+      }
+ 
 }

@@ -1,16 +1,16 @@
-.counter {
-    background: #100028;
+// .counter {
+//     background: #100028;
 
-    @media screen and (min-width: 480px) and (max-width: 767px) {}
+//     @media screen and (min-width: 480px) and (max-width: 767px) {}
 
-    @media screen and (min-width: 768px) and (max-width: 1023px) {}
+//     @media screen and (min-width: 768px) and (max-width: 1023px) {}
 
-    @media screen and (min-width: 1024px) {
-        height: 840px;
-        padding-top: 380px;
-        overflow: hidden;
-    }
-}
+//     @media screen and (min-width: 1024px) {
+//         height: 500px;
+//         padding: 25px 25px;
+//         overflow: hidden;
+//     }
+// }
 
 .counter__container {
     margin-left: auto;
@@ -54,7 +54,7 @@
 
         max-width: 960px;
 
-        padding: 0px 145px 0 50px;
+        padding: 50px 75px;
     }
 }
 
@@ -87,7 +87,8 @@
     width: 100%;
     height: 255px;
 
-    background: #1a083d;
+    background: #171717;
+    backdrop-filter: blur(15px);
 
     text-align: center;
 

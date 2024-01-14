@@ -73,9 +73,9 @@ const ServicesList = () => {
                   making in Croatia by refunding the 25%-30% of the production
                   expenses made in Croatia.
                 </p>
-                <a className={css.item_link} href="#">
+                {/* <a className={css.item_link} href="#">
                   BENEFITS OF FILMING IN CROATIA
-                </a>
+                </a> */}
               </div>
               <div className={css.unit_picture_thumb}></div>
             </li>
