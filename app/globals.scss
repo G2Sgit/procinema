@@ -95,7 +95,16 @@ a {
 
 .slick-slide {
   & > div {
-    margin-right: 10px;
+    margin-right: 20px;
+  }
+}
+
+.slick-dots {
+  & li {
+    & button:before {
+      color: var(--buttonColor) !important;
+      font-size: 10px !important;
+    }
   }
 }
 
