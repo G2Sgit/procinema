@@ -21,13 +21,13 @@ const ContactsList = ({ contacts }) => {
           <p className={css.text}>{email}</p>
         </div>
       </li>
-      <li className={css.item}>
+      {/* <li className={css.item}>
         <BiSolidPhoneCall className={css.icon} />
         <div className={css["text-thumb"]}>
           <h4 className={css.title}>Call Us</h4>
           <p className={css.text}>{phone}</p>
         </div>
-      </li>
+      </li> */}
     </ul>
   );
 };

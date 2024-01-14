@@ -7,6 +7,7 @@ import HomePageContent from "../components/HomePageComponents/HomePage";
 import Header from "@/components/Header/Header";
 import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
 
+
 export const metadata = {
   title: "PROCINEMA",
   description: "Procinema studio home page",
@@ -18,17 +19,11 @@ const HomePage = () => {
       <Header isHomePage />
       <MainHero />
       <Section>
-      <Container dark="dark">
+      <Container >
         <HomePageContent />
         <AboutStatisticSection />
       </Container>
       </Section>
-      {/* <Section >
-      <Container dark="dark">
-        <AboutStatisticSection />
-        </Container>
-      </Section> */}
-      <Section></Section>
     </>
   );
 };

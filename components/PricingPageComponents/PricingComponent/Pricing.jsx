@@ -2,6 +2,7 @@ import UnderlinedHeading from "@/components/UnderlinedHeading/UnderlinedHeading"
 import Container from "@/components/Container/Container";
 import Section from "@/components/Section/Section";
 import css from "./Pricing.module.scss";
+import Link from "next/link";
 
 import { IoIosRadioButtonOn } from "react-icons/io";
 import { TiMediaPlay } from "react-icons/ti";
@@ -27,11 +28,19 @@ const Pricing = () => {
       </Section>
       <Section className={css.pricingConditionsSection}>
 <Container >
+
+
+
 <ul className={css.pricingWrapper}>
+
+<li>
+<ul className={css.descrButtonswrapper}>
             <li className={css.pricingCardWrapper}>
               <h3 className={css.cardTitle}>DOCUMENTARY film</h3>
               <p className={css.cardParagraph}>Services:</p>
               <ul className={css.listOfDef}>
+
+
                 <li className={css.serviceDef}>
                   <IoIosRadioButtonOn/>
                   <p className={css.serviceDefText}>Professional video editing from 1-3 cameras &#10088;HD, 4k&#10089;</p>
@@ -45,6 +54,7 @@ const Pricing = () => {
                   <p className={css.serviceDefText}>Licensed sound design & music</p>
                 </li>
               </ul>
+
               <ul className={css.listOfDef}>
                 <li className={css.serviceDef}>
                 <TiMediaPlay/>
@@ -55,6 +65,8 @@ const Pricing = () => {
                   <p className={css.serviceDefText}>30-60 min long - 700$</p>
                 </li>
               </ul>
+
+
               <ul className={css.listOfDef}>
                 <li className={css.serviceDef}>
                   <MdOutlineRunningWithErrors/>
@@ -67,6 +79,17 @@ const Pricing = () => {
               </ul>
             </li>
 
+
+            <li className={css.buttonsWrapper}>
+              <Link  className={css.cardButton} href="/works">Works</Link>
+              <Link className={css.cardButton} href="/contact">Order now</Link>
+            </li>
+</ul>
+</li>
+
+
+<li>
+<ul className={css.descrButtonswrapper}>
             <li className={css.pricingCardWrapper}>
               <h3 className={css.cardTitle}>
                 COMMERCIAL/ MUSIC VIDEO/ TRAILER
@@ -111,7 +134,17 @@ const Pricing = () => {
                 </li>
               </ul>
             </li>
+            <li className={css.buttonsWrapper}>
+              <Link  className={css.cardButton} href="/works">Works</Link>
+              <Link className={css.cardButton} href="/contact">Order now</Link>
+            </li>
+            </ul>
+            </li>
 
+
+
+<li>
+<ul className={css.descrButtonswrapper}>
             <li className={css.pricingCardWrapper}>
               <h3 className={css.cardTitle}>MOTION DESIGN template</h3>
               <p className={css.cardParagraph}>Services:</p>
@@ -136,6 +169,7 @@ const Pricing = () => {
                 <MdOutlineRunningWithErrors/>
                   <p className={css.serviceDefText}>2-4 days turnaround</p>
                 </li>
+                
 
                 <li className={css.serviceDef}>
                 <MdPreview/>
@@ -143,6 +177,13 @@ const Pricing = () => {
                 </li>
               </ul>
             </li>
+            <li className={css.buttonsWrapper}>
+              <Link  className={css.cardButton} href="/works">Works</Link>
+              <Link className={css.cardButton} href="/contact">Order now</Link>
+            </li>
+            </ul>
+            </li>
+
           </ul>
 </Container>
       </Section>

@@ -4,15 +4,16 @@
     max-width: 470px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 29px;
-    padding-bottom: 38px;
-    padding-left: 35px;
-    padding-right: 35px;
+    // padding-top: 29px;
+    // padding-bottom: 38px;
+    // padding-left: 35px;
+    // padding-right: 35px;
 }
 
 .input-thumb {
-    width: 170px;
-    height: 92px;
+
+    height: 50px;
+
 
     &:nth-child(2n) {
         margin-left: 30px;
@@ -20,16 +21,16 @@
 }
 
 .input {
-    padding: 17px 24px;
-    width: 100%;
+    padding: 12px 15px;
     border: 0;
     border-radius: 6px;
     background-color: var(--secondaryBackgroundColor);
+    width: 100%;
 }
 
 .textarea-thumb {
-    width: 370px;
-    height: 210px;
+    width: 425px;
+    height: 170px;
 }
 
 .text-area {
@@ -48,13 +49,13 @@
 }
 
 .button {
-    padding: 17px 28px;
+    padding: 17px 17px 17px 17px;
     font-family: var(--roboto);
     font-size: 14px;
     font-weight: 500;
     line-height: 11px;
     border: 0;
     border-radius: 8px;
-    background-color: var(--buttonColor);
+    background-color: var(--buttonAndHeaderAccentColor);
     color: var(--lightTextColor);
 }

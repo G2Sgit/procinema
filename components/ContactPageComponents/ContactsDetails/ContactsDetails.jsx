@@ -20,7 +20,7 @@ const ContactsDetails = ({ sectionTitle, hidden }) => {
               contacts={{
                 address: "Kyiv, Ukraine",
                 email: "office@procinemastudio.com",
-                phone: "+38 044 555-55-55",
+                // phone: "+38 044 555-55-55",
               }}
             />
           </div>

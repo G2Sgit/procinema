@@ -35,8 +35,9 @@
     }
   
     @media screen and (min-width: 1200px) {
-      display: flex;
-      justify-content: space-around;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 10px
     }
 
   }
@@ -45,7 +46,6 @@
   .pricingCardWrapper{
     border-radius: 8px;
     border: 1px solid gray;
-    -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
     padding: 35px 20px 25px;
     text-align: center;
@@ -55,7 +55,10 @@
     display: flex;
     flex-direction: column;
     min-height: 300px;
-    background-color: var(--buttonAndHeaderAccentColor);
+
+
+    
+    // background-color: var(--buttonAndHeaderAccentColor);
   }
 
   .cardTitle{
@@ -79,3 +82,26 @@
     margin-left: 10px;
   }
 
+  .descrButtonswrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonsWrapper{
+    margin-top: 10px;
+    display: flex;
+    justify-content: stretch;
+    margin: 20px 20px;
+    gap: 8px;
+  }
+
+
+  .cardButton{
+   text-align: center;
+    border: 1px solid;
+    color: #fafafa;
+    border-radius: 10px;
+    padding:10px 20px;
+    width:150px;
+
+  }
