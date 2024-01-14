@@ -1,8 +1,8 @@
 import css from "./Container.module.scss";
 
-const Container = function({ children }) {
+const Container = function({ children,dark }) {
     return (
-        <div className={css.container}>
+        <div className={dark?css.containerDark:css.container}>
             {children}
         </div>
     )

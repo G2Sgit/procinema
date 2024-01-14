@@ -11,7 +11,6 @@
 
 .fixedNav {
   @extend %flex;
-
 }
 .staticNav {
   @extend %flex;
@@ -23,7 +22,7 @@
 
   &.visible {
     @extend %flex;
-color: #000000;
+color: var(--lightTextColor);
     top: 0;
   }
 
@@ -33,23 +32,17 @@ color: #000000;
     top: 0;
     right: 0;
     left: 0;
-    background-color: var(--lightTextColor);
+    background-color: var(--buttonAndHeaderAccentColor);
+    backdrop-filter: blur(15px);
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
-color: #000000;
+color: var(--lightTextColor);
 
 
-    & a,
+& a,
     & p,
     & span {
-      color:black;
-
-      &:hover {
-       
-          color: var(--primaryNavColor);
-          outline: 1px solid #000000;
-          border-radius: 30px;
-        
-      }
+      color:var(--lightTextColor);
+ 
     }
   }
 
