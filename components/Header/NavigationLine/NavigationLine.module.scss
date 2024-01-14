@@ -11,6 +11,7 @@
 
 .fixedNav {
   @extend %flex;
+
 }
 .staticNav {
   @extend %flex;
@@ -22,7 +23,7 @@
 
   &.visible {
     @extend %flex;
-
+color: #000000;
     top: 0;
   }
 
@@ -34,18 +35,20 @@
     left: 0;
     background-color: var(--lightTextColor);
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
+color: #000000;
+
 
     & a,
     & p,
     & span {
-      color: var(--primaryNavColor);
+      color:black;
 
       &:hover {
-        &:hover {
+       
           color: var(--primaryNavColor);
           outline: 1px solid #000000;
           border-radius: 30px;
-        }
+        
       }
     }
   }
@@ -109,19 +112,13 @@
 
   @media screen and (min-width: 768px) {
     padding: 38px 0;
+    color: #000000;
 
     &:not(:last-child) {
       border-bottom: none;
     }
   }
 }
-
-// .nav_dropdown_item {
-//   position: relative;
-
-//   display: flex;
-//   flex-direction: column;
-// }
 
 .nav_link {
   font-size: 15px;
@@ -160,25 +157,7 @@
   color: var(--primaryNavColor);
 }
 
-// .dropdown_unit {
-//   display: flex;
 
-//   justify-content: space-between;
-//   align-items: center;
-
-//   padding: 0;
-
-//   border: none;
-
-//   cursor: pointer;
-// }
-
-// .dropdown_btn_text {
-//   padding-right: 6px;
-
-//   font-size: 15px;
-//   font-weight: 600;
-// }
 
 .nav_link_main ~ .plus {
   color: var(--lightTextColor);

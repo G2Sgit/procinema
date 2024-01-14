@@ -8,7 +8,7 @@ const BurgerBtn = ({ setIsOpen, isOpen }) => {
         {isOpen ? (
           <IoMdClose value={{ fill: 'black' }}/>
         ) : (
-          <svg fill={"white"} width={"80px"} height={"70px"}>
+          <svg fill={"white"} width={"30px"} height={"30px"}>
             <use href={"/icons-sprite.svg#burger-menu"} />
           </svg>
         )}
