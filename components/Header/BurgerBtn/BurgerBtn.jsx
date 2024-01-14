@@ -6,9 +6,9 @@ const BurgerBtn = ({ setIsOpen, isOpen }) => {
     <div className={css.buttonWrapper}>
       <button className={css.button} onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? (
-          <IoMdClose />
+          <IoMdClose value={{ fill: 'black' }}/>
         ) : (
-          <svg fill={"white"} width={"80px"} height={"70px"}>
+          <svg fill={"white"} width={"30px"} height={"30px"}>
             <use href={"/icons-sprite.svg#burger-menu"} />
           </svg>
         )}

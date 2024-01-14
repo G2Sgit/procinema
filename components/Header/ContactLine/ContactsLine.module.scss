@@ -17,16 +17,20 @@
 
     @media screen and (max-width: 768px) {
       justify-content: center;
+
+
+      display: none;
     }
   }
   .pageContactsLine {
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    color: white;
-    & li {
-      &:not(:last-of-type) {
-        border-right: none;
-      }
-    }
+    display: none;
+    // border: none;
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    // color: white;
+    // & li {
+    //   &:not(:last-of-type) {
+    //     border-right: none;
+    //   }
+    // }
   }
   

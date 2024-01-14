@@ -6,7 +6,6 @@ import css from "./AboutStatisticSection.module.scss";
 
 const AboutStatisticSection = () => {
   return (
-    <div className={css.counter}>
       <div className={css["counter__container"]}>
         <div className={css["counter__content"]}>
           <ul className={css.row}>
@@ -65,7 +64,7 @@ const AboutStatisticSection = () => {
           </ul>
         </div>
       </div>
-    </div>
+
   );
 };
 

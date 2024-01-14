@@ -17,12 +17,17 @@ const HomePage = () => {
     <>
       <Header isHomePage />
       <MainHero />
-      <Container>
-        <HomePageContent />
-      </Container>
       <Section>
+      <Container dark="dark">
+        <HomePageContent />
         <AboutStatisticSection />
+      </Container>
       </Section>
+      {/* <Section >
+      <Container dark="dark">
+        <AboutStatisticSection />
+        </Container>
+      </Section> */}
       <Section></Section>
     </>
   );

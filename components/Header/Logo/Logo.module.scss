@@ -7,7 +7,7 @@
     color: white;
     font-style: italic;
     font-size: 12px;
-    z-index: 30;
+    z-index: 1000;
     & svg {
       fill: var(--lightTextColor);
       width: 200px;
@@ -25,21 +25,24 @@
   .logo {
     @extend %logoTemplate;
     position: absolute;
-    top: -5%;
-
+    top: -30px;
+    pointer-events: none;
 
     @media screen and (max-width: 768px) {
       position: relative;
+     top:-10px;
     }
   }
   
   .pageLogo {
-    @extend %logoTemplate;
-    position: absolute;
-    top:-2%;
-    & svg {
-      fill: var(--lightTextColor);
-    }
+    display: none;
+    // @extend %logoTemplate;
+    // position: absolute;
+    // top: -30px;
+    // pointer-events: none;
+    // & svg {
+    //   fill: var(--lightTextColor);
+    // }
   }
   
   .hidden{

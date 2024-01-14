@@ -123,7 +123,7 @@ const NavigationLine = ({ isHomePage }) => {
     <div className={classList}>
       <Container>
         <div className={css.fixedNav}>
-          <Logo isHomePage={isHomePage} />
+          <Logo isHomePage={isHomePage} isFixed={isFixed}/>
 
           <BurgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />
           <Navigation

@@ -1,4 +1,4 @@
-import Pricing from "../../components/PricingPageComponents/Pricing";
+import Pricing from "@/components/PricingPageComponents/PricingComponent/Pricing";
 import Header from "@/components/Header/Header";
 
 export const metadata = {

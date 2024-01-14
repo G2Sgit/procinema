@@ -1,0 +1,81 @@
+.visually_hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .top_container {
+    padding: 0 25px;
+  
+  
+    @media screen and (min-width: 1200px) {
+    }
+  }
+  
+  .page_description_text {
+    text-align: center;
+  
+    font-weight: 300;
+    line-height: calc(27 / 14);
+  }
+  
+
+  .pricingWrapper{
+
+    @media screen and (max-width: 1199px) {
+      display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-around;
+    }
+
+  }
+
+
+  .pricingCardWrapper{
+    border-radius: 8px;
+    border: 1px solid gray;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    padding: 35px 20px 25px;
+    text-align: center;
+    height: 100%;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    background-color: var(--buttonAndHeaderAccentColor);
+  }
+
+  .cardTitle{
+    margin-bottom: 20px;
+  }
+
+  // .cardParagraph{
+  //   margin-bottom: 10px;
+  // }
+
+  .listOfDef{
+    margin-top:10px;
+  }
+
+  .serviceDef{
+    display: flex;
+    align-items: center;
+  }
+
+  .serviceDefText{
+    margin-left: 10px;
+  }
+

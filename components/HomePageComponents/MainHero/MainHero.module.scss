@@ -18,7 +18,7 @@
     cursor: pointer;
     font-weight: 700;
     transition-duration: 0.2s;
-    background-color: var(--accentColor);
+    background-color: rgba(33,33,33,0.8);
   
     font-size: 16px;
     font-weight: 500;
@@ -30,7 +30,7 @@
       &::after,
       &::before {
         animation: none;
-        background: var(--accentColor);
+        background: rgba(33,33,33,0.8);
         box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
       }
     }
@@ -47,11 +47,11 @@
     background: linear-gradient(
       45deg,
       var(--ch-black),
-      var(--accentColor),
-      var(--night-rider),
+      rgba(33,33,33,0.8),
+      rgba(33,33,33,0.8),
       var(--ch-white),
       // var(--night-rider),
-      var(--accentColor),
+      rgba(33,33,33,0.8),
       // var(--ch-black),
       var(--ch-black)
     );
@@ -157,7 +157,7 @@
     left: 0;
     position: absolute;
     background-color: #08172d;
-    opacity: 0.5;
+    opacity: 0.3;
     mix-blend-mode: multiply;
     z-index: -1;
   }

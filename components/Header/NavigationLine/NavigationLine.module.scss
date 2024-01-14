@@ -1,7 +1,7 @@
 %flex {
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
   @media screen and (max-width: 767px) {
     & div {
       flex-grow: 1;
@@ -14,7 +14,6 @@ align-items: center;
 }
 .staticNav {
   @extend %flex;
-
   transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 
   @media screen and (max-width: 767px) {
@@ -23,23 +22,27 @@ align-items: center;
 
   &.visible {
     @extend %flex;
-
+color: var(--lightTextColor);
     top: 0;
   }
 
   &.fixed {
     @extend %flex;
-
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    background-color: #fff;
+    background-color: var(--buttonAndHeaderAccentColor);
+    backdrop-filter: blur(15px);
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
-    & a,
+color: var(--lightTextColor);
+
+
+& a,
     & p,
     & span {
-      color: var(--primaryNavColor);
+      color:var(--lightTextColor);
+ 
     }
   }
 
@@ -56,7 +59,7 @@ align-items: center;
 
   width: 450px;
 
-  padding: 46px 40px 50px 50px;
+  // padding:46px 40px 50px 50px;
 
   background-color: var(--primaryBackgroundColor);
   z-index: 10;
@@ -102,18 +105,12 @@ align-items: center;
 
   @media screen and (min-width: 768px) {
     padding: 38px 0;
+    color: #000000;
 
     &:not(:last-child) {
       border-bottom: none;
     }
   }
-}
-
-.nav_dropdown_item {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .nav_link {
@@ -153,25 +150,7 @@ align-items: center;
   color: var(--primaryNavColor);
 }
 
-.dropdown_unit {
-  display: flex;
 
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 0;
-
-  border: none;
-
-  cursor: pointer;
-}
-
-.dropdown_btn_text {
-  padding-right: 6px;
-
-  font-size: 15px;
-  font-weight: 600;
-}
 
 .nav_link_main ~ .plus {
   color: var(--lightTextColor);
