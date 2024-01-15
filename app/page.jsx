@@ -8,6 +8,7 @@ import Header from "@/components/Header/Header";
 import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
 import FeedbackSection from "@/components/HomePageComponents/FeedbackSection";
 
+
 export const metadata = {
   title: "PROCINEMA",
   description: "Procinema studio home page",
@@ -19,18 +20,16 @@ const HomePage = () => {
       <Header isHomePage />
       <MainHero />
       <Section>
+
         <Container dark="dark">
           <HomePageContent />
           <AboutStatisticSection />
         </Container>
       </Section>
-      {/* <Section >
-      <Container dark="dark">
-        <AboutStatisticSection />
-        </Container>
-      </Section> */}
-      <Section></Section>
+      
+      
       <FeedbackSection />
+
     </>
   );
 };

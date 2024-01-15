@@ -10,14 +10,8 @@ const FooterBottomLine = () => {
             <li>
               <a href="/">Privacy Policy</a>
             </li>
-            <li>
-              <a href="/">Refund Policy</a>
-            </li>
-            <li>
-              <a href="/">Cookie Policy</a>
-            </li>
           </ul>
-          <p>© Procinema 2023</p>
+          <p>© Procinema 2024</p>
         </div>
       </Container>
     </div>

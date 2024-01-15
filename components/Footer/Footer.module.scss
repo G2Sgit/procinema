@@ -3,6 +3,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: black;
   
     @media screen and (min-width: 480px) {
       width: 480px;
@@ -13,10 +14,10 @@
     // }
   
     @media screen and (min-width: 768px) {
-      width: 768px;
+      width: 100vw;
     }
   
     @media screen and (min-width: 1200px) {
-      width: 1200px;
+      width: 100vw;
     }
   }
