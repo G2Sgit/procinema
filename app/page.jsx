@@ -6,6 +6,7 @@ import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
 import HomePageContent from "../components/HomePageComponents/HomePage";
 import Header from "@/components/Header/Header";
 import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
+import FeedbackSection from "@/components/HomePageComponents/FeedbackSection";
 
 
 export const metadata = {
@@ -19,11 +20,16 @@ const HomePage = () => {
       <Header isHomePage />
       <MainHero />
       <Section>
-      <Container >
-        <HomePageContent />
-        <AboutStatisticSection />
-      </Container>
+
+        <Container dark="dark">
+          <HomePageContent />
+          <AboutStatisticSection />
+        </Container>
       </Section>
+      
+      
+      <FeedbackSection />
+
     </>
   );
 };
