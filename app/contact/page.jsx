@@ -13,11 +13,7 @@ const ContactPage = () => {
     <>
       <Header />
       <main>
-      <Section>
-        <Container dark="dark">
-          <ContactsDetails />
-        </Container>
-      </Section>
+          <ContactsDetails hidden="hidden"/>
       </main>
     </>
   );
