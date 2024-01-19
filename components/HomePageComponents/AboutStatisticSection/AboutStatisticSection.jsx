@@ -16,14 +16,14 @@ const AboutStatisticSection = () => {
             <li className={css["counter__item"]}>
               <div className={css["counter__item__text"]}>
               <GrCompliance size={60}/>
-                <h2 className={css["counter__num"]}>230</h2>
+                <h2 className={css["counter__num"]}>1490</h2>
                 <p>Compled Projects</p>
               </div>
             </li>
             <li className={css["counter__item"]}>
               <div className={css["counter__item__text"]}>
               <BsFillPersonCheckFill size={60}/>
-                <h2 class={css["counter_num"]}>1068</h2>
+                <h2 class={css["counter_num"]}>79</h2>
                 <p>Happy clients</p>
               </div>
             </li>
@@ -37,7 +37,7 @@ const AboutStatisticSection = () => {
             <li className={css["counter__item"]}>
               <div className={css["counter__item__text"]}>
                 <SlGlobe size={60}/>
-                <h2 className={css["counter__num"]}>10</h2>
+                <h2 className={css["counter__num"]}>4</h2>
                 <p>Countries</p>
               </div>
             </li>

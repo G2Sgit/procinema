@@ -12,23 +12,27 @@
     flex-direction: column;
   }
 
-  &:hover {
+  
+
     background-color: rgba(33,33,33,.8);
     backdrop-filter: blur(15px);
-  }
+  
+
 }
+
+
+
 
 .stikyHeader {
   display: flex;
   justify-content: space-between;
+
 }
 
 .pageHeader {
-  background-color: #FFFFFF;
-  // background-color: var(--accentColor);
-  // background-color: rgba(33,33,33,0.8);
+  background-color: #000000;
   backdrop-filter: blur(30px);
-color: black;
+color: white;
 
 
 }

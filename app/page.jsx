@@ -21,7 +21,7 @@ const HomePage = () => {
       <MainHero />
       <Section>
 
-        <Container dark="dark">
+        <Container content="content">
           <HomePageContent />
           <AboutStatisticSection />
         </Container>

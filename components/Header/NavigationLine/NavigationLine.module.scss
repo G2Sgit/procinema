@@ -9,6 +9,8 @@
   }
 }
 
+
+
 .fixedNav {
   @extend %flex;
 }
@@ -18,6 +20,7 @@
 
   @media screen and (max-width: 767px) {
     overflow-x: hidden;
+
   }
 
   &.visible {
@@ -52,10 +55,10 @@ color: var(--lightTextColor);
 }
 
 .nav_container {
-  position: absolute;
+  // position: absolute;
 
-  top: 0;
-  right: 0;
+  // top: 0;
+  // right: 0;
 
   width: 450px;
 
@@ -65,7 +68,7 @@ color: var(--lightTextColor);
   z-index: 10;
 
   @media screen and (min-width: 768px) {
-    position: static;
+    // position: static;
 
     width: initial;
 

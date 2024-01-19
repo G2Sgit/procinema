@@ -25,6 +25,7 @@
   letter-spacing: 2px;
 
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .unit_title {
@@ -33,12 +34,15 @@
 
 .description_text,
 .page_description_text {
-  font-weight: 300;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
   line-height: calc(27 / 14);
 }
 
 .page_description_text {
   text-align: center;
+  color: black;
 }
 
 .service_unit {

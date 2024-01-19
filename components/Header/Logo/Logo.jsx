@@ -9,7 +9,7 @@ const Logo = ({ isHomePage, isFixed }) => {
         <use href={"/logo-sprite.svg#logo"} />
       </svg> */}
       <LogoSvg isFixed={isFixed}/>
-      <LogoText logoText="Post Production Studio" isFixed={isFixed} />
+      <LogoText logoText="Post Production Studio"/>
     </div>
   );
 };

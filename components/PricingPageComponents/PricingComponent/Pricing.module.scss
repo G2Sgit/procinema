@@ -1,107 +1,155 @@
 .visually_hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  
-  .top_container {
-    padding: 0 25px;
-  
-  
-    @media screen and (min-width: 1200px) {
-    }
-  }
-  
-  .page_description_text {
-    text-align: center;
-  
-    font-weight: 300;
-    line-height: calc(27 / 14);
-  }
-  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-  .pricingWrapper{
+.top_container {
+  padding: 0 25px;
 
-    @media screen and (max-width: 1199px) {
-      display: flex;
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); 
-      gap: 10px
-    }
+  @media screen and (min-width: 1200px) {
+  }
+}
 
+.page_description_text {
+  text-align: center;
+
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(27 / 14);
+}
+
+.pricingWrapper {
+
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+
+  @media screen and (max-width: 768px) {
+display: grid;
   }
 
 
-  .pricingCardWrapper{
-    border-radius: 8px;
-    border: 1px solid gray;
-    backdrop-filter: blur(3px);
-    padding: 35px 20px 25px;
-    text-align: center;
-    height: 100%;
-    color: #FFFFFF;
-    box-sizing: border-box;
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
-    min-height: 300px;
-
-
-    
-    // background-color: var(--buttonAndHeaderAccentColor);
-  }
-
-  .cardTitle{
-    margin-bottom: 20px;
-  }
-
-  // .cardParagraph{
-  //   margin-bottom: 10px;
-  // }
-
-  .listOfDef{
-    margin-top:10px;
-  }
-
-  .serviceDef{
-    display: flex;
     align-items: center;
+    text-align: center;
   }
 
-  .serviceDefText{
-    margin-left: 10px;
+  @media screen and (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
+}
 
-  .descrButtonswrapper{
-    display: flex;
-    flex-direction: column;
-  }
+.pricingCardWrapper {
+  flex: 1;
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding: 35px 20px 25px;
+  border-color: black;
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
+  // text-align: center;
 
-  .buttonsWrapper{
-    margin-top: 10px;
-    display: flex;
-    justify-content: stretch;
-    margin: 20px 20px;
-    gap: 8px;
-  }
+  color: #000000;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  min-width: 350px;
+  // justify-content: space-between;
+
+  // background-color: var(--buttonAndHeaderAccentColor);
+}
+
+.cardTitle {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-family: var(--open_sans);
+  text-align: center;
+}
+
+.cardParagraph {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.listOfDef {
+  margin-top: 10px;
+  height: 150px;
+}
+
+.listOfPrices {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  height: 80px;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.servicePriceText {
+  text-align: center;
+}
+
+.priceNumber {
+  font-size: x-large;
+}
+
+.serviceDef {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.serviceDefText {
+  margin-left: 10px;
+  align-items: center;
+  max-width: 270px;
+}
+
+.descrButtonswrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonsWrapper {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.cardButton {
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+
+  padding: 10px 20px;
+  width: 150px;
+}
+
+.pricingConditionsSection {
+  background-color: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 
-  .cardButton{
-   text-align: center;
-    border: 1px solid;
-    color: #fafafa;
-    border-radius: 10px;
-    padding:10px 20px;
-    width:150px;
-
-  }
+.letterDFix{
+  font-size: 13px;
+}
