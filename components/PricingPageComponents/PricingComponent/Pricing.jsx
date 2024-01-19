@@ -52,7 +52,7 @@ const Pricing = () => {
 
                 <li className={css.serviceDef}>
                   <MdRadioButtonChecked/>
-                  <p className={css.serviceDefText}>Professional video editing from 1-3 cameras &#10088;HD, 4k&#10089;</p>
+                  <p className={css.serviceDefText}>Professional video editing &#10088;HD, 4k&#10089;</p>
                 </li>
                 <li className={css.serviceDef}>
                 <MdRadioButtonChecked/>
@@ -97,7 +97,7 @@ const Pricing = () => {
 
               <ul className={css.listOfPrices}>
                 <li className={css.servicePrice}>
-                  <p className={css.servicePriceText}><span><strong>$ <span className={css.priceNumber}>100 </span></strong></span><span>/1 min long</span></p>
+                  <p className={css.servicePriceText}><span><strong>$ <span className={css.priceNumber}>120 </span></strong></span><span>/1 min long</span></p>
                 </li>
                 <li className={css.servicePrice}>
                   <p className={css.servicePriceText}><span><strong>$ <span className={css.priceNumber}>200 </span></strong></span><span>/2 min long</span></p>
