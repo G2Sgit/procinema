@@ -5,8 +5,10 @@ import NavigationLine from "./NavigationLine/NavigationLine";
 const Header = ({ isHomePage }) => {
   return (
     <header className={isHomePage ? css.header : css.pageHeader}>
+      <div className={css.headerWrapper}>
       <ContactsLine primary={isHomePage} />
       <NavigationLine isHomePage={isHomePage} />
+      </div>
     </header>
   );
 };

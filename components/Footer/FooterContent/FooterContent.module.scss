@@ -39,7 +39,7 @@
     @media screen and (min-width: 1024px) {
       padding: 10px 0 10px;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
     }
   
     & h3 {
@@ -48,41 +48,35 @@
       letter-spacing: 0;
       position: relative;
       margin-bottom: 20px;
-      &:hover {
-        &::before {
-          width: 15px;
-        }
-        &::after {
-          width: 50px;
-          left: 25px;
-        }
-      }
+      // &:hover {
+      //   &::before {
+      //     width: 15px;
+      //   }
+      //   &::after {
+      //     width: 50px;
+      //     left: 25px;
+      //   }
+      // }
       &::before {
         position: absolute;
         content: "";
         background: var(--accentColor);
-        width: 50px;
-        left: 0;
+        width: 120px;
+
   
-        height: 3px;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-        z-index: 1;
+        height: 1px;
         bottom: -10px;
       }
-      &::after {
-        position: absolute;
-        content: "";
-        background: var(--accentColor);
+      // &::after {
+      //   position: absolute;
+      //   content: "";
+      //   background: var(--accentColor);
   
-        width: 15px;
-        left: 60px;
-        height: 3px;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-        z-index: 1;
-        bottom: -10px;
-      }
+      //   width: 50px;
+
+      //   height: 1px;
+      //   bottom: -10px;
+      // }
     }
   }
   

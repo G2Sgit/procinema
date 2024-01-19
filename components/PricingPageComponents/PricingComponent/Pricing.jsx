@@ -4,10 +4,10 @@ import Section from "@/components/Section/Section";
 import css from "./Pricing.module.scss";
 import Link from "next/link";
 
-import { IoIosRadioButtonOn } from "react-icons/io";
-import { TiMediaPlay } from "react-icons/ti";
+
 import { MdOutlineRunningWithErrors } from "react-icons/md";
 import { MdPreview } from "react-icons/md";
+import { MdRadioButtonChecked } from "react-icons/md";
 
 const Pricing = () => {
   return (
@@ -26,7 +26,7 @@ const Pricing = () => {
           </div>
         </Container >
       </Section>
-      <Section className={css.pricingConditionsSection}>
+      <div className={css.pricingConditionsSection}>
 <Container >
 
 
@@ -37,34 +37,34 @@ const Pricing = () => {
 <ul className={css.descrButtonswrapper}>
             <li className={css.pricingCardWrapper}>
               <h3 className={css.cardTitle}>DOCUMENTARY film</h3>
+
+              <ul className={css.listOfPrices}>
+                <li className={css.servicePrice}>
+                  <p className={css.servicePriceText}><span><strong>$ <span className={css.priceNumber}>500 </span></strong></span><span>/20-25 min long</span></p>
+                </li>
+                <li className={css.servicePrice}>
+                  <p className={css.servicePriceText}><span><strong>$ <span className={css.priceNumber}>700 </span></strong></span><span>/30-60 min long</span></p>
+                </li>
+              </ul>
               <p className={css.cardParagraph}>Services:</p>
               <ul className={css.listOfDef}>
 
 
                 <li className={css.serviceDef}>
-                  <IoIosRadioButtonOn/>
+                  <MdRadioButtonChecked/>
                   <p className={css.serviceDefText}>Professional video editing from 1-3 cameras &#10088;HD, 4k&#10089;</p>
                 </li>
                 <li className={css.serviceDef}>
-                <IoIosRadioButtonOn/>
+                <MdRadioButtonChecked/>
                   <p className={css.serviceDefText}>Color Correction</p>
                 </li>
                 <li className={css.serviceDef}>
-                <IoIosRadioButtonOn/>
+                <MdRadioButtonChecked/>
                   <p className={css.serviceDefText}>Licensed sound design & music</p>
                 </li>
               </ul>
 
-              <ul className={css.listOfDef}>
-                <li className={css.serviceDef}>
-                <TiMediaPlay/>
-                  <p className={css.serviceDefText}>20-25 min long - 500$</p>
-                </li>
-                <li className={css.serviceDef}>
-                <TiMediaPlay/>
-                  <p className={css.serviceDefText}>30-60 min long - 700$</p>
-                </li>
-              </ul>
+            
 
 
               <ul className={css.listOfDef}>
@@ -77,13 +77,13 @@ const Pricing = () => {
                   <p className={css.serviceDefText}>2 rounds of revisions</p>
                 </li>
               </ul>
+              <div className={css.buttonsWrapper}><Link className={css.cardButton} href="/contact">Contact us</Link></div>
             </li>
 
 
-            <li className={css.buttonsWrapper}>
-              <Link  className={css.cardButton} href="/works">Works</Link>
-              <Link className={css.cardButton} href="/contact">Order now</Link>
-            </li>
+            {/* <li className={css.buttonsWrapper}>
+              <Link className={css.cardButton} href="/contact">Contact us</Link>
+            </li> */}
 </ul>
 </li>
 
@@ -94,35 +94,35 @@ const Pricing = () => {
               <h3 className={css.cardTitle}>
                 COMMERCIAL/ MUSIC VIDEO/ TRAILER
               </h3>
+
+              <ul className={css.listOfPrices}>
+                <li className={css.servicePrice}>
+                  <p className={css.servicePriceText}><span><strong>$ <span className={css.priceNumber}>100 </span></strong></span><span>/1 min long</span></p>
+                </li>
+                <li className={css.servicePrice}>
+                  <p className={css.servicePriceText}><span><strong>$ <span className={css.priceNumber}>200 </span></strong></span><span>/2 min long</span></p>
+                </li>
+              </ul>
               <p className={css.cardParagraph}>Services:</p>
               <ul className={css.listOfDef}>
                 <li className={css.serviceDef}>
-                <IoIosRadioButtonOn/>
+                <MdRadioButtonChecked/>
                   <p className={css.serviceDefText}>Professional video editing &#10088;HD, 4k, 6k&#10089;</p>
                 </li>
                 <li className={css.serviceDef}>
-                <IoIosRadioButtonOn/>
+                <MdRadioButtonChecked/>
                   <p className={css.serviceDefText}>Color Correction</p>
                 </li>
                 <li className={css.serviceDef}>
-                <IoIosRadioButtonOn/>
+                <MdRadioButtonChecked/>
                   <p className={css.serviceDefText}>Visual Effects</p>
                 </li>
                 <li className={css.serviceDef}>
-                <IoIosRadioButtonOn/>
+                <MdRadioButtonChecked/>
                   <p className={css.serviceDefText}>Licensed sound design & music</p>
                 </li>
               </ul>
-              <ul className={css.listOfDef}>
-                <li className={css.serviceDef}>
-                <TiMediaPlay/>
-                  <p className={css.serviceDefText}>1 min long - 120$</p>
-                </li>
-                <li className={css.serviceDef}>
-                <TiMediaPlay/>
-                  <p className={css.serviceDefText}>2 min long - 200$</p>
-                </li>
-              </ul>
+     
               <ul className={css.listOfDef}>
                 <li className={css.serviceDef}>
                 <MdOutlineRunningWithErrors/>
@@ -133,11 +133,11 @@ const Pricing = () => {
                   <p className={css.serviceDefText}>2 rounds of revisions</p>
                 </li>
               </ul>
+              <div className={css.buttonsWrapper}><Link className={css.cardButton} href="/contact">Contact us</Link></div>
             </li>
-            <li className={css.buttonsWrapper}>
-              <Link  className={css.cardButton} href="/works">Works</Link>
-              <Link className={css.cardButton} href="/contact">Order now</Link>
-            </li>
+            {/* <li className={css.buttonsWrapper}>
+              <Link className={css.cardButton} href="/contact">Contact us</Link>
+            </li> */}
             </ul>
             </li>
 
@@ -147,23 +147,23 @@ const Pricing = () => {
 <ul className={css.descrButtonswrapper}>
             <li className={css.pricingCardWrapper}>
               <h3 className={css.cardTitle}>MOTION DESIGN template</h3>
+              <ul className={css.listOfPrices}>
+                <li className={css.servicePrice}>
+                  <p className={css.servicePriceText}><span><strong>$ <span className={css.priceNumber}>100 </span></strong></span><span>/4-7 sec long</span></p>
+                </li>
+              </ul>
               <p className={css.cardParagraph}>Services:</p>
               <ul className={css.listOfDef}>
                 <li className={css.serviceDef}>
-                <IoIosRadioButtonOn/>
-                  <p className={css.serviceDefText}>2D Animation logo, text or visual static</p>
+                <MdRadioButtonChecked/>
+                  <p className={css.serviceDefText}>2<span className={css.letterDFix}>D</span> logo or visual static animation</p>
                 </li>
                 <li className={css.serviceDef}>
-                <IoIosRadioButtonOn/>
+                <MdRadioButtonChecked/>
                   <p className={css.serviceDefText}>Licensed sound design</p>
                 </li>
               </ul>
-              <ul className={css.listOfDef}>
-                <li className={css.serviceDef}>
-                <TiMediaPlay/>
-                  <p className={css.serviceDefText}>4-7 sec long - 100$</p>
-                </li>
-              </ul>
+         
               <ul className={css.listOfDef}>
                 <li className={css.serviceDef}>
                 <MdOutlineRunningWithErrors/>
@@ -176,17 +176,17 @@ const Pricing = () => {
                   <p className={css.serviceDefText}>2 rounds of revisions</p>
                 </li>
               </ul>
+              <div className={css.buttonsWrapper}><Link className={css.cardButton} href="/contact">Contact us</Link></div>
             </li>
-            <li className={css.buttonsWrapper}>
-              <Link  className={css.cardButton} href="/works">Works</Link>
-              <Link className={css.cardButton} href="/contact">Order now</Link>
-            </li>
+            {/* <li className={css.buttonsWrapper}>
+              <Link className={css.cardButton} href="/contact">Contact us</Link>
+            </li> */}
             </ul>
             </li>
 
           </ul>
 </Container>
-      </Section>
+      </div>
     </>
   );
 };

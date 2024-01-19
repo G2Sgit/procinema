@@ -17,7 +17,7 @@ const ServicesList = () => {
       IN COMMERCIAL FILMS, DOCUMENTARIES, DRONE FILMING, CORPORATE FILMS,
       MUSIC VIDEOS AND MANY OTHERS."
               position="center"
-              color="orange"
+              color="black"
             />
 
             <p className={css.page_description_text}>

@@ -1,7 +1,7 @@
 import Container from "@/components/Container/Container";
 import AddressList from "./AddressList/AddressList";
 import SocialIcons from "./SocialIcons/SocialIcons";
-
+import Logo from "../Logo/Logo";
 
 import css from "./ContactsLine.module.scss";
 
@@ -16,6 +16,7 @@ const ContactsLine = ({ primary }) => {
             address={"Kyiv, Ukraine"}
             primary
           />
+          <Logo isHomePage="isHomePage"/>
           <SocialIcons
             fb={"https://www.facebook.com/"}
             insta={"http://www.instagram.com/"}

@@ -8,8 +8,8 @@
 
   padding: 46px 40px 50px 50px;
 
-  background-color: var(--primaryBackgroundColor);
-  z-index: 10;
+  // background-color: var(--primaryBackgroundColor);
+  z-index: 1000;
   transition: all 0.8s ease;
 
   @media screen and (max-width: 767px) {
@@ -19,7 +19,7 @@
     &.isOpen {
       // transform: translate3d(0, 0, 0);
       transform: translateX(0);
-
+      background-color: #FFFFFF;
       box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
       opacity: 1;
       & .nav_link,
@@ -37,7 +37,7 @@
 
     padding: 0;
 
-    background-color: transparent;
+  //  background-color: #FFFFFF; 
   }
 }
 
@@ -63,7 +63,7 @@
 }
 
 .nav_item {
-  padding: 10px 0;
+  padding: 20px 0;
 
   &:not(:last-child) {
     border-bottom: 1px solid var(--navBorderColor);
@@ -91,7 +91,7 @@
   line-height: calc(25 / 15);
   padding: 5px;
 
-  color: #000000;
+  color: #FFFFFF;
 
   transition: color var(--mainDuration) var(--mainTimingFunction);
 
@@ -117,7 +117,7 @@
 }
 
 .nav_item:hover .nav_link_main {
-  color: var(--);
+  color: white;
 }
 
 .main_page_home_link {

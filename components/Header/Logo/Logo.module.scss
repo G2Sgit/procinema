@@ -24,12 +24,14 @@
   }
   .logo {
     @extend %logoTemplate;
-    position: absolute;
-    top: -30px;
+    display: flex;
+    align-items: center;
+    // position: absolute;
+    // top: -30px;
     pointer-events: none;
 
     @media screen and (max-width: 768px) {
-      position: relative;
+      // position: relative;
     //  top:-10px;
     }
   }

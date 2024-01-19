@@ -1,21 +1,22 @@
 .buttonWrapper {
   position: absolute;
-  bottom: 100;
-  left: 0;
+  bottom: 100%;
+  left: 88%;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 .button {
-  position: absolute;
+position: absolute;
+padding-top:10px;
   border: none;
   background: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   & svg {
-    fill: var(--accentColor);
+    // fill: var(--accentColor);
     width: 30px;
     height: 30px;
   }
