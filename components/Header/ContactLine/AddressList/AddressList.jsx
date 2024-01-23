@@ -13,7 +13,7 @@ const AdressList = ({ email, phoneNumber, address, primary }) => {
     >
       <li className={css.link}>
         <a href="/" className={css.adressA}>
-          <MdOutlineMailOutline />
+          {/* <MdOutlineMailOutline /> */}
           <span > {email}</span>
         </a>
       </li>
@@ -23,12 +23,12 @@ const AdressList = ({ email, phoneNumber, address, primary }) => {
           <span>{phoneNumber}</span>
         </a>
       </li> */}
-      <li className={css.link}>
+      {/* <li className={css.link}>
         <a href="/" className={css.adressA}>
           <RiMapPinLine />
           <span>{address}</span>
         </a>
-      </li>
+      </li> */}
     </ul>
   );
 };

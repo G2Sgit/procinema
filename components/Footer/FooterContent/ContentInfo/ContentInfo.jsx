@@ -1,6 +1,6 @@
 import { RiMapPinLine } from "react-icons/ri";
 // import { FiPhoneCall } from "react-icons/fi";
-import { MdOutlineMailOutline } from "react-icons/md";
+// import { MdOutlineMailOutline } from "react-icons/md";
 import css from "../FooterContent.module.scss";
 
 const ContentInfo = () => {
@@ -8,14 +8,14 @@ const ContentInfo = () => {
     <div className={css.blockWrapper}>
       <h3>Contact Info</h3>
       <ul>
-        <li className={css.link}>
+        {/* <li className={css.link}>
           <a href="/" className={css.linkA}>
             <RiMapPinLine />
             <span>
               Kyiv, Ukraine
             </span>
           </a>
-        </li>
+        </li> */}
         {/* <li className={css.link}>
           <a href="tel:+380670000000">
             <FiPhoneCall />
@@ -24,7 +24,7 @@ const ContentInfo = () => {
         </li> */}
         <li className={css.link}>
           <a href="/">
-            <MdOutlineMailOutline />
+            {/* <MdOutlineMailOutline /> */}
             <span> procinemapost@gmail.com</span>
           </a>
         </li>
