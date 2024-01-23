@@ -29,10 +29,10 @@ const WorksList = () => {
               <h3 className={css.work_heading}>Showreel</h3>
               <div className={css.video_thumb}></div>
             </li>
-            <li className={css.work_item}>
+            {/* <li className={css.work_item}>
               <h3 className={css.work_heading}>Color Grading Reel</h3>
               <div className={css.video_thumb}></div>
-            </li>
+            </li> */}
           </ul>
         </Container>
       </Section>

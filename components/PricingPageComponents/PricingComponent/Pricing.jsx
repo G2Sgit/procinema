@@ -19,9 +19,7 @@ const Pricing = () => {
             <UnderlinedHeading tag="h2" text="pricing" position="center" />
 
             <p className={css.page_description_text}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              
-
+            *The prices could be discussed in an individual way.
             </p>
           </div>
         </Container >
@@ -77,7 +75,7 @@ const Pricing = () => {
                   <p className={css.serviceDefText}>2 rounds of revisions</p>
                 </li>
               </ul>
-              <div className={css.buttonsWrapper}><Link className={css.cardButton} href="/contact">Contact us</Link></div>
+              <div className={css.buttonsWrapper}><button className={css.cardButton} type="button">Contact us</button></div>
             </li>
 
 
@@ -133,7 +131,7 @@ const Pricing = () => {
                   <p className={css.serviceDefText}>2 rounds of revisions</p>
                 </li>
               </ul>
-              <div className={css.buttonsWrapper}><Link className={css.cardButton} href="/contact">Contact us</Link></div>
+              <div className={css.buttonsWrapper}><button className={css.cardButton} type="button">Contact us</button></div>
             </li>
             {/* <li className={css.buttonsWrapper}>
               <Link className={css.cardButton} href="/contact">Contact us</Link>
@@ -176,7 +174,7 @@ const Pricing = () => {
                   <p className={css.serviceDefText}>2 rounds of revisions</p>
                 </li>
               </ul>
-              <div className={css.buttonsWrapper}><Link className={css.cardButton} href="/contact">Contact us</Link></div>
+              <div className={css.buttonsWrapper}><button className={css.cardButton} type="button">Contact us</button></div>
             </li>
             {/* <li className={css.buttonsWrapper}>
               <Link className={css.cardButton} href="/contact">Contact us</Link>

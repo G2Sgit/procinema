@@ -97,14 +97,16 @@
 
   &:hover {
     outline: 1px solid #000000;
-    border-radius: 30px;
+    border-radius: 8px;
   }
 }
 
 .nav_item:hover .nav_link {
   color: var(--accentColor);
+  
   outline: 1px solid var(--accentColor);
-  border-radius: 30px;
+  border-radius: 8px;
+  gap:8px
 }
 
 .nav_link_main {
@@ -126,7 +128,7 @@
   outline: 1px solid var(--accentColor);
   color:var(--accentColor);
   padding: 5px;
-  border-radius: 30px;
+  border-radius: 8px;
 
   &:hover {
     color: var(--accentColor);
@@ -138,7 +140,7 @@
   outline: 1px solid var(--accentColor);
   padding: 5px;
   color: var(--accentColor);
-  border-radius: 30px;
+  border-radius: 8px;
 
   &:hover {
     outline: 1px solid var(--accentColor);
@@ -151,5 +153,5 @@
 
 .nav_link:hover ~ .minus {
   outline: 1px solid #000000;
-  border-radius: 30px;
+  border-radius: 8px;
 }
