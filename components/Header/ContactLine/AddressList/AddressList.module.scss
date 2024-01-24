@@ -1,43 +1,47 @@
 .link {
-    display: flex;
-    // align-items: center;
-    // justify-content: center;
-    font-style: 10px;
-    font-size: 14px;
-    padding: 4px;
-    font-family: var(--contax-sans);
-    font-weight: 200;
-    justify-content: center;
-  
-    @media screen and (max-width: 767px) {
-      padding: 0;
-      opacity: 0;
-    }
-    @media screen and (min-width: 768px) {
-      justify-content: flex-start;
-      opacity: 100;
-    }
-  
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
 
+  font-size: 16px;
+  padding: 10px 8px;
+  font-family: var(--contax-sans);
+  font-weight: 200;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 8px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    opacity: 0;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+    opacity: 100;
+  }
+
+  & svg {
+    margin-right: 10px;
+    // font-size: 16px;
+    font-size: 26px;
+  }
+
+  &:hover {
     & svg {
       margin-right: 10px;
-      font-size: 16px;}
+      // font-size: 16px;
+      font-size: 26px;
 
-    &:hover{
-      & svg {
-        margin-right: 10px;
-        font-size: 16px;
-          fill: var(--accentColor);
+      fill: var(--accentColor);
     }
-    & span{
+    & span {
       color: var(--accentColor);
     }
-    }
-   
-  
+  }
+
   %contactsLine {
     display: flex;
-  
+
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
       gap: 10px;
@@ -45,20 +49,19 @@
       padding: 10px 0 10px;
     }
   }
-  
+
   .primary-contactsLine {
     @extend %contactsLine;
-flex-direction: column;
+    flex-direction: column;
   }
-  
+
   .secondary-contactsLine {
     @extend %contactsLine;
   }
-  
-  .adressA{
+
+  .adressA {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 }

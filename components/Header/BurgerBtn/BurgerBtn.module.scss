@@ -1,15 +1,20 @@
 .buttonWrapper {
   position: absolute;
-  bottom: 100%;
-  left: 88%;
+  // bottom: 100%;
+  left: 83%;
+  // top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
 .button {
-position: absolute;
-padding-top:10px;
+  padding: 0;
+  // position: absolute;
+  // padding-top: 10px;
   border: none;
   background: none;
   display: flex;
@@ -17,21 +22,24 @@ padding-top:10px;
   align-items: center;
   & svg {
     // fill: var(--accentColor);
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
   }
   // position: absolute;
   // top: 0;
   // z-index: 120;
 }
 
+// .svgBurger {
+//   fill: white;
+//   width: 40px;
+//   height: 40px;
+// }
 
-.svgBurger{
-  fill: white;
-  width: 30px;
-  height: 30px;
+.pageBtn {
+  fill: var(--);
 }
 
-.hidden{
+.hidden {
   display: none;
 }

@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+
   @media screen and (max-width: 767px) {
     & div {
       flex-grow: 1;
@@ -9,23 +11,22 @@
   }
 }
 
-
-
 .fixedNav {
   @extend %flex;
 }
+
 .staticNav {
   @extend %flex;
   transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 
+  height: 84px;
   @media screen and (max-width: 767px) {
-    overflow-x: hidden;
-
+    align-items: flex-start;
   }
 
   &.visible {
     @extend %flex;
-color: var(--lightTextColor);
+    // color: var(--lightTextColor);
     top: 0;
   }
 
@@ -38,20 +39,21 @@ color: var(--lightTextColor);
     background-color: var(--buttonAndHeaderAccentColor);
     backdrop-filter: blur(15px);
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
-color: var(--lightTextColor);
+    color: var(--secondaryTextColor);
 
-
-& a,
-    & p,
-    & span {
-      color:var(--lightTextColor);
- 
+    @media screen and (min-width: 767px) {
+      color: var(--lightTextColor);
+      & a,
+      & p,
+      & span {
+        color: var(--lightTextColor);
+      }
     }
   }
 
-  &.hidden {
-    top: -100%;
-  }
+  // &.hidden {
+  //   top: -100%;
+  // }
 }
 
 .nav_container {
@@ -153,12 +155,8 @@ color: var(--lightTextColor);
   color: var(--primaryNavColor);
 }
 
-
-
-.nav_link_main ~ .plus {
-  color: var(--lightTextColor);
-}
-
-.nav_link:hover ~ .minus {
-  color: var(--primaryNavColor);
+.pageNav {
+  background-color: #000000;
+  backdrop-filter: blur(30px);
+  color: white;
 }

@@ -1,35 +1,33 @@
 %title {
-    position: relative;
-    padding-top: 28px;
-    padding-bottom: 25px;
-    font-size: 38px;
-    font-weight: 700;
+  position: relative;
+  z-index: 1;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  font-size: 38px;
+  font-weight: 700;
 
-    &::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        content: "";
-        width: 65px;
-        height: 5px;
-        background-color: var(--accentColor);
-    }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 65px;
+    height: 5px;
+    background-color: var(--accentColor);
+  }
 }
 
 .title-dark {
-    @extend %title;
-    color: var(--secondaryTextColor);
-    
+  @extend %title;
+  color: var(--secondaryTextColor);
 }
 
 .title-light {
-    @extend %title;
-    color: var(--lightTextColor);
+  @extend %title;
+  color: var(--lightTextColor);
 }
 
-
-
 .accent-text {
-    color: var(--accentColor);
+  color: var(--accentColor);
 }

@@ -1,5 +1,5 @@
 import { FaInstagram } from "react-icons/fa";
-import { FaVimeo } from "react-icons/fa";
+import { FaVimeoV } from "react-icons/fa";
 
 import css from "./SocialIcons.module.scss";
 
@@ -13,7 +13,7 @@ export default function SocialIcons({ fb, insta, vimeo }) {
       </li>
       <li className={css.link}>
         <a href={vimeo}>
-          <FaVimeo />
+          <FaVimeoV />
         </a>
       </li>
     </ul>

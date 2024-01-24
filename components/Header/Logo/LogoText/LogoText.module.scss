@@ -1,17 +1,20 @@
-.logoText{
-    // position: absolute;
-    // bottom:40%;
-    font-family: var(--contax-sans);
-    font-size: 12px;
-    font-weight: 100;
-    font-style: normal;
-    letter-spacing: 1px;
+.logoText {
+  // position: absolute;
+  // bottom:40%;
+  font-family: var(--contax-sans);
+  font-size: 12px;
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 1px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
-.hidden{
-    opacity: 0;
-  }
+.hidden {
+  opacity: 0;
+}
 
-  .visible{
-    opacity: 100;
-  }
+.visible {
+  opacity: 100;
+}

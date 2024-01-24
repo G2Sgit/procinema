@@ -5,7 +5,7 @@ import css from "./WorksList.module.scss";
 
 const WorksList = () => {
   return (
-    <>
+    <div className={css.section}>
       <Section>
         <Container>
           <h1 className={css.visually_hidden}>PRODUCTION SERVICES</h1>
@@ -36,7 +36,7 @@ const WorksList = () => {
           </ul>
         </Container>
       </Section>
-    </>
+    </div>
   );
 };
 

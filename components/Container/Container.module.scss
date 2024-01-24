@@ -1,46 +1,45 @@
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
- 
-  
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-  
-    // @media screen and (max-width: 767px) {
-    //   overflow-x: hidden;
-    // }
-  
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-    }
+  // overflow-x: hidden;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  
-  .containerContent{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-background-color: #FFFFFF;
-border-radius: 30px;
- 
-  
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-    }
+
+  // @media screen and (max-width: 767px) {
+  //   overflow-x: hidden;
+  // }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.containerContent {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #ffffff;
+  border-radius: 30px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}

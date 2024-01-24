@@ -5,7 +5,7 @@ import Container from "@/components/Container/Container";
 
 const ServicesList = () => {
   return (
-    <>
+    <div className={css.section}>
       <Section>
         <Container>
           <h1 className={css.visually_hidden}>PRODUCTION SERVICES</h1>
@@ -89,7 +89,8 @@ const ServicesList = () => {
                 />
                 <p
                   style={{ marginBottom: "25px" }}
-                  className={css.description_text}>
+                  className={css.description_text}
+                >
                   First of all, wherever filming, you will need various shooting
                   permits. That’s where we come in.
                 </p>
@@ -114,7 +115,8 @@ const ServicesList = () => {
                 />
                 <p
                   style={{ marginBottom: "25px" }}
-                  className={css.description_text}>
+                  className={css.description_text}
+                >
                   Let us know of the equipment you need on set and we will
                   provide it for you.
                 </p>
@@ -143,7 +145,7 @@ const ServicesList = () => {
           </ul>
         </Container>
       </Section>
-    </>
+    </div>
   );
 };
 

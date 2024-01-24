@@ -1,70 +1,64 @@
 .section {
-    padding: 10px 30px;
-    align-items: center;
-    background-color: black;
+  padding: 84px 30px 10px;
+  align-items: center;
+  background-color: black;
 }
 
 .title {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 38px;
-    font-weight: 700;
-    line-height: 1.7;
-    text-align: center;
-    color: var(--accentColor);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--accentColor);
 
-    &Hid {
-        position: absolute;
-        white-space: nowrap;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        border: 0;
-        padding: 0;
-        clip: rect(0 0 0 0);
-        -webkit-clip-path: inset(50%);
-                clip-path: inset(50%);
-        margin: -1px;
-    }
+  &Hid {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 }
 
-
 .thumb {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .left-column {
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
 
-    background-color: var(--buttonAndHeaderAccentColor);
-    border-top-left-radius: 150px;
+  background-color: var(--buttonAndHeaderAccentColor);
+  border-top-left-radius: 150px;
 
-
-    
-    @media screen and (min-width: 1200px) {
-        width: 45%;
-         }
+  @media screen and (min-width: 1200px) {
+    width: 45%;
+  }
 }
 
 .right-column {
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
 
-    border-bottom-right-radius: 150px;
-    background-color: var(--primaryBackgroundColor);
+  border-bottom-right-radius: 150px;
+  background-color: var(--primaryBackgroundColor);
 
-
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 45%;
-      }
- 
+  }
 }

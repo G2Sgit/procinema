@@ -12,11 +12,10 @@ const ContactsLine = ({ primary }) => {
         <div className={css.contactsLineWrapper}>
           <AddressList
             email={"procinemapost@gmail.com"}
-            phoneNumber={"380670000000"}
-            address={"Kyiv, Ukraine"}
+            // address={"Kyiv, Ukraine"}
             primary
           />
-          <Logo isHomePage="isHomePage"/>
+          {/* <Logo /> */}
           <SocialIcons
             fb={"https://www.facebook.com/"}
             insta={"http://www.instagram.com/"}
