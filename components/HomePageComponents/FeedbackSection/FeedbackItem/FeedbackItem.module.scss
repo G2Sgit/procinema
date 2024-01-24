@@ -1,6 +1,6 @@
 .text {
   padding: 30px;
-  border: 1px solid var(--accentColor);
+  border: 1px solid var(--secondaryTextColor);
   font-style: italic;
   height: 180px;
 
@@ -26,7 +26,7 @@
 .slick-dots {
   & li {
     & button:before {
-      color: var(--buttonColor) !important;
+      color: var(--secondaryTextColor) !important;
       font-size: 10px !important;
     }
   }

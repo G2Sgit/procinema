@@ -41,7 +41,7 @@ const FeedbackSection = () => {
             tag="h3"
             text="LOVED BY CLIENTS."
             position="center"
-            color="orange"
+            color="black"
           />
           <div className={css.sliderWrapper}>
             <FeedbackSlider feedbacks={sectionContent} />

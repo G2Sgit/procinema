@@ -5,11 +5,12 @@ const LogoSvg = ({ isFixed }) => {
     <svg
       className={isFixed ? css.hidden : css.visible}
       fill={"white"}
-      // width={"200px"}
-      // height={"100px"}
+      // width={"150px"}
+      // height={"75px"}
     >
       <use href={"/logo-sprite.svg#logo"} />
     </svg>
+
   );
 };
 

@@ -13,8 +13,8 @@ const MainHero = () => {
 </video>
       <Container>
         <div className={css.content_wrapper}>
-          <h1 className={css.title}>WELCOME TO PROCINEMA</h1>
-          {/* <p className={css.subtitle}>Creating Digital Excellence</p> */}
+          <h1 className={css.title}>Welcome to Procinema</h1>
+          <p className={css.subtitle}>We are a professional post-production studio <br/>with a quality approach</p>
           <button type="button" className={css.button}>
             Contact us
           </button>

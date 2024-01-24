@@ -15,6 +15,7 @@ const AdressList = ({ email, phoneNumber, address, primary }) => {
         <a href="/" className={css.adressA}>
           {/* <MdOutlineMailOutline /> */}
           <span> {email}</span>
+
         </a>
       </li>
       {/* <li className={css.link}>

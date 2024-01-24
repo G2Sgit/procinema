@@ -1,8 +1,28 @@
 .section {
-  padding: 84px 30px 10px;
-  align-items: center;
-  background-color: black;
+
+    padding-top: 84px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 84px;
+      padding-bottom: 60px;
+    }
 }
+
+
+.sectionGrey{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f2f2f2;
+  
+    @media screen and (min-width: 1200px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+}
+
+
 
 .title {
   padding-top: 10px;
@@ -50,15 +70,37 @@
 }
 
 .right-column {
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 20px;
+
+    // padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+
+    border-bottom-right-radius: 150px;
+    background-color: var(--primaryBackgroundColor);
 
   border-bottom-right-radius: 150px;
   background-color: var(--primaryBackgroundColor);
 
   @media screen and (min-width: 1200px) {
     width: 45%;
-  }
+
+      }
+ 
 }
+
+.page_description_text {
+    text-align: center;
+  
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(27 / 14);
+  }
+
+
+  .formSection{
+    background-color: #f2f2f2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }

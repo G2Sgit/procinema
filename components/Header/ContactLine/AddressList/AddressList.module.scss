@@ -1,7 +1,27 @@
 .link {
-  display: flex;
-  // align-items: center;
-  // justify-content: center;
+
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    font-style: 10px;
+    font-size: 14px;
+    padding: 5px;
+    font-family: var(--contax-sans);
+    font-weight: 200;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px solid var(--accentColor);
+  
+    @media screen and (max-width: 767px) {
+      padding: 0;
+      opacity: 0;
+    }
+  
+    @media screen and (min-width: 768px) {
+      justify-content: flex-start;
+      opacity: 100;
+    }
+  
 
   font-size: 16px;
   padding: 10px 8px;

@@ -1,45 +1,99 @@
 .form {
+    padding: 30px 10px 30px 10px;
+    border-color: black;
+    box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
+    // text-align: center;
+justify-content: center;
+  
+    color: #000000;
+    box-sizing: border-box;
+    background-color: #ffffff;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 470px;
-    margin-left: auto;
-    margin-right: auto;
-    // padding-top: 29px;
-    // padding-bottom: 38px;
-    // padding-left: 35px;
-    // padding-right: 35px;
+    justify-content: center;
+    flex-direction: column;
+
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding: 40px 40px 40px;
+        flex-direction: unset;
+
+
+    }
+
+
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding: 40px 40px 40px;
+        flex-direction: unset;
+
+    }
 }
 
+
+
+
 .input-thumb {
+    margin-bottom: 20px;
 
-    height: 50px;
-
+    @media screen and (min-width: 768px) {
+        height: 50px;
+width: 47%;
+margin-bottom: 20px;
 
     &:nth-child(2n) {
-        margin-left: 30px;
-    }
+        margin-left: 20px;
+    }}
+          
+
+    @media screen and (min-width: 1200px){
+    height: 50px;
+width: 47%;
+margin-bottom: 40px;
+
+    &:nth-child(2n) {
+        margin-left: 40px;
+    }}
 }
 
 .input {
     padding: 12px 15px;
     border: 0;
     border-radius: 6px;
-    background-color: var(--secondaryBackgroundColor);
+    background-color: #f2f2f2;;
     width: 100%;
 }
 
 .textarea-thumb {
-    width: 425px;
-    height: 170px;
+    width: 100%;
+    height: 320px;
+
+    @media screen and (min-width: 1200px){
+        width: 688px;
+        height: 320px;
+    }
 }
 
 .text-area {
     width: 100%;
-    height: 150px;
+    height: 320px;
     padding: 15px 24px;
     border: 0;
     border-radius: 6px;
-    background-color: var(--secondaryBackgroundColor);
+    background-color: #f2f2f2;
 }
 
 .error {
@@ -49,13 +103,18 @@
 }
 
 .button {
-    padding: 17px 17px 17px 17px;
+    margin-top: 40px;
+    padding: 10px 20px;
+    width: 150px;
     font-family: var(--roboto);
     font-size: 14px;
     font-weight: 500;
     line-height: 11px;
-    border: 0;
-    border-radius: 8px;
-    background-color: var(--buttonAndHeaderAccentColor);
-    color: var(--lightTextColor);
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+align-self: center;
+
 }
+
+  

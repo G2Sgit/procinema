@@ -86,7 +86,7 @@
 }
 
 .listOfDef {
-  margin-top: 10px;
+  // margin-top: 10px;
   height: 150px;
 }
 
@@ -94,9 +94,9 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid black;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   height: 80px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-end;
 }
 
