@@ -8,7 +8,9 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.section {
+  padding-top: 84px;
+}
 .top_container {
   padding: 0 25px;
 
@@ -26,18 +28,15 @@
 }
 
 .pricingWrapper {
-
   display: flex;
   gap: 30px;
   flex-direction: column;
   align-items: center;
   text-align: center;
 
-
   @media screen and (max-width: 768px) {
-display: grid;
+    display: grid;
   }
-
 
   @media screen and (max-width: 1199px) {
     display: flex;
@@ -149,7 +148,6 @@ display: grid;
   padding-bottom: 60px;
 }
 
-
-.letterDFix{
+.letterDFix {
   font-size: 13px;
 }

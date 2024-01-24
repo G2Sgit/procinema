@@ -3,28 +3,32 @@
 
   top: 0;
   right: 0;
-
-  width: 450px;
+  z-index: 1002;
 
   padding: 46px 40px 50px 50px;
-
-  // background-color: var(--primaryBackgroundColor);
-  z-index: 1000;
   transition: all 0.8s ease;
-
   @media screen and (max-width: 767px) {
-    transform: translateX(150%);
+    background-color: var(--primaryBackgroundColor);
+
+    transform: translateX(100%);
+    width: 100vw;
+    height: 100vh;
     // opacity: 0;
 
     &.isOpen {
       // transform: translate3d(0, 0, 0);
       transform: translateX(0);
-      background-color: #FFFFFF;
+      background-color: var (--primaryBackgroundColor);
       box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.8);
       opacity: 1;
+
       & .nav_link,
       & .dropdown_btn_text {
         color: var(--primaryNavColor);
+      }
+
+      body & {
+        overflow: hidden;
       }
     }
   }
@@ -36,8 +40,6 @@
     width: initial;
 
     padding: 0;
-
-  //  background-color: #FFFFFF; 
   }
 }
 
@@ -64,6 +66,7 @@
 
 .nav_item {
   padding: 20px 0;
+  transition: all 0.8s ease;
 
   &:not(:last-child) {
     border-bottom: 1px solid var(--navBorderColor);
@@ -78,20 +81,16 @@
   }
 }
 
-.nav_dropdown_item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
 .nav_link {
   font-family: var(--contax-sans);
   font-size: 15px;
   font-weight: 700;
   line-height: calc(25 / 15);
-  padding: 5px;
+  // padding: 5px;
+  padding: 8px 12px;
+  transition: all 0.8s ease;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   transition: color var(--mainDuration) var(--mainTimingFunction);
 
@@ -105,8 +104,9 @@
   color: var(--accentColor);
   
   outline: 1px solid var(--accentColor);
+  padding: 8px 12px;
   border-radius: 8px;
-  gap:8px
+  //gap:8px
 }
 
 .nav_link_main {
@@ -119,15 +119,20 @@
 }
 
 .nav_item:hover .nav_link_main {
-  color: white;
+  color: var(--accentColor);
+
+  @media screen and (min-width: 768px) {
+    color: white;
+  }
 }
 
 .main_page_home_link {
   font-size: 15px;
   font-weight: 600;
   outline: 1px solid var(--accentColor);
-  color:var(--accentColor);
-  padding: 5px;
+  color: var(--accentColor);
+  padding: 8px 12px;
+
   border-radius: 8px;
 
   &:hover {
@@ -138,8 +143,11 @@
 
 .active_link {
   outline: 1px solid var(--accentColor);
-  padding: 5px;
+  // padding: 5px;
   color: var(--accentColor);
+  // border-radius: 30px;
+  padding: 8px 12px;
+
   border-radius: 8px;
 
   &:hover {

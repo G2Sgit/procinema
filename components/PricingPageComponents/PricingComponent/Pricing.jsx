@@ -4,14 +4,13 @@ import Section from "@/components/Section/Section";
 import css from "./Pricing.module.scss";
 import Link from "next/link";
 
-
 import { MdOutlineRunningWithErrors } from "react-icons/md";
 import { MdPreview } from "react-icons/md";
 import { MdRadioButtonChecked } from "react-icons/md";
 
 const Pricing = () => {
   return (
-    <>
+    <div className={css.section}>
       <Section>
         <Container>
           <h1 className={css.visually_hidden}>PRODUCTION SERVICES</h1>
@@ -22,7 +21,7 @@ const Pricing = () => {
             *The prices could be discussed in an individual way.
             </p>
           </div>
-        </Container >
+        </Container>
       </Section>
       <div className={css.pricingConditionsSection}>
 <Container >
@@ -133,23 +132,83 @@ const Pricing = () => {
               </ul>
               <div className={css.buttonsWrapper}><button className={css.cardButton} type="button">Contact us</button></div>
             </li>
-            {/* <li className={css.buttonsWrapper}>
+
+            <li>
+              <ul className={css.descrButtonswrapper}>
+                <li className={css.pricingCardWrapper}>
+                  <h3 className={css.cardTitle}>
+                    COMMERCIAL/ MUSIC VIDEO/ TRAILER
+                  </h3>
+
+                  <ul className={css.listOfPrices}>
+                    <li className={css.servicePrice}>
+                      <p className={css.servicePriceText}>
+                        <span>
+                          <strong>
+                            $ <span className={css.priceNumber}>100 </span>
+                          </strong>
+                        </span>
+                        <span>/1 min long</span>
+                      </p>
+                    </li>
+                    <li className={css.servicePrice}>
+                      <p className={css.servicePriceText}>
+                        <span>
+                          <strong>
+                            $ <span className={css.priceNumber}>200 </span>
+                          </strong>
+                        </span>
+                        <span>/2 min long</span>
+                      </p>
+                    </li>
+                  </ul>
+                  <p className={css.cardParagraph}>Services:</p>
+                  <ul className={css.listOfDef}>
+                    <li className={css.serviceDef}>
+                      <MdRadioButtonChecked />
+                      <p className={css.serviceDefText}>
+                        Professional video editing &#10088;HD, 4k, 6k&#10089;
+                      </p>
+                    </li>
+                    <li className={css.serviceDef}>
+                      <MdRadioButtonChecked />
+                      <p className={css.serviceDefText}>Color Correction</p>
+                    </li>
+                    <li className={css.serviceDef}>
+                      <MdRadioButtonChecked />
+                      <p className={css.serviceDefText}>Visual Effects</p>
+                    </li>
+                    <li className={css.serviceDef}>
+                      <MdRadioButtonChecked />
+                      <p className={css.serviceDefText}>
+                        Licensed sound design & music
+                      </p>
+                    </li>
+                  </ul>
+
+                  <ul className={css.listOfDef}>
+                    <li className={css.serviceDef}>
+                      <MdOutlineRunningWithErrors />
+                      <p className={css.serviceDefText}>3-7 days turnaround</p>
+                    </li>
+                    <li className={css.serviceDef}>
+                      <MdPreview />
+                      <p className={css.serviceDefText}>
+                        2 rounds of revisions
+                      </p>
+                    </li>
+                  </ul>
+                  <div className={css.buttonsWrapper}>
+                    <Link className={css.cardButton} href="/contact">
+                      Contact us
+                    </Link>
+                  </div>
+                </li>
+                {/* <li className={css.buttonsWrapper}>
               <Link className={css.cardButton} href="/contact">Contact us</Link>
             </li> */}
-            </ul>
-            </li>
-
-
-
-<li>
-<ul className={css.descrButtonswrapper}>
-            <li className={css.pricingCardWrapper}>
-              <h3 className={css.cardTitle}>MOTION DESIGN template</h3>
-              <ul className={css.listOfPrices}>
-                <li className={css.servicePrice}>
-                  <p className={css.servicePriceText}><span><strong>$ <span className={css.priceNumber}>100 </span></strong></span><span>/4-7 sec long</span></p>
-                </li>
               </ul>
+
               <p className={css.cardParagraph}>Services:</p>
               <ul className={css.listOfDef}>
                 <li className={css.serviceDef}>
@@ -176,16 +235,68 @@ const Pricing = () => {
               </ul>
               <div className={css.buttonsWrapper}><button className={css.cardButton} type="button">Contact us</button></div>
             </li>
-            {/* <li className={css.buttonsWrapper}>
+
+            <li>
+              <ul className={css.descrButtonswrapper}>
+                <li className={css.pricingCardWrapper}>
+                  <h3 className={css.cardTitle}>MOTION DESIGN template</h3>
+                  <ul className={css.listOfPrices}>
+                    <li className={css.servicePrice}>
+                      <p className={css.servicePriceText}>
+                        <span>
+                          <strong>
+                            $ <span className={css.priceNumber}>100 </span>
+                          </strong>
+                        </span>
+                        <span>/4-7 sec long</span>
+                      </p>
+                    </li>
+                  </ul>
+                  <p className={css.cardParagraph}>Services:</p>
+                  <ul className={css.listOfDef}>
+                    <li className={css.serviceDef}>
+                      <MdRadioButtonChecked />
+                      <p className={css.serviceDefText}>
+                        2<span className={css.letterDFix}>D</span> logo or
+                        visual static animation
+                      </p>
+                    </li>
+                    <li className={css.serviceDef}>
+                      <MdRadioButtonChecked />
+                      <p className={css.serviceDefText}>
+                        Licensed sound design
+                      </p>
+                    </li>
+                  </ul>
+
+                  <ul className={css.listOfDef}>
+                    <li className={css.serviceDef}>
+                      <MdOutlineRunningWithErrors />
+                      <p className={css.serviceDefText}>2-4 days turnaround</p>
+                    </li>
+
+                    <li className={css.serviceDef}>
+                      <MdPreview />
+                      <p className={css.serviceDefText}>
+                        2 rounds of revisions
+                      </p>
+                    </li>
+                  </ul>
+                  <div className={css.buttonsWrapper}>
+                    <Link className={css.cardButton} href="/contact">
+                      Contact us
+                    </Link>
+                  </div>
+                </li>
+                {/* <li className={css.buttonsWrapper}>
               <Link className={css.cardButton} href="/contact">Contact us</Link>
             </li> */}
-            </ul>
+              </ul>
             </li>
-
           </ul>
-</Container>
+        </Container>
       </div>
-    </>
+    </div>
   );
 };
 

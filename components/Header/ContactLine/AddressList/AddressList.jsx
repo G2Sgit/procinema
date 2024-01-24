@@ -14,7 +14,8 @@ const AdressList = ({ email, phoneNumber, address, primary }) => {
       <li className={css.link}>
         <a href="/" className={css.adressA}>
           {/* <MdOutlineMailOutline /> */}
-          <span > {email}</span>
+          <span> {email}</span>
+
         </a>
       </li>
       {/* <li className={css.link}>

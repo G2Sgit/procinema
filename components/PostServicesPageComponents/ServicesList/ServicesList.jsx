@@ -5,7 +5,7 @@ import Container from "@/components/Container/Container";
 
 const ServicesList = () => {
   return (
-    <>
+    <div className={css.section}>
       <Section>
         <Container>
           <h1 className={css.visually_hidden}>POST SERVICES</h1>
@@ -72,6 +72,14 @@ const ServicesList = () => {
                   // text="SHOOTING PERMITS, PARKING, FIREFIGHTING DEPARTMENT, POLICE, INSURANCE, LEASES"
                   position="left"
                 />
+//                <p
+//                   style={{ marginBottom: "25px" }}
+//                   className={css.description_text}
+//                 >
+//                   First of all, wherever filming, you will need various shooting
+//                   permits. That’s where we come in.
+//                 </p>
+
                 <p className={css.description_text}>
                 A color correction process adjusts video footage&#39;s color balance, brightness, and contrast to ensure consistency and fix lighting problems. It helps to create a specific mood or atmosphere through color manipulation.
                 </p>
@@ -90,6 +98,14 @@ const ServicesList = () => {
                   // text="LICENSED STEADICAM/GIMBAL OPERATORS AND DRONE CREW"
                   position="left"
                 />
+//                 <p
+//                   style={{ marginBottom: "25px" }}
+//                   className={css.description_text}
+//                 >
+//                   Let us know of the equipment you need on set and we will
+//                   provide it for you.
+//                 </p>
+
                 <p className={css.description_text}>
                 To make transitions between scenes smoother, various transitions are added between clips. Moreover, we use special effects, color corrections, and filters to enhance the visual aspect of our work.
                 </p>
@@ -117,7 +133,7 @@ const ServicesList = () => {
           </ul>
         </Container>
       </Section>
-    </>
+    </div>
   );
 };
 

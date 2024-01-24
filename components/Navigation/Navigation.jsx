@@ -6,12 +6,10 @@ import css from "./Navigation.module.scss";
 import BurgerBtn from "../Header/BurgerBtn/BurgerBtn";
 import MobileNavigationContacts from "../Header/MobileNavigationContacts/MobileNavigationContacts";
 
-
 const Navigation = ({ isOpen, setIsOpen }) => {
   const pathname = usePathname();
 
   const isMainPage = pathname === "/";
-
 
   return (
     <>
@@ -20,7 +18,7 @@ const Navigation = ({ isOpen, setIsOpen }) => {
           isOpen ? `${css.nav_container} ${css.isOpen}` : `${css.nav_container}`
         }
       >
-  <BurgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />
+        <BurgerBtn setIsOpen={setIsOpen} isOpen={isOpen} />
 
         <ul className={css.nav_list}>
           <li className={css.nav_item}>
@@ -46,13 +44,12 @@ const Navigation = ({ isOpen, setIsOpen }) => {
              } 
              
             ${pathname === "/" && css.nav_link_main}`}
-            
-            href="/postServices"
-            // onClick={() => setIsOpen(!isOpen)}
+              href="/postServices"
+              // onClick={() => setIsOpen(!isOpen)}
             >
-            Post services
-          </Link>
-        </li>
+              Post services
+            </Link>
+          </li>
           <li className={css.nav_item}>
             <Link
               // Link color for current path and color behavior for this link on the main page
@@ -72,7 +69,9 @@ const Navigation = ({ isOpen, setIsOpen }) => {
             <Link
               // Link color for current path and color behavior for this link on the main page
               className={`${css.nav_link} ${
-                pathname === "/pricing" && pathname !== "/" ? css.active_link : null
+                pathname === "/pricing" && pathname !== "/"
+                  ? css.active_link
+                  : null
               } 
             ${pathname === "/" && css.nav_link_main}`}
               href="/pricing"

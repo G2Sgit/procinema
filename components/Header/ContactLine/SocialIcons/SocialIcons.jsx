@@ -13,7 +13,8 @@ export default function SocialIcons({ fb, insta, vimeo }) {
       </li>
       <li className={css.link}>
         <a href={vimeo}>
-          <FaVimeoV size={20}/>
+          <FaVimeoV />
+
         </a>
       </li>
     </ul>

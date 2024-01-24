@@ -1,12 +1,12 @@
 .wrapper {
-    display: flex;
-    gap: 20px;
-    margin-left: 120px;
-  
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+  display: flex;
+  gap: 20px;
+  margin-left: 120px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
+
   
   .link {
     cursor: pointer;
@@ -18,6 +18,11 @@
       }
     }
 
-    
+  & svg {
+    font-size: 26px;
+
+    &:hover {
+      fill: var(--accentColor);
+    }
   }
-  
+}

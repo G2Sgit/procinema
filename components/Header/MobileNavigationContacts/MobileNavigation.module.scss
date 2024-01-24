@@ -12,8 +12,10 @@
 }
 
 .item {
+  color: var(--secondaryTextColor);
   display: flex;
   gap: 20px;
+
   & svg {
     width: 30px;
     height: 30px;
