@@ -1,7 +1,10 @@
+"use client";
+
 import UnderlinedHeading from "@/components/UnderlinedHeading/UnderlinedHeading";
 import css from "./ServicesList.module.scss";
 import Section from "@/components/Section/Section";
 import Container from "@/components/Container/Container";
+import VideoReact from "@/components/VideoReact/VideoReact";
 
 const ServicesList = () => {
   return (
@@ -46,16 +49,19 @@ const ServicesList = () => {
                   be improved, and the final product can be polished and
                   engaging. Among the most popular video editing programs we use
                   are Final Cut Pro, Adobe Premiere Pro, After Effects, and
-                  DaVinci Resolve. <br />
-                  In general, video editing is both a technical skill and an art
-                  form. Combine technical expertise and creative vision to
-                  create videos that engage, inform and entertain audiences.
+                  Adobe Audition.During video editing, raw footage can be
+                  combined into a cohesive narrative, the pacing and flow of the
+                  video can be controlled, errors can be fixed, image and sound
+                  quality can be improved, and the final product can be polished
+                  and engaging. Among the most popular video editing programs we
+                  use are Final Cut Pro, Adobe Premiere Pro, After Effects, and
+                  Adobe Audition. <br />
+                  Video editing combines technical skills with creative vision
+                  to engage, inform, and entertain audiences.
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <video autoPlay className={css.video} muted loop>
-                  <source src="https://video.procinemastudio.com/video/1_video_editing_43m.mov" />
-                </video>
+                <VideoReact url="https://video.procinemastudio.com/video/1_video_editing_43m.mov" />
               </div>
             </li>
             <li className={css.service_unit}>
@@ -78,9 +84,10 @@ const ServicesList = () => {
                 </a> */}
               </div>
               <div className={css.unit_picture_thumb}>
-                <video autoPlay className={css.video} muted loop playsinline>
+                <VideoReact url="https://video.procinemastudio.com/video/2_motion_design_21m.mov" />
+                {/* <video autoPlay className={css.video} muted loop playsinline>
                   <source src="https://video.procinemastudio.com/video/2_motion_design_21m.mov" />
-                </video>
+                </video> */}
               </div>
             </li>
             <li className={css.service_unit}>
@@ -109,9 +116,10 @@ const ServicesList = () => {
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <video autoPlay className={css.video} muted loop>
+                <VideoReact url="https://video.procinemastudio.com/video/3_color_correction_43m.mov" />
+                {/* <video autoPlay className={css.video} muted loop>
                   <source src="https://video.procinemastudio.com/video/3_color_correction_43m.mov" />
-                </video>
+                </video> */}
               </div>
             </li>
             <li className={css.service_unit}>
@@ -134,16 +142,18 @@ const ServicesList = () => {
 
                 */}
                 <p className={css.description_text}>
-                  To make transitions between scenes smoother, various
-                  transitions are added between clips. Moreover, we use special
-                  effects, color corrections, and filters to enhance the visual
-                  aspect of our work.
+                  With the help of visual effects, videos can be told in an
+                  engaging and more vivid way. In a story or imagined world,
+                  they simulate the events imagined as illusions or tricks of
+                  the eye. Also, we use various transitions, color corrections,
+                  and filters to enhance the visual aspect of our work.
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <video autoPlay className={css.video} muted loop>
+                <VideoReact url="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" />
+                {/* <video autoPlay className={css.video} muted loop>
                   <source src="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" />
-                </video>
+                </video> */}
               </div>
             </li>
             <li className={css.service_unit}>
@@ -157,15 +167,14 @@ const ServicesList = () => {
                   position="left"
                 />
                 <p className={css.description_text}>
-                  The audio component of video editing is crucial. Our team can
-                  adjust audio levels, add background music, and troubleshoot
-                  issues with audio quality.
+                The audio component of video editing is crucial. Our team can adjust audio levels, troubleshoot issues with audio quality, add sound design and background music.
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <video autoPlay className={css.video} muted loop playsinline>
+                <VideoReact url="https://video.procinemastudio.com/video/5_music_33m.mov" />
+                {/* <video autoPlay className={css.video} muted loop playsinline>
                   <source src="https://video.procinemastudio.com/video/5_music_33m.mov" />
-                </video>
+                </video> */}
               </div>
             </li>
           </ul>

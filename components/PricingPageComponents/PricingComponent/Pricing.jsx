@@ -18,7 +18,7 @@ const Pricing = () => {
             <UnderlinedHeading tag="h2" text="pricing" position="center" />
 
             <p className={css.page_description_text}>
-              *The prices could be discussed in an individual way.
+            *The prices could be discussed in an individual way.
             </p>
           </div>
         </Container>
