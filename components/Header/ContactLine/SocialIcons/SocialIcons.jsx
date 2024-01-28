@@ -8,7 +8,7 @@ export default function SocialIcons({ fb, insta, vimeo }) {
     <ul className={css.wrapper}>
       <li className={css.link}>
         <a href={insta}>
-          <FaInstagram size={20}/>
+          <FaInstagram />
         </a>
       </li>
       <li className={css.link}>
