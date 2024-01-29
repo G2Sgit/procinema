@@ -8,7 +8,7 @@ const MainHero = () => {
   return (
     <div className={css.wrapper}>
       <div className={css.videoOverlay}></div>
-      <video autoPlay className={css.video} muted loop>
+      <video autoPlay className={css.video} muted loop playsInline>
   <source src="https://video.procinemastudio.com/video/background_v1.mp4"/>
 </video>
       <Container>
