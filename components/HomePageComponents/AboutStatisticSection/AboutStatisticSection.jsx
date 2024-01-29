@@ -33,13 +33,13 @@ const AboutStatisticSection = () => {
 <ul className={css["topLineStatList"]}>
             <li className={css["counter__item"]}>
               <div className={css["counter__item__text"]}>
-                <h2 class={css["counter__num"]}><CountUp end={79} duration={0.1} /></h2>
+                <h2 class={css["counter__num"]}><CountUp end={79} duration={3.4} enableScrollSpy={true}/></h2>
                 <p className={css["counter__descr"]}>Happy clients</p>
               </div>
             </li>
             <li className={css["counter__item"]}>
               <div className={css["counter__item__text"]}>
-                <h2 className={css["counter__num"]}><CountUp end={10} duration={0.1} /></h2>
+                <h2 className={css["counter__num"]}><CountUp end={10} duration={4.8} enableScrollSpy={true} /></h2>
                 <p className={css["counter__descr"]}>Years of experience</p>
               </div>
             </li>
@@ -50,7 +50,7 @@ const AboutStatisticSection = () => {
             
             <li className={css["counter__BottomItem"]}>
               <div className={css["counter__item__text"]}>
-                <h2 className={css["counter__num"]}><CountUp end={1490} duration={0.1} /></h2>
+                <h2 className={css["counter__num"]}><CountUp end={1490} duration={2} enableScrollSpy={true}/></h2>
                 <p className={css["counter__descr"]}>Compled Projects</p>
               </div>
             </li>
