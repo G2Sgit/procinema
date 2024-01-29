@@ -128,9 +128,13 @@
     position: relative;
     z-index: 4;
     padding-top: 100px;
+  background-repeat: no-repeat;
+background-size: cover;
+background-image: url(https://video.procinemastudio.com/images/image_hero_mobile.png);
   }
   
   .content_wrapper {
+    z-index: 100;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,15 +142,22 @@
   }
   
   .video {
-    width: 100vw;
-    height: 56.25vw;
-    min-height: 100vh;
-    min-width: 177.77vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
+
+opacity: 0;
+
+    @media screen and (min-width: 768px){
+      opacity: 1;
+      width: 100vw;
+      height: 56.25vw;
+      min-height: 100vh;
+      min-width: 177.77vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+    }
+
   }
   
   .videoOverlay {

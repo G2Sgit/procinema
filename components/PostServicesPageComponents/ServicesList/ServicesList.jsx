@@ -147,7 +147,7 @@ const ServicesList = () => {
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" placeholderImg="https://video.procinemastudio.com/images/4_visual_effects_frame.png"/>
+                <VideoReact  url="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" placeholderImg="https://video.procinemastudio.com/images/4_visual_effects_frame.png"/>
                 {/* <video autoPlay className={css.video} muted loop>
                   <source src="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" />
                 </video> */}
@@ -168,7 +168,7 @@ const ServicesList = () => {
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/5_music_33m.mov" placeholderImg="https://video.procinemastudio.com/images/5_music_frame.png"/>
+                <VideoReact height="100%" url="https://video.procinemastudio.com/video/5_music_33m.mov" placeholderImg="https://video.procinemastudio.com/images/5_music_frame.png"/>
                 {/* <video autoPlay className={css.video} muted loop playsinline>
                   <source src="https://video.procinemastudio.com/video/5_music_33m.mov" />
                 </video> */}
