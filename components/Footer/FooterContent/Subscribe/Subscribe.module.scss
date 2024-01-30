@@ -1,0 +1,31 @@
+.subscribeWrapper{
+      padding: 30px 0px 30px;
+      display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+
+      @media screen and (min-width: 768px) {
+        display: none;
+        padding: 30px 0;
+      }
+      @media screen and (min-width: 1200px) {
+        display: none;
+        padding: 30px 0 30px;
+      }
+    }
+
+    .subscribeActionText{
+        align-self: flex-start;
+    }
+
+    .subscribePlatformItem{
+        border-bottom: 1px solid white;
+    }
+
+
+    .subscribePlatforms{
+        :not(:last-child){
+            margin-bottom: 10px;
+        } 
+    }

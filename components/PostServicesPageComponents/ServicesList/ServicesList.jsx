@@ -61,7 +61,7 @@ const ServicesList = () => {
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/1_video_editing_43m.mov" />
+                <VideoReact url="https://video.procinemastudio.com/video/1_video_editing_43m.mov" placeholderImg="https://video.procinemastudio.com/images/1_video_editing_frame.png" />
               </div>
             </li>
             <li className={css.service_unit}>
@@ -79,12 +79,9 @@ const ServicesList = () => {
                   creating ads, movie titles, explainer videos, and information
                   sharing.
                 </p>
-                {/* <a className={css.item_link} href="#">
-                  BENEFITS OF FILMING IN CROATIA
-                </a> */}
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/2_motion_design_21m.mov" />
+                <VideoReact url="https://video.procinemastudio.com/video/2_motion_design_21m.mov" placeholderImg="https://video.procinemastudio.com/images/2_motion_design_frame.png"/>
                 {/* <video autoPlay className={css.video} muted loop playsinline>
                   <source src="https://video.procinemastudio.com/video/2_motion_design_21m.mov" />
                 </video> */}
@@ -116,7 +113,7 @@ const ServicesList = () => {
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/3_color_correction_43m.mov" />
+                <VideoReact url="https://video.procinemastudio.com/video/3_color_correction_43m.mov" placeholderImg="https://video.procinemastudio.com/images/3_color_correction_frame.png"/>
                 {/* <video autoPlay className={css.video} muted loop>
                   <source src="https://video.procinemastudio.com/video/3_color_correction_43m.mov" />
                 </video> */}
@@ -150,7 +147,7 @@ const ServicesList = () => {
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" />
+                <VideoReact  url="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" placeholderImg="https://video.procinemastudio.com/images/4_visual_effects_frame.png"/>
                 {/* <video autoPlay className={css.video} muted loop>
                   <source src="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" />
                 </video> */}
@@ -171,7 +168,7 @@ const ServicesList = () => {
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/5_music_33m.mov" />
+                <VideoReact height="100%" url="https://video.procinemastudio.com/video/5_music_33m.mov" placeholderImg="https://video.procinemastudio.com/images/5_music_frame.png"/>
                 {/* <video autoPlay className={css.video} muted loop playsinline>
                   <source src="https://video.procinemastudio.com/video/5_music_33m.mov" />
                 </video> */}
