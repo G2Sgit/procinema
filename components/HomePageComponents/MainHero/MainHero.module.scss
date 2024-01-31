@@ -132,7 +132,15 @@
   background-repeat: no-repeat;
 background-size: cover;
 background-image: url(https://video.procinemastudio.com/images/image_hero_mobile.png);
-  }
+  
+@media screen and (min-width: 768px){
+background-image: none;
+background-color: #141414;
+}
+
+
+
+}
   
   .content_wrapper {
     z-index: 100;

@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 .section {
-  padding-top: 84px;
+  padding-top: 80px;
 }
 .top_container {
   padding: 0 25px;
@@ -60,6 +60,8 @@
   padding: 35px 20px 25px;
   border-color: black;
   box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
+  border: 1px solid black;
+border-radius: 16px;
   // text-align: center;
 
   color: #000000;
@@ -104,6 +106,9 @@ align-items: flex-start;
 .pricesWrapper{
   display: flex;
   flex-direction: column;
+
+
+  
   border-bottom: 1px solid black;
   padding-bottom: 30px;
   height: 80px;
@@ -144,9 +149,17 @@ align-items: center;
 
 
 .pricingConditionsSection {
+
+
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #f2f2f2;
-  padding-top: 60px;
-  padding-bottom: 60px;
+
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .letterDFix {
@@ -154,99 +167,99 @@ align-items: center;
 }
 
 
-.button {
-  text-align: center;
-  color: #ffffff;
-  background-color: #000000;
+// .button {
+//   text-align: center;
+//   color: #ffffff;
+//   background-color: #000000;
 
-  padding: 10px 20px;
-  width: 150px;
+//   padding: 10px 20px;
+//   width: 150px;
+// }
+
+
+
+
+
+
+
+
+.button {
+  --ch-black: #141414;
+  --eer-black: #1b1b1b;
+  --night-rider: #2e2e2e;
+  --af-white: #f3f3f3;
+  --ch-white: #e1e1e1;
+  border-radius: 8px;
+  width: 200px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 20px 16px 20px;
+  border: none;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  background-color: rgba(33,33,33,0.8);
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1rem;
+
+  &:hover,
+  &:focus {
+    &::after,
+    &::before {
+      animation: none;
+      background: rgba(33,33,33,0.8);
+      box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    }
+  }
 }
 
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  transition: all 0.8s ease;
+  background: linear-gradient(
+    45deg,
+    var(--ch-black),
+    rgba(33,33,33,0.8),
+    rgba(33,33,33,0.8),
+    var(--ch-white),
+    // var(--night-rider),
+    rgba(33,33,33,0.8),
+    // var(--ch-black),
+    var(--ch-black)
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
 
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
 
+  50% {
+    background-position: 400% 0;
+  }
 
+  100% {
+    background-position: 0 0;
+  }
+}
 
-
-
-
-// .button {
-//   --ch-black: #141414;
-//   --eer-black: #1b1b1b;
-//   --night-rider: #2e2e2e;
-//   --af-white: #f3f3f3;
-//   --ch-white: #e1e1e1;
-//   border-radius: 8px;
-//   width: 200px;
-//   height: 44px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 8px;
-//   padding: 16px 20px 16px 20px;
-//   border: none;
-//   color: white;
-//   position: relative;
-//   cursor: pointer;
-//   transition-duration: 0.2s;
-//   background-color: rgba(33,33,33,0.8);
-
-//   font-size: 20px;
-//   font-weight: 500;
-//   line-height: 22px;
-//   letter-spacing: 0.1rem;
-
-//   &:hover,
-//   &:focus {
-//     &::after,
-//     &::before {
-//       animation: none;
-//       background: rgba(33,33,33,0.8);
-//       box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-//     }
-//   }
-// }
-
-// .button:before,
-// .button:after {
-//   content: "";
-//   position: absolute;
-//   left: -2px;
-//   top: -2px;
-//   border-radius: 10px;
-//   transition: all 0.8s ease;
-//   background: linear-gradient(
-//     45deg,
-//     var(--ch-black),
-//     rgba(33,33,33,0.8),
-//     rgba(33,33,33,0.8),
-//     var(--ch-white),
-//     // var(--night-rider),
-//     rgba(33,33,33,0.8),
-//     // var(--ch-black),
-//     var(--ch-black)
-//   );
-//   background-size: 400%;
-//   width: calc(100% + 4px);
-//   height: calc(100% + 4px);
-//   z-index: -1;
-//   animation: steam 20s linear infinite;
-// }
-
-// @keyframes steam {
-//   0% {
-//     background-position: 0 0;
-//   }
-
-//   50% {
-//     background-position: 400% 0;
-//   }
-
-//   100% {
-//     background-position: 0 0;
-//   }
-// }
-
-// .button:after {
-//   filter: blur(50px);
-// }
+.button:after {
+  filter: blur(50px);
+}
