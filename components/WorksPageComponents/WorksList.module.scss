@@ -8,6 +8,8 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
 .section {
   padding-top: 84px;
 }
@@ -30,9 +32,9 @@
   line-height: calc(27 / 14);
 }
 
-.works_list {
-  padding-bottom: 60px;
-}
+// .works_list {
+//   padding-bottom: 60px;
+// }
 
 .work_item {
   display: flex;

@@ -11,7 +11,7 @@ import { MdRadioButtonChecked } from "react-icons/md";
 const Pricing = () => {
   return (
     <div className={css.section}>
-      <Section>
+      <Section topSection="topSection">
         <Container>
           <h1 className={css.visually_hidden}>PRODUCTION SERVICES</h1>
           <div className={css.top_container}>
@@ -30,8 +30,8 @@ const Pricing = () => {
               <ul className={css.descrButtonswrapper}>
                 <li className={css.pricingCardWrapper}>
                   <h3 className={css.cardTitle}>DOCUMENTARY film</h3>
-
-                  <ul className={css.listOfPrices}>
+<div className={css.pricesWrapper}>
+  <ul className={css.listOfPrices}>
                     <li className={css.servicePrice}>
                       <p className={css.servicePriceText}>
                         <span>
@@ -53,6 +53,8 @@ const Pricing = () => {
                       </p>
                     </li>
                   </ul>
+                  </div>
+                  
                   <p className={css.cardParagraph}>Services:</p>
                   <ul className={css.listOfDef}>
                     <li className={css.serviceDef}>
@@ -86,7 +88,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                    <button className={css.cardButton} type="button">
+                    <button className={css.button} type="button">
                       Contact us
                     </button>
                   </div>
@@ -104,7 +106,7 @@ const Pricing = () => {
                   <h3 className={css.cardTitle}>
                     COMMERCIAL/ MUSIC VIDEO/ TRAILER
                   </h3>
-
+                  <div className={css.pricesWrapper}>
                   <ul className={css.listOfPrices}>
                     <li className={css.servicePrice}>
                       <p className={css.servicePriceText}>
@@ -127,6 +129,7 @@ const Pricing = () => {
                       </p>
                     </li>
                   </ul>
+                  </div>
                   <p className={css.cardParagraph}>Services:</p>
                   <ul className={css.listOfDef}>
                     <li className={css.serviceDef}>
@@ -164,7 +167,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                    <button className={css.cardButton} type="button">
+                    <button className={css.button} type="button">
                       Contact us
                     </button>
                   </div>
@@ -179,6 +182,7 @@ const Pricing = () => {
               <ul className={css.descrButtonswrapper}>
                 <li className={css.pricingCardWrapper}>
                   <h3 className={css.cardTitle}>MOTION DESIGN template</h3>
+                  <div className={css.pricesWrapper}>
                   <ul className={css.listOfPrices}>
                     <li className={css.servicePrice}>
                       <p className={css.servicePriceText}>
@@ -191,6 +195,7 @@ const Pricing = () => {
                       </p>
                     </li>
                   </ul>
+                  </div>
                   <p className={css.cardParagraph}>Services:</p>
                   <ul className={css.listOfDef}>
                     <li className={css.serviceDef}>
@@ -222,7 +227,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                    <button className={css.cardButton} type="button">
+                    <button className={css.button} type="button">
                       Contact us
                     </button>
                   </div>
