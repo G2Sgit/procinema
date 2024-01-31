@@ -6,19 +6,19 @@ import css from "./WorksList.module.scss";
 const WorksList = () => {
   return (
     <div className={css.section}>
-      <Section>
+      <Section topSection="topSection">
         <Container>
           <h1 className={css.visually_hidden}>PRODUCTION SERVICES</h1>
           <div className={css.top_container}>
             <UnderlinedHeading
               tag="h2"
-              text="LATEST COMMERCIAL FILMS"
+              text="LATEST COMMERCIAL PROJECTS"
               position="center"
             />
-
+{/* 
             <p className={css.page_description_text}>
               Commercial Film Production Works
-            </p>
+            </p> */}
           </div>
         </Container>
       </Section>

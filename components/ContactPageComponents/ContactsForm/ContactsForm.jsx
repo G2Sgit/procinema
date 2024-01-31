@@ -58,7 +58,7 @@ const ContactsForm = () => {
         />
         {errors.email && <p className={css.error}>{errors.email.message}</p>}
       </div>
-
+{/* 
       <div className={css["input-thumb"]}>
         <input
           className={css.input}
@@ -68,9 +68,9 @@ const ContactsForm = () => {
           {...register("phone")}
         />
         {errors.phone && <p className={css.error}>{errors.phone.message}</p>}
-      </div>
+      </div> */}
 
-      <div className={css["input-thumb"]}>
+      {/* <div className={css["input-thumb"]}>
         <input
           className={css.input}
           type="text"
@@ -81,7 +81,7 @@ const ContactsForm = () => {
         {errors.website && (
           <p className={css.error}>{errors.website.message}</p>
         )}
-      </div>
+      </div> */}
 
       <div className={css["textarea-thumb"]}>
         <textarea
