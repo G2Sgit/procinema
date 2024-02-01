@@ -1,7 +1,7 @@
 import css from "../FooterContent.module.scss";
 const ContentNavigation = () => {
   return (
-    <div className={css.blockWrapper}>
+    <div className={css.footerNavWrapper}>
       <h3>Navigation</h3>
       <ul className={css.footerNavList}>
         <li className={css.link}>

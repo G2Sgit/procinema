@@ -28,6 +28,9 @@ const ContentInfo = () => {
             <span> procinemapost@gmail.com</span>
           </a>
         </li>
+        {/* <li>
+          <button className={css.footerButton} type="button">Contact us</button>
+        </li> */}
       </ul>
     </div>
   );
