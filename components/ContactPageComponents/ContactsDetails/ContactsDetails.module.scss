@@ -11,15 +11,18 @@
 }
 
 
-.sectionGrey{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #f2f2f2;
-  
-    @media screen and (min-width: 1200px) {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
+
+
+.formSection {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f2f2f2;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
 }
 
 
@@ -55,26 +58,26 @@
   align-items: stretch;
 }
 
-.left-column {
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 20px;
+// .left-column {
+//   padding-top: 20px;
+//   padding-left: 50px;
+//   padding-right: 50px;
+//   padding-bottom: 20px;
 
-  background-color: var(--buttonAndHeaderAccentColor);
-  border-top-left-radius: 150px;
+//   background-color: var(--buttonAndHeaderAccentColor);
+//   border-top-left-radius: 150px;
 
-  @media screen and (min-width: 1200px) {
-    width: 45%;
-  }
-}
+//   @media screen and (min-width: 1200px) {
+//     width: 45%;
+//   }
+// }
 
 .right-column {
 
     // padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-bottom: 20px;
+
 
     border-bottom-right-radius: 150px;
     background-color: var(--primaryBackgroundColor);
@@ -83,7 +86,7 @@
   background-color: var(--primaryBackgroundColor);
 
   @media screen and (min-width: 1200px) {
-    width: 45%;
+    width: 90%;
 
       }
  
@@ -91,16 +94,20 @@
 
 .page_description_text {
     text-align: center;
-  
     color: black;
     font-size: 14px;
     font-weight: 500;
     line-height: calc(27 / 14);
+    margin-left: auto;
+   margin-right: auto;
+
+
+
+    @media screen and (min-width: 1200px) {
+      width: 768px;
+   width: 100%;
+        }
   }
 
 
-  .formSection{
-    background-color: #f2f2f2;
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+

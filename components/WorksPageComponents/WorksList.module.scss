@@ -10,8 +10,9 @@
 }
 
 
-.section {
+.wrapper {
   padding-top: 84px;
+
 }
 
 .top_container {
@@ -19,9 +20,9 @@
 
   // margin-bottom: 40px;
 
-  @media screen and (min-width: 1200px) {
-    // margin-bottom: 60px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   margin-bottom: 60px;
+  // }
 }
 
 .page_description_text {
@@ -47,41 +48,85 @@
   }
 }
 
-.work_heading {
-  position: relative;
-  color: black;
+.showreelTitle {
+  // position: relative;
+  color: #FFFFFF;
   width: 100%;
-
-  padding-left: 16px;
-  margin-bottom: 80px;
-
   font-size: 35px;
   font-weight: 300;
   line-height: calc(42 / 35);
 
-  &::after {
-    content: "";
+  // &::after {
+  //   content: "";
 
-    position: absolute;
+  //   position: absolute;
 
-    left: 0px;
-    bottom: -10px;
+  //   left: 0px;
+  //   bottom: -10px;
 
-    width: 100%;
-    height: 1px;
+  //   width: 100%;
+  //   height: 1px;
 
-    background-color: var(--buttonColor);
-  }
+  //   background-color: var(--buttonColor);
+  // }
 }
 
 .video_thumb {
-  width: calc(100% - 20px);
-  height: 460px;
-
+  // width: calc(100% - 20px);
+  width: 100%;
+  border-radius: 6px;
+  border: 0;
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
   background-color: var(--lightContactsBackgroundColor);
-  background-image: url(#);
+  background-image: url(https://video.procinemastudio.com/images/bg_works.jpg);
 
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+height: 270px;
+
+  @media screen and (min-width: 768px) {
+    height: 432px;
+  }
+
+
+  @media screen and (min-width: 1200px) {
+    height: 675px;
+  }
+
+}
+
+.showreelButton{
+
+width: 60px;
+height: 60px;
+border-radius: 10px;
+border: 0;
+
+
+@media screen and (min-width: 768px) {
+  width: 100px;
+  height: 100px;
+}
+
+}
+
+.showreelOnCardItems{
+  display: flex;
+justify-content: space-between;
+  align-items: center;
+width: 100%;
+padding-bottom: 20px;
+padding-left: 34px;
+padding-right: 34px;
+
+
+@media screen and (min-width: 768px) {
+  padding-bottom: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
 }
