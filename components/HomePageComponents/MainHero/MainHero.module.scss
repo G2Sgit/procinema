@@ -1,175 +1,149 @@
 .button {
-    --ch-black: #141414;
-    --eer-black: #1b1b1b;
-    --night-rider: #2e2e2e;
-    --af-white: #f3f3f3;
-    --ch-white: #e1e1e1;
-    border-radius: 8px;
-    width: 200px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 16px 20px 16px 20px;
-    border: none;
-    color: white;
-    position: relative;
-    cursor: pointer;
-    transition-duration: 0.2s;
-    background-color: rgba(33,33,33,0.8);
-  
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0.1rem;
-  
-    &:hover,
-    &:focus {
-      &::after,
-      &::before {
-        animation: none;
-        background: rgba(33,33,33,0.8);
-        box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
-      }
+  --ch-black: #141414;
+  --eer-black: #1b1b1b;
+  --night-rider: #2e2e2e;
+  --af-white: #f3f3f3;
+  --ch-white: #e1e1e1;
+  border-radius: 8px;
+  width: 200px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 20px 16px 20px;
+  border: none;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  background-color: rgba(33, 33, 33, 0.8);
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.1rem;
+
+  &:hover,
+  &:focus {
+    &::after,
+    &::before {
+      animation: none;
+      background: rgba(33, 33, 33, 0.8);
+      box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     }
   }
-  
-  .button:before,
-  .button:after {
-    content: "";
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    border-radius: 10px;
-    transition: all 0.8s ease;
-    background: linear-gradient(
-      45deg,
-      var(--ch-black),
-      rgba(33,33,33,0.8),
-      rgba(33,33,33,0.8),
-      var(--ch-white),
-      // var(--night-rider),
-      rgba(33,33,33,0.8),
-      // var(--ch-black),
-      var(--ch-black)
-    );
-    background-size: 400%;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    z-index: -1;
-    animation: steam 20s linear infinite;
-  }
-  
-  @keyframes steam {
-    0% {
-      background-position: 0 0;
-    }
-  
-    50% {
-      background-position: 400% 0;
-    }
-  
-    100% {
-      background-position: 0 0;
-    }
-  }
-  
-  .button:after {
-    filter: blur(50px);
-  }
-  
-  // .title {
-  //   font-size: 20px;
-  //   font-weight: 500;
-  //   line-height: 26px;
-  //   letter-spacing: 0px;
-  //   color: var(--accentColor);
-  //   margin-bottom: 20px;
-  //   text-transform: uppercase;
-  //   @media screen and (max-width: 768px) {
-  //     font-size: 15px;
-  //   }
-  // }
-  
-  .subtitle {
-    text-align: center;
-    font-size: 32px;
-    line-height: 36.77px;
-    font-weight: 500;
-    margin-bottom: 40px;
-    color: var(--lightTextColor);
-  
-    @media screen and (max-width: 768px) {
-      font-size: 24px;
-    }
+}
+
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  border-radius: 10px;
+  transition: all 0.8s ease;
+  background: linear-gradient(
+    45deg,
+    var(--ch-black),
+    rgba(33, 33, 33, 0.8),
+    rgba(33, 33, 33, 0.8),
+    var(--ch-white),
+    // var(--night-rider),
+    rgba(33, 33, 33, 0.8),
+    // var(--ch-black),
+    var(--ch-black)
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
   }
 
-  .title{
-      text-align: center;
-      font-size: 48px;
-      line-height: 55.15px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: var(--lightTextColor);
-    
-      @media screen and (max-width: 768px) {
-        font-size: 24px;
-      }
+  50% {
+    background-position: 400% 0;
   }
-  
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    z-index: 4;
-    padding-top: 100px;
+
+  100% {
+    background-position: 0 0;
   }
-  
-  .content_wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.button::after {
+  filter: blur(50px);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 32px;
+  line-height: 36.77px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: var(--lightTextColor);
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
   }
-  
-  .video {
-    width: 100vw;
-    height: 56.25vw;
-    min-height: 100vh;
-    min-width: 177.77vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
+}
+
+.title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 55.15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--lightTextColor);
+
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
   }
-  
-  .videoOverlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-color: #08172d;
-    opacity: 0.3;
-    mix-blend-mode: multiply;
-    z-index: -1;
-  }
-  
-  // .triangle {
-  //   bottom: -4px;
-  //   left: 0;
-  //   z-index: 1;
-  //   overflow: hidden;
-  //   position: absolute;
-  //   width: 100%;
-  //   fill: var(--lightTextColor);
-  //   transform-origin: center;
-  //   transform: rotate(180deg);
-  // }
-  
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  padding-top: 100px;
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.videoOverlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #08172d;
+  opacity: 0.3;
+  mix-blend-mode: multiply;
+  z-index: -1;
+}

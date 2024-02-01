@@ -1,33 +1,41 @@
 .text {
-  padding: 30px;
+  padding: 32px;
   border: 1px solid var(--secondaryTextColor);
-  font-style: italic;
-  height: 180px;
+  border-radius: 16px;
+  // font-style: italic;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--secondaryTextColor);
+
+  @media screen and (min-width: 768px) {
+    height: 250px;
+  }
 
   & p {
     font-size: 16px;
+    font-weight: 400;
+    line-height: 1.14;
     padding: 0;
     text-indent: 0;
-  }
-}
 
-.user {
-  padding: 20px 30px;
-  display: flex;
-  gap: 20px;
-  & p {
-    font-weight: 300;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 22px;
+    }
   }
   & h2 {
-    font-size: 15px;
-  }
-}
-
-.slick-dots {
-  & li {
-    & button:before {
-      color: var(--secondaryTextColor) !important;
-      font-size: 10px !important;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.14;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 32px;
     }
   }
 }
