@@ -93,10 +93,11 @@ const ContactsForm = () => {
           <p className={css.error}>{errors.message.message}</p>
         )}
       </div>
-
-      <button className={css.button} type="submit">
+<div className={css.buttonWrapper}>
+  <button className={css.button} type="submit">
         Send Message
-      </button>
+      </button></div>
+      
     </form>
   );
 };

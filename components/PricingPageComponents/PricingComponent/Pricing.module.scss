@@ -139,11 +139,13 @@ align-items: center;
 }
 
 .buttonsWrapper {
+  position: relative;
+  z-index: 2;
   margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 20px;
+  margin: 20px 20px 100px 20px;
 }
 
 
@@ -191,7 +193,7 @@ align-items: center;
   --ch-white: #e1e1e1;
   border-radius: 8px;
   width: 200px;
-  height: 44px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,8 +206,12 @@ align-items: center;
   transition-duration: 0.2s;
   background-color: rgba(33,33,33,0.8);
 
-  font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: var(--open_sans);
+  text-align: center;
+
+
+  font-size: 1.17em;
   line-height: 22px;
   letter-spacing: 0.1rem;
 

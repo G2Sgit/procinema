@@ -122,19 +122,21 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
     position: relative;
     z-index: 4;
-    padding-top: 100px;
+    // padding-top: 100px;
   background-repeat: no-repeat;
 background-size: cover;
 background-image: url(https://video.procinemastudio.com/images/image_hero_mobile.png);
   
 @media screen and (min-width: 768px){
+      justify-content: center;
 background-image: none;
+    padding-top: 100px;
 background-color: #141414;
 }
 
