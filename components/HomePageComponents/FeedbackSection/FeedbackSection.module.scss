@@ -1,9 +1,3 @@
-.wrapper {
-  // background-image: url(https://www.cinemart.tv/wp-content/uploads/2019/11/background-landscape.jpg);
-  // background-position: 50% 22px;
-  color: var(--secondaryTextColor);
-  
-}
 .title {
   text-align: center;
 
@@ -15,4 +9,12 @@
   letter-spacing: 2px;
 
   text-transform: uppercase;
+}
+
+.wrapper {
+  // background-image: url(https://www.cinemart.tv/wp-content/uploads/2019/11/background-landscape.jpg);
+  // background-position: 50% 22px;
+  color: var(--secondaryTextColor);
+  // padding: 0px 0 60px;
+  position: relative;
 }
