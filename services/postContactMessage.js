@@ -1,5 +1,5 @@
 export async function postContactMessage(formdata) {
-    const {name, email, phone, website, message} = formdata;
+    const {name, email, message} = formdata;
     const res = await fetch(`https://api.procinemastudio.com/v1/messages`, {
       method: 'POST',
       headers: {
@@ -8,8 +8,6 @@ export async function postContactMessage(formdata) {
       body: JSON.stringify({
         user_name: name,
         user_email: email,
-        user_phone: phone,
-        user_website: website,
         text: message
       }),
     })

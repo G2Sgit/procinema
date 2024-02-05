@@ -3,7 +3,7 @@ import css from "./ContactsForm.module.scss";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
-import { postContactMessage } from "../../../services/postContactMessage"
+import { postContactMessage } from "../../../services/postContactMessage";
 
 const ContactsForm = () => {
   const validationSchema = Yup.object().shape({
@@ -13,10 +13,6 @@ const ContactsForm = () => {
     email: Yup.string()
       .email("This is an ERROR email")
       .required("Please enter your email"),
-    phone: Yup.number()
-      .min(10, "Your phone is too short")
-      .required("Please enter your phone"),
-    website: Yup.string(),
     message: Yup.string()
       .required("Please enter your message")
       .min(20, "Message is too short - should be 20 chars minimum."),
@@ -33,7 +29,7 @@ const ContactsForm = () => {
     <form
       className={css.form}
       onSubmit={handleSubmit(async (data) => {
-        await postContactMessage(data)
+        await postContactMessage(data);
         reset();
       })}
     >
@@ -47,7 +43,7 @@ const ContactsForm = () => {
         />
         {errors.name && <p className={css.error}>{errors.name.message}</p>}
       </div>
-      
+
       <div className={css["input-thumb"]}>
         <input
           className={css.input}
@@ -58,30 +54,6 @@ const ContactsForm = () => {
         />
         {errors.email && <p className={css.error}>{errors.email.message}</p>}
       </div>
-{/* 
-      <div className={css["input-thumb"]}>
-        <input
-          className={css.input}
-          type="text"
-          name="phone"
-          placeholder="phone"
-          {...register("phone")}
-        />
-        {errors.phone && <p className={css.error}>{errors.phone.message}</p>}
-      </div> */}
-
-      {/* <div className={css["input-thumb"]}>
-        <input
-          className={css.input}
-          type="text"
-          name="website"
-          placeholder="website"
-          {...register("website")}
-        />
-        {errors.website && (
-          <p className={css.error}>{errors.website.message}</p>
-        )}
-      </div> */}
 
       <div className={css["textarea-thumb"]}>
         <textarea
@@ -93,11 +65,11 @@ const ContactsForm = () => {
           <p className={css.error}>{errors.message.message}</p>
         )}
       </div>
-<div className={css.buttonWrapper}>
-  <button className={css.button} type="submit">
-        Send Message
-      </button></div>
-      
+      <div className={css.buttonWrapper}>
+        <button className={css.button} type="submit">
+          Send Message
+        </button>
+      </div>
     </form>
   );
 };
