@@ -1,9 +1,12 @@
 "use client";
 import css from "./ContactsForm.module.scss";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { postContactMessage } from "../../../services/postContactMessage";
+import ModalSuccess from "../ModalSuccess/ModalSuccess";
+import ModalError from "../ModalError/ModalError";
 
 const ContactsForm = () => {
   const validationSchema = Yup.object().shape({
@@ -25,12 +28,29 @@ const ContactsForm = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(validationSchema) });
 
+  const [ isSuccess, setIsSuccess ] = useState(false);
+  const [ isError, setIsError ] = useState(false);
+
+  const closeSuccessMessage = () => {
+    setIsSuccess(false)
+  }
+  const closeErrorMessage = () => {
+    setIsError(false)
+  }
+
   return (
     <form
       className={css.form}
       onSubmit={handleSubmit(async (data) => {
-        await postContactMessage(data);
-        reset();
+        try {
+          await postContactMessage(data);
+          reset();
+          setIsSuccess(true)
+        } catch (error) {
+          console.log(error)
+          setIsError(true)
+        }
+        
       })}
     >
       <div className={css["input-thumb"]}>
@@ -47,7 +67,7 @@ const ContactsForm = () => {
       <div className={css["input-thumb"]}>
         <input
           className={css.input}
-          type="text"
+          type="email"
           name="email"
           placeholder="Email"
           {...register("email")}
@@ -70,6 +90,8 @@ const ContactsForm = () => {
           Send Message
         </button>
       </div>
+      {isSuccess && <ModalSuccess closeHandler={closeSuccessMessage} />}
+      {isError && <ModalError closeHandler={closeErrorMessage}/>}
     </form>
   );
 };
