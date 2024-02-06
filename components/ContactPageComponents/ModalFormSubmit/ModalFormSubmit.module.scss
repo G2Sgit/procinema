@@ -23,7 +23,14 @@
     background-color: white;
 }
 
-.icon {
+.icon-success {
+    width: 100px;
+    height: 100px;
+    fill: green;
+    color: green;
+}
+
+.icon-error {
     width: 100px;
     height: 100px;
     fill: red;

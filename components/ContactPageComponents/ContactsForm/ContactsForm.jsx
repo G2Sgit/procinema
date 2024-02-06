@@ -5,8 +5,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { postContactMessage } from "../../../services/postContactMessage";
-import ModalSuccess from "../ModalSuccess/ModalSuccess";
-import ModalError from "../ModalError/ModalError";
+import ModalFormSubmit from "../ModalFormSubmit/ModalFormSubmit";
 
 const ContactsForm = () => {
   const validationSchema = Yup.object().shape({
@@ -90,8 +89,8 @@ const ContactsForm = () => {
           Send Message
         </button>
       </div>
-      {isSuccess && <ModalSuccess closeHandler={closeSuccessMessage} />}
-      {isError && <ModalError closeHandler={closeErrorMessage}/>}
+      {isSuccess && <ModalFormSubmit submit="success" text="Success" buttonText="OK" closeHandler={closeSuccessMessage} />}
+      {isError && <ModalFormSubmit text="Error. Try again later" buttonText="OK" closeHandler={closeErrorMessage}/>}
     </form>
   );
 };
