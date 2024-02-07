@@ -1,9 +1,12 @@
+"use client";
 import Section from "@/components/Section/Section";
 import css from "./FeedbackSection.module.scss";
 import Container from "@/components/Container/Container";
 import UnderlinedHeading from "@/components/UnderlinedHeading/UnderlinedHeading";
 import FeedbackSlider from "./FeedbackSlider/FeedbackSlider";
 import LeaveFeedback from "./LeaveFeedback/LeaveFeedback";
+
+import { ParallaxBanner } from "react-scroll-parallax";
 
 const sectionContent = [
   {
@@ -41,19 +44,24 @@ const sectionContent = [
 const FeedbackSection = () => {
   return (
     <div className={css.wrapper}>
-      <Section>
-        <Container>
-          <h2 className={css.title}>WHAT CLIENTS SAY?</h2>
-          <UnderlinedHeading
-            tag="h3"
-            // text="LOVED BY CLIENTS."
-            position="center"
-            color="black"
-          />
-          <LeaveFeedback />
-          <FeedbackSlider feedbacks={sectionContent} />
-        </Container>
-      </Section>
+      <ParallaxBanner
+        layers={[{ image: "/pexels.jpg", speed: -20 }]}
+        className="aspect-[2/1]"
+      >
+        <Section>
+          <Container>
+            <h2 className={css.title}>WHAT CLIENTS SAY?</h2>
+            <UnderlinedHeading
+              tag="h3"
+              // text="LOVED BY CLIENTS."
+              position="center"
+              color="black"
+            />
+            <LeaveFeedback />
+            <FeedbackSlider feedbacks={sectionContent} />
+          </Container>
+        </Section>
+      </ParallaxBanner>
     </div>
   );
 };
