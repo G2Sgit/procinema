@@ -12,8 +12,10 @@
 //     }
 // }
 
-
 .counter__content {
+
+
+
     box-sizing: border-box;
 
     @media screen and (min-width: 480px) {
@@ -62,7 +64,12 @@
 
 .counter__item{
 color: black;
+
+
+border-color: black;
+box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
 border: 1px solid black;
+
 border-radius: 16px;
 width: 100%;
 padding: 44px 24px 44px 24px;
@@ -84,7 +91,14 @@ padding: 44px 24px 44px 24px;
 
 .counter__BottomItem{
     color: black;
+
+
+
+    border-color: black;
+    box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
     border: 1px solid black;
+
+
     border-radius: 16px;
     max-width: 450px;
     padding: 44px 24px 44px 24px;
