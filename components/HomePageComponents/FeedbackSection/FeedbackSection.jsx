@@ -23,7 +23,7 @@ const sectionContent = [
   },
   {
     id: 3,
-    name: "Jill Niraj",
+    name: "William Withers",
     company: "Some company",
     text: " You approached our ideas with such respect and infused our video with a unique perspective perfectly. We cannot thank you enough for all the time you spent in person working with us to make this project perfect.  ",
   },
@@ -45,7 +45,7 @@ const FeedbackSection = () => {
   return (
     <div className={css.wrapper}>
       <ParallaxBanner
-        layers={[{ image: "/pexels.jpg", speed: -20 }]}
+        layers={[{ image: "/shuttler.jpg", speed: -20 }]}
         className="aspect-[2/1]"
       >
         <Section>

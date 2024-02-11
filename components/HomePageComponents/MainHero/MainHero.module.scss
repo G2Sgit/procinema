@@ -192,10 +192,18 @@
 }
 
 .content_wrapper {
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+padding-bottom: 120px;
+
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
+
 }
 
 .video {
