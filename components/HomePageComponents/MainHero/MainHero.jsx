@@ -1,31 +1,12 @@
-"use client";
-
-import { useState } from "react";
 import css from "./MainHero.module.scss";
 import Container from "@/components/Container/Container";
-import  ModalContactFormByHeroBtn from "./ModalContactFormByHeroBtn/ModalContactFormByHeroBtn"
-
+import ContactUsButtonAndModal from "@/components/ContactUsButtonAndModal/ContactUsButtonAndModal";
 
 
 
 
 
 const MainHero = () => {
-
-  const [ isOpen, setIsOpen ] = useState(false);
-
-
-
-
-
-  const openHandler = () => {
-    setIsOpen(true)
-  }
-  const closeHandler = () => {
-    setIsOpen(false)
-  }
-
-
 
 
   return (
@@ -43,10 +24,7 @@ const MainHero = () => {
             We are a professional post-production studio <br />
             with a quality approach
           </p>
-          <button type="button" className={css.button} onClick={openHandler}>
-            Contact us
-          </button>
-          {isOpen && <ModalContactFormByHeroBtn  closeHandler={closeHandler} />}
+          <ContactUsButtonAndModal/>
         </div>
       </Container>
     </div>

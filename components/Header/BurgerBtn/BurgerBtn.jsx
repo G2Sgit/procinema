@@ -8,6 +8,7 @@ const BurgerBtn = ({ setIsOpen, isOpen, isHomePage }) => {
         {isOpen ? (
           <IoMdClose value={{ fill: "black" }} />
         ) : (
+
           <svg
             // stroke={isHomePage ? "white" : "black"}
             stroke={"white"}

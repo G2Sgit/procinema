@@ -1,23 +1,71 @@
+.backdrop {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  width: 1200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 55%;
+  left: 50%;
+  border-radius: 15px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.buttonCloseWrapper {
+  z-index: 100;
+  position: absolute;
+  top: 1%;
+  right: 38%;
+  border: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    top: 1%;
+    right: 20%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 1%;
+    right: 2%;
+  }
+}
+
+.buttonClose {
+  background-color: transparent;
+  border: 0;
+}
+
 .form {
   padding: 30px 10px 30px 10px;
-  border-color: black;
-  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
   // text-align: center;
   justify-content: center;
-
-  color: #000000;
+  border: 1px solid black;
+  border-radius: 16px;
   box-sizing: border-box;
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
+  color: #000000;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-flex-direction: column;
-  border: 1px solid black;
-  border-radius: 16px;
+  flex-direction: column;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding: 40px 40px 40px;
+  padding: 60px 40px 40px;
   margin-left: auto;
   margin-right: auto;
+  width: auto;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -38,7 +86,6 @@ flex-direction: column;
   margin-bottom: 20px;
   height: 50px;
   width: 100%;
-
 
   @media screen and (min-width: 768px) {
     height: 50px;
@@ -81,13 +128,21 @@ flex-direction: column;
 }
 
 .text-area {
-  width: 100%;
+  width: 250px;
   height: 320px;
   padding: 12px 15px;
   // border: 1px solid black;
   border: 0;
   border-radius: 6px;
   background-color: #f2f2f2;
+
+  @media screen and (min-width: 768px) {
+    width: 685px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1120px;
+  }
 }
 
 .error {
@@ -103,7 +158,7 @@ flex-direction: column;
   --af-white: #f3f3f3;
   --ch-white: #e1e1e1;
   border-radius: 8px;
-  width: 200px;
+  width: 250px;
   height: 34px;
   display: flex;
   align-items: center;
@@ -121,7 +176,6 @@ flex-direction: column;
   font-weight: 600;
   font-family: var(--open_sans);
   text-align: center;
-
 
   font-size: 1.17em;
   line-height: 22px;
@@ -182,8 +236,7 @@ flex-direction: column;
   filter: blur(50px);
 }
 
-
-.buttonWrapper{
+.buttonWrapper {
   position: relative;
   z-index: 2;
 }
