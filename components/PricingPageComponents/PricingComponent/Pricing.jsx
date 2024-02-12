@@ -7,7 +7,7 @@ import Link from "next/link";
 import { MdOutlineRunningWithErrors } from "react-icons/md";
 import { MdPreview } from "react-icons/md";
 import { MdRadioButtonChecked } from "react-icons/md";
-import ContactUsButtonAndModal from "@/components/ContactUsButtonPricing/ContactUsButtonAndModalPricing";
+import ContactUsButtonAndModal from "@/components/ContactUsButtonAndModal/ContactUsButtonAndModal";
 
 const Pricing = () => {
   return (
