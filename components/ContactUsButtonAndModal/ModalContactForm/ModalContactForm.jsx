@@ -106,6 +106,7 @@ const ModalContactForm = ({ closeHandler }) => {
               submit="success"
               text="Success"
               buttonText="OK"
+              closeFormModal={closeHandler}
               closeHandler={closeSuccessMessage}
             />
           )}
@@ -113,6 +114,7 @@ const ModalContactForm = ({ closeHandler }) => {
             <ModalFormSubmit
               text="Error. Try again later"
               buttonText="OK"
+              closeFormModal={closeHandler}
               closeHandler={closeErrorMessage}
             />
           )}
