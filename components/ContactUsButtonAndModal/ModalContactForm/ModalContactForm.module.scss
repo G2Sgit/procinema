@@ -1,16 +1,17 @@
 .backdrop {
-  position: absolute;
-  z-index: 999;
+  position: fixed;
+  z-index: 9998;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
+  // background-color: aliceblue;
 }
 
 .modal {
   width: 1200px;
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +23,6 @@
 }
 
 .buttonCloseWrapper {
-  z-index: 100;
   position: absolute;
   top: 1%;
   right: 38%;
