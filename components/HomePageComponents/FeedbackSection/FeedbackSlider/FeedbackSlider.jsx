@@ -76,7 +76,7 @@ export default function FeedbackSlider({ feedbacks }) {
   };
 
   return (
-    <div className={css.FeedbackSlider}>
+    <div className={css.feedbackSlider}>
       <Slider {...settings} ref={sliderRef}>
         {(data?.length ? data : feedbacks).map((item) => (
           <FeedbackItem item={item} key={item.id} />

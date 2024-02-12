@@ -47,13 +47,7 @@ const ServicesList = () => {
                   be improved, and the final product can be polished and
                   engaging. Among the most popular video editing programs we use
                   are Final Cut Pro, Adobe Premiere Pro, After Effects, and
-                  Adobe Audition.During video editing, raw footage can be
-                  combined into a cohesive narrative, the pacing and flow of the
-                  video can be controlled, errors can be fixed, image and sound
-                  quality can be improved, and the final product can be polished
-                  and engaging. Among the most popular video editing programs we
-                  use are Final Cut Pro, Adobe Premiere Pro, After Effects, and
-                  Adobe Audition. <br />
+                  Adobe Audition.<br />
                   Video editing combines technical skills with creative vision
                   to engage, inform, and entertain audiences.
                 </p>

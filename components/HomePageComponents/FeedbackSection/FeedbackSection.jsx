@@ -6,7 +6,7 @@ import UnderlinedHeading from "@/components/UnderlinedHeading/UnderlinedHeading"
 import FeedbackSlider from "./FeedbackSlider/FeedbackSlider";
 import LeaveFeedback from "./LeaveFeedback/LeaveFeedback";
 
-import { ParallaxBanner } from "react-scroll-parallax";
+// import { ParallaxBanner } from "react-scroll-parallax";
 
 const sectionContent = [
   {
@@ -44,24 +44,27 @@ const sectionContent = [
 const FeedbackSection = () => {
   return (
     <div className={css.wrapper}>
-      <ParallaxBanner
+      {/* <ParallaxBanner
         layers={[{ image: "/shuttler.jpg", speed: -20 }]}
         className="aspect-[2/1]"
-      >
+      > */}
         <Section>
           <Container>
             <h2 className={css.title}>WHAT CLIENTS SAY?</h2>
             <UnderlinedHeading
               tag="h3"
-              // text="LOVED BY CLIENTS."
+              // text="Here you can leave your feedback"
               position="center"
               color="black"
             />
-            <LeaveFeedback />
+             <p className={css.page_description_text}>
+             Here you can leave your feedback
+            </p>
             <FeedbackSlider feedbacks={sectionContent} />
+            <LeaveFeedback />
           </Container>
         </Section>
-      </ParallaxBanner>
+      {/* </ParallaxBanner> */}
     </div>
   );
 };

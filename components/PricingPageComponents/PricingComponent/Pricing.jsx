@@ -7,6 +7,7 @@ import Link from "next/link";
 import { MdOutlineRunningWithErrors } from "react-icons/md";
 import { MdPreview } from "react-icons/md";
 import { MdRadioButtonChecked } from "react-icons/md";
+import ContactUsButtonAndModal from "@/components/ContactUsButtonPricing/ContactUsButtonAndModalPricing";
 
 const Pricing = () => {
   return (
@@ -75,7 +76,7 @@ const Pricing = () => {
                     </li>
                   </ul>
 
-                  <ul className={css.listOfDef}>
+                  <ul className={css.listOfSecondDef}>
                     <li className={css.serviceDef}>
                       <MdOutlineRunningWithErrors />
                       <p className={css.serviceDefText}>7-14 days turnaround</p>
@@ -88,9 +89,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                    <button className={css.button} type="button">
-                      Contact us
-                    </button>
+                  <ContactUsButtonAndModal/>
                   </div>
                 </li>
 
@@ -154,7 +153,7 @@ const Pricing = () => {
                     </li>
                   </ul>
 
-                  <ul className={css.listOfDef}>
+                  <ul className={css.listOfSecondDef}>
                     <li className={css.serviceDef}>
                       <MdOutlineRunningWithErrors />
                       <p className={css.serviceDefText}>3-7 days turnaround</p>
@@ -167,9 +166,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                    <button className={css.button} type="button">
-                      Contact us
-                    </button>
+                  <ContactUsButtonAndModal/>
                   </div>
                 </li>
                 {/* <li className={css.buttonsWrapper}>
@@ -213,7 +210,7 @@ const Pricing = () => {
                     </li>
                   </ul>
 
-                  <ul className={css.listOfDef}>
+                  <ul className={css.listOfSecondDef}>
                     <li className={css.serviceDef}>
                       <MdOutlineRunningWithErrors />
                       <p className={css.serviceDefText}>2-4 days turnaround</p>
@@ -227,9 +224,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                    <button className={css.button} type="button">
-                      Contact us
-                    </button>
+                  <ContactUsButtonAndModal/>
                   </div>
                 </li>
                 {/* <li className={css.buttonsWrapper}>

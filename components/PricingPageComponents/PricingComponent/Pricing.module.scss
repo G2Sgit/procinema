@@ -68,7 +68,6 @@ border-radius: 16px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  min-height: 600px;
   min-width: 350px;
   // justify-content: space-between;
 
@@ -88,9 +87,14 @@ border-radius: 16px;
 }
 
 .listOfDef {
-  // margin-top: 10px;
+ 
   height: 150px;
 }
+
+.listOfSecondDef{
+  height: fit-content;
+}
+
 
 .listOfPrices {
   display: flex;
@@ -141,11 +145,13 @@ align-items: center;
 .buttonsWrapper {
   position: relative;
   z-index: 2;
-  margin-top: 60px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 20px 100px 20px;
+
+
+  margin-top: 50px;
 }
 
 
@@ -193,7 +199,7 @@ align-items: center;
   --ch-white: #e1e1e1;
   border-radius: 8px;
   width: 200px;
-  height: 34px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,14 +210,10 @@ align-items: center;
   position: relative;
   cursor: pointer;
   transition-duration: 0.2s;
-  background-color: rgba(33,33,33,0.8);
+  background-color: rgba(33, 33, 33, 0.8);
 
-  font-weight: 600;
-  font-family: var(--open_sans);
-  text-align: center;
-
-
-  font-size: 1.17em;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.1rem;
 
