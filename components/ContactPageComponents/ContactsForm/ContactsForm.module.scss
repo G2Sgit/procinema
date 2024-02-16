@@ -205,11 +205,18 @@ flex-direction: column;
 }
 
 .button:after {
-  filter: blur(50px);
+  filter: blur(25px);
+
+
+  @media screen and (min-width: 1200px) {
+    filter: blur(50px);
+  }
 }
 
 
 .buttonWrapper{
   position: relative;
   z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -94,9 +94,9 @@ export default function FeedbackSlider({ feedbacks }) {
           </span>
         </div>
         <button type="button" className={css.next} onClick={handleNext}>
-          <FaChevronRight className={css.next1} />
-          <FaChevronRight className={css.next2} />
-          <FaChevronRight className={css.next3} />
+          <FaChevronRight className={css.next1}/>
+          <FaChevronRight className={css.next2} style={{ color: 'black' }}/>
+          <FaChevronRight className={css.next3} style={{ color: 'black' }}/>
         </button>
       </div>
     </div>
