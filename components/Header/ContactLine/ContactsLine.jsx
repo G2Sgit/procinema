@@ -18,8 +18,8 @@ const ContactsLine = ({ primary }) => {
           {/* <Logo /> */}
           <SocialIcons
             fb={"https://www.facebook.com/"}
-            insta={"http://www.instagram.com/"}
-            vimeo={"https://vimeo.com/"}
+            insta={"https://www.instagram.com/procinema_studio?igsh=MTVydmlmNXAzYzNueg%3D%3D&utm_source=qr"}
+            vimeo={"https://vimeo.com/procinemastudio"}
           />
         </div>
       </Container>

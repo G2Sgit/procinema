@@ -7,14 +7,17 @@ export default function SocialIcons({ fb, insta, vimeo }) {
   return (
     <ul className={css.wrapper}>
       <li className={css.link}>
-        <a href={insta}>
+        <a
+          href={
+            "https://www.instagram.com/procinema_studio?igsh=MTVydmlmNXAzYzNueg%3D%3D&utm_source=qr"
+          }
+        >
           <FaInstagram />
         </a>
       </li>
       <li className={css.link}>
-        <a href={vimeo}>
+        <a href={"https://vimeo.com/procinemastudio"}>
           <FaVimeoV />
-
         </a>
       </li>
     </ul>

@@ -158,14 +158,14 @@
   --af-white: #f3f3f3;
   --ch-white: #e1e1e1;
   border-radius: 8px;
-  width: 250px;
-  height: 34px;
+  width: 200px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 40px;
   padding: 16px 20px 16px 20px;
+  margin-top: 40px;
   border: none;
   color: white;
   position: relative;
@@ -173,11 +173,8 @@
   transition-duration: 0.2s;
   background-color: rgba(33, 33, 33, 0.8);
 
-  font-weight: 600;
-  font-family: var(--open_sans);
-  text-align: center;
-
-  font-size: 1.17em;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.1rem;
 

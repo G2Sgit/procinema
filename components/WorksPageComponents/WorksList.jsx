@@ -3,6 +3,11 @@ import Container from "../Container/Container";
 import Section from "../Section/Section";
 import css from "./WorksList.module.scss";
 import { CiPlay1 } from "react-icons/ci";
+import WorksButtonAndModal from "../WorksButtonAndModal/WorksButtonAndModal";
+
+
+
+
 
 const WorksList = () => {
   return (
@@ -18,7 +23,7 @@ const WorksList = () => {
             />
             
             <p className={css.page_description_text}>
-              Placeholder  - need some text here
+            Commercials produced by Procinema:
             </p>
           </div>
         </Container>
@@ -34,6 +39,24 @@ const WorksList = () => {
                   <CiPlay1 size={40}/>
 
                   </button>
+                </div>
+              </div>
+            </li>
+            {/* <li className={css.work_item}>
+              <h3 className={css.work_heading}>Color Grading Reel</h3>
+              <div className={css.video_thumb}></div>
+            </li> */}
+          </ul>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <ul className={css.works_list}>
+            <li className={css.work_item}>
+              <div className={css.video_thumb}>
+                <div className={css.showreelOnCardItems}>
+                  <h3 className={css.showreelTitle}>Documentary</h3>
+                  <WorksButtonAndModal iframe=""/>
                 </div>
               </div>
             </li>

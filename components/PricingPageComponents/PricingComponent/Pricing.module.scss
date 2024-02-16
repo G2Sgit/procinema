@@ -61,7 +61,7 @@
   border-color: black;
   box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
   border: 1px solid black;
-border-radius: 16px;
+  border-radius: 16px;
   // text-align: center;
 
   color: #000000;
@@ -87,39 +87,34 @@ border-radius: 16px;
 }
 
 .listOfDef {
- 
   height: 150px;
 }
 
-.listOfSecondDef{
+.listOfSecondDef {
   height: fit-content;
 }
 
-
 .listOfPrices {
   display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .servicePriceText {
   text-align: center;
 }
 
-.pricesWrapper{
+.pricesWrapper {
   display: flex;
   flex-direction: column;
 
-
-  
   border-bottom: 1px solid black;
   padding-bottom: 30px;
   height: 80px;
-align-items: center;
+  align-items: center;
   justify-content: flex-start;
 }
-
 
 .priceNumber {
   font-size: x-large;
@@ -150,19 +145,13 @@ align-items: center;
   justify-content: center;
   align-items: center;
 
-
   margin-top: 50px;
 }
 
-
-
 .pricingConditionsSection {
-
-
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #f2f2f2;
-
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
@@ -173,23 +162,6 @@ align-items: center;
 .letterDFix {
   font-size: 13px;
 }
-
-
-// .button {
-//   text-align: center;
-//   color: #ffffff;
-//   background-color: #000000;
-
-//   padding: 10px 20px;
-//   width: 150px;
-// }
-
-
-
-
-
-
-
 
 .button {
   --ch-black: #141414;
@@ -222,7 +194,7 @@ align-items: center;
     &::after,
     &::before {
       animation: none;
-      background: rgba(33,33,33,0.8);
+      background: rgba(33, 33, 33, 0.8);
       box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     }
   }
@@ -239,11 +211,11 @@ align-items: center;
   background: linear-gradient(
     45deg,
     var(--ch-black),
-    rgba(33,33,33,0.8),
-    rgba(33,33,33,0.8),
+    rgba(33, 33, 33, 0.8),
+    rgba(33, 33, 33, 0.8),
     var(--ch-white),
     // var(--night-rider),
-    rgba(33,33,33,0.8),
+    rgba(33, 33, 33, 0.8),
     // var(--ch-black),
     var(--ch-black)
   );
