@@ -45,7 +45,7 @@ const ModalContactForm = ({ closeHandler }) => {
       <div className={css.modal}>
         <div className={css.buttonCloseWrapper} onClick={closeHandler}>
           <button className={css.buttonClose}>
-            <IoMdClose value={{ fill: "black" }} size={30} />
+            <IoMdClose style={{ color: 'black' }} size={30} />
           </button>
         </div>
 
