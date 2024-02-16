@@ -1,5 +1,3 @@
-"use client";
-
 import UnderlinedHeading from "@/components/UnderlinedHeading/UnderlinedHeading";
 import css from "./ServicesList.module.scss";
 import Section from "@/components/Section/Section";
@@ -9,7 +7,7 @@ import VideoReact from "@/components/VideoReact/VideoReact";
 const ServicesList = () => {
   return (
     <div className={css.section}>
-      <Section>
+      <Section topSection="topSection">
         <Container>
           <h1 className={css.visually_hidden}>POST SERVICES</h1>
           <div className={css.top_container}>
@@ -49,13 +47,7 @@ const ServicesList = () => {
                   be improved, and the final product can be polished and
                   engaging. Among the most popular video editing programs we use
                   are Final Cut Pro, Adobe Premiere Pro, After Effects, and
-                  Adobe Audition.During video editing, raw footage can be
-                  combined into a cohesive narrative, the pacing and flow of the
-                  video can be controlled, errors can be fixed, image and sound
-                  quality can be improved, and the final product can be polished
-                  and engaging. Among the most popular video editing programs we
-                  use are Final Cut Pro, Adobe Premiere Pro, After Effects, and
-                  Adobe Audition. <br />
+                  Adobe Audition.<br />
                   Video editing combines technical skills with creative vision
                   to engage, inform, and entertain audiences.
                 </p>
@@ -82,9 +74,6 @@ const ServicesList = () => {
               </div>
               <div className={css.unit_picture_thumb}>
                 <VideoReact url="https://video.procinemastudio.com/video/2_motion_design_21m.mov" placeholderImg="https://video.procinemastudio.com/images/2_motion_design_frame.png"/>
-                {/* <video autoPlay className={css.video} muted loop playsinline>
-                  <source src="https://video.procinemastudio.com/video/2_motion_design_21m.mov" />
-                </video> */}
               </div>
             </li>
             <li className={css.service_unit}>
@@ -114,9 +103,6 @@ const ServicesList = () => {
               </div>
               <div className={css.unit_picture_thumb}>
                 <VideoReact url="https://video.procinemastudio.com/video/3_color_correction_43m.mov" placeholderImg="https://video.procinemastudio.com/images/3_color_correction_frame.png"/>
-                {/* <video autoPlay className={css.video} muted loop>
-                  <source src="https://video.procinemastudio.com/video/3_color_correction_43m.mov" />
-                </video> */}
               </div>
             </li>
             <li className={css.service_unit}>
@@ -148,9 +134,6 @@ const ServicesList = () => {
               </div>
               <div className={css.unit_picture_thumb}>
                 <VideoReact  url="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" placeholderImg="https://video.procinemastudio.com/images/4_visual_effects_frame.png"/>
-                {/* <video autoPlay className={css.video} muted loop>
-                  <source src="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" />
-                </video> */}
               </div>
             </li>
             <li className={css.service_unit}>

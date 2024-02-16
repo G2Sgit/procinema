@@ -6,8 +6,9 @@ const BurgerBtn = ({ setIsOpen, isOpen, isHomePage }) => {
     <div className={css.buttonWrapper}>
       <button className={css.button} onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? (
-          <IoMdClose value={{ fill: "black" }} />
+          <IoMdClose style={{ color: 'black' }} />
         ) : (
+
           <svg
             // stroke={isHomePage ? "white" : "black"}
             stroke={"white"}

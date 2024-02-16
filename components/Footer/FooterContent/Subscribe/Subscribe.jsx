@@ -7,8 +7,8 @@ const Subscribe = () => {
     <div className={css.subscribeWrapper}>
       <p className={css.subscribeActionText}>Follow us:</p>
       <div className={css.subscribePlatforms}>
-        <p className={css.subscribePlatformItem}>Instagram</p>
-        <p className={css.subscribePlatformItem}>Vimeo</p>
+        <a className={css.subscribePlatformItem} href="https://www.instagram.com/procinema_studio?igsh=MTVydmlmNXAzYzNueg%3D%3D&utm_source=qr">Instagram</a>
+        <a className={css.subscribePlatformItem} href="https://vimeo.com/procinemastudio">Vimeo</a>
       </div>
     </div>
   );

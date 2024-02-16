@@ -24,9 +24,11 @@ const ContactsDetails = ({ sectionTitle, hidden }) => {
         </div>
       </Container>
       </section>
-      <section className={css.sectionGrey}>
+      <section className={css.formSection}>
+      <Container>
 <ContactsForm />
-    </section> 
+</Container>
+</section>
     </>
   );
 };

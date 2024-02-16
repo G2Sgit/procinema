@@ -7,11 +7,12 @@ import Link from "next/link";
 import { MdOutlineRunningWithErrors } from "react-icons/md";
 import { MdPreview } from "react-icons/md";
 import { MdRadioButtonChecked } from "react-icons/md";
+import ContactUsButtonAndModal from "@/components/ContactUsButtonAndModal/ContactUsButtonAndModal";
 
 const Pricing = () => {
   return (
     <div className={css.section}>
-      <Section>
+      <Section topSection="topSection">
         <Container>
           <h1 className={css.visually_hidden}>PRODUCTION SERVICES</h1>
           <div className={css.top_container}>
@@ -30,8 +31,8 @@ const Pricing = () => {
               <ul className={css.descrButtonswrapper}>
                 <li className={css.pricingCardWrapper}>
                   <h3 className={css.cardTitle}>DOCUMENTARY film</h3>
-
-                  <ul className={css.listOfPrices}>
+<div className={css.pricesWrapper}>
+  <ul className={css.listOfPrices}>
                     <li className={css.servicePrice}>
                       <p className={css.servicePriceText}>
                         <span>
@@ -53,6 +54,8 @@ const Pricing = () => {
                       </p>
                     </li>
                   </ul>
+                  </div>
+                  
                   <p className={css.cardParagraph}>Services:</p>
                   <ul className={css.listOfDef}>
                     <li className={css.serviceDef}>
@@ -73,7 +76,7 @@ const Pricing = () => {
                     </li>
                   </ul>
 
-                  <ul className={css.listOfDef}>
+                  <ul className={css.listOfSecondDef}>
                     <li className={css.serviceDef}>
                       <MdOutlineRunningWithErrors />
                       <p className={css.serviceDefText}>7-14 days turnaround</p>
@@ -86,9 +89,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                    <button className={css.cardButton} type="button">
-                      Contact us
-                    </button>
+                  <ContactUsButtonAndModal/>
                   </div>
                 </li>
 
@@ -104,7 +105,7 @@ const Pricing = () => {
                   <h3 className={css.cardTitle}>
                     COMMERCIAL/ MUSIC VIDEO/ TRAILER
                   </h3>
-
+                  <div className={css.pricesWrapper}>
                   <ul className={css.listOfPrices}>
                     <li className={css.servicePrice}>
                       <p className={css.servicePriceText}>
@@ -127,6 +128,7 @@ const Pricing = () => {
                       </p>
                     </li>
                   </ul>
+                  </div>
                   <p className={css.cardParagraph}>Services:</p>
                   <ul className={css.listOfDef}>
                     <li className={css.serviceDef}>
@@ -151,7 +153,7 @@ const Pricing = () => {
                     </li>
                   </ul>
 
-                  <ul className={css.listOfDef}>
+                  <ul className={css.listOfSecondDef}>
                     <li className={css.serviceDef}>
                       <MdOutlineRunningWithErrors />
                       <p className={css.serviceDefText}>3-7 days turnaround</p>
@@ -164,9 +166,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                    <button className={css.cardButton} type="button">
-                      Contact us
-                    </button>
+                  <ContactUsButtonAndModal/>
                   </div>
                 </li>
                 {/* <li className={css.buttonsWrapper}>
@@ -179,6 +179,7 @@ const Pricing = () => {
               <ul className={css.descrButtonswrapper}>
                 <li className={css.pricingCardWrapper}>
                   <h3 className={css.cardTitle}>MOTION DESIGN template</h3>
+                  <div className={css.pricesWrapper}>
                   <ul className={css.listOfPrices}>
                     <li className={css.servicePrice}>
                       <p className={css.servicePriceText}>
@@ -191,6 +192,7 @@ const Pricing = () => {
                       </p>
                     </li>
                   </ul>
+                  </div>
                   <p className={css.cardParagraph}>Services:</p>
                   <ul className={css.listOfDef}>
                     <li className={css.serviceDef}>
@@ -208,7 +210,7 @@ const Pricing = () => {
                     </li>
                   </ul>
 
-                  <ul className={css.listOfDef}>
+                  <ul className={css.listOfSecondDef}>
                     <li className={css.serviceDef}>
                       <MdOutlineRunningWithErrors />
                       <p className={css.serviceDefText}>2-4 days turnaround</p>
@@ -222,9 +224,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                    <button className={css.cardButton} type="button">
-                      Contact us
-                    </button>
+                  <ContactUsButtonAndModal/>
                   </div>
                 </li>
                 {/* <li className={css.buttonsWrapper}>

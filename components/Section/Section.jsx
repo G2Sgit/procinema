@@ -1,8 +1,8 @@
 import css from "./Section.module.scss";
 
-const Section = ({ children }) => {
+const Section = ({ children,topSection }) => {
     return (
-        <section className={css.section}>{children}</section>
+        <section className={topSection?`${css.topSection}`:`${css.section}`}>{children}</section>
     )
 
 }
