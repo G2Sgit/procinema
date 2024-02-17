@@ -1,4 +1,5 @@
 %logoTemplate {
+
   a {
     position: absolute;
    right: 50%;
@@ -43,8 +44,10 @@
   // top: -30px;
   // pointer-events: none;
   width: fit-content;
+  display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
+    display: inherit;
     // position: relative;
     //  top:-10px;
   }

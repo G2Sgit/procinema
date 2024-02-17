@@ -12,7 +12,7 @@ const AdressList = ({ email, phoneNumber, address, primary }) => {
       // {css.contactsLine}
     >
       <li className={css.link}>
-        <a href="/" className={css.adressA}>
+        <a href={`mailto:${email}`} className={css.adressA}>
           {/* <MdOutlineMailOutline /> */}
           <span> {email}</span>
 

@@ -19,11 +19,25 @@ const MainHero = () => {
 
       <Container>
         <div className={css.content_wrapper}>
+  <div className={css.content_tabl_desct}>
           <h1 className={css.title}>Welcome to Procinema</h1>
           <p className={css.subtitle}>
             We are a professional post-production studio <br />
             with a quality approach
           </p>
+          </div>
+          <div className={css.content_mobile}>
+          <svg
+      className={css.logo}
+      fill={"white"}
+      width={"220px"}
+      height={"110px"}
+    >
+      <use href={"/logo-sprite.svg#logo"} />
+    </svg>
+    <span className={css.logoText}>Post Production Studio</span>
+    <span className={css.subtitleMobile}>YOU ARE WELCOME</span>
+          </div>
           <ContactUsButtonAndModal/>
         </div>
       </Container>
