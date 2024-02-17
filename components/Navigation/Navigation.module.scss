@@ -87,7 +87,7 @@
   font-weight: 700;
   line-height: calc(25 / 15);
   // padding: 5px;
-  padding: 8px 12px;
+  padding: 8px 0px;
   transition: all 0.8s ease;
 
   color: #ffffff;
@@ -98,6 +98,11 @@
     outline: 1px solid #000000;
     border-radius: 8px;
   }
+
+
+  @media screen and (min-width: 768px) {
+    padding: 8px 12px;
+  }
 }
 
 .nav_item:hover .nav_link {
@@ -107,6 +112,7 @@
   padding: 8px 12px;
   border-radius: 8px;
   //gap:8px
+
 }
 
 .nav_link_main {
@@ -138,6 +144,10 @@
   &:hover {
     color: var(--accentColor);
     outline: 1px solid var(--accentColor);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 8px 12px;
   }
 }
 

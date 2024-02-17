@@ -35,10 +35,7 @@ const WorksList = () => {
               <div className={css.video_thumb}>
                 <div className={css.showreelOnCardItems}>
                   <h3 className={css.showreelTitle}>Showreel</h3>
-                  <button className={css.showreelButton}>
-                  <CiPlay1 size={40}/>
-
-                  </button>
+                  <WorksButtonAndModal url="https://player.vimeo.com/video/912707190?h=a0e16f4890"/>
                 </div>
               </div>
             </li>
@@ -56,7 +53,7 @@ const WorksList = () => {
               <div className={css.video_thumb}>
                 <div className={css.showreelOnCardItems}>
                   <h3 className={css.showreelTitle}>Documentary</h3>
-                  <WorksButtonAndModal iframe=""/>
+                  <WorksButtonAndModal url="https://player.vimeo.com/video/912707190?h=a0e16f4890"/>
                 </div>
               </div>
             </li>
