@@ -30,8 +30,8 @@ const MainHero = () => {
           <svg
       className={css.logo}
       fill={"white"}
-      width={"220px"}
-      height={"110px"}
+      width={"250px"}
+      height={"125px"}
     >
       <use href={"/logo-sprite.svg#logo"} />
     </svg>
