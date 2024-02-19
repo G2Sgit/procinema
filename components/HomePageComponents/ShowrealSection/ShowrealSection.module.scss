@@ -1,0 +1,309 @@
+.visually_hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.img-video {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  padding: 20px;
+
+  background-color: var(--lightContactsBackgroundColor);
+  background-image: url(https://video.procinemastudio.com/images/bg_works.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &-item {
+    display: block;
+    width: 100%;
+
+    object-fit: cover;
+  }
+}
+
+.overlay {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    padding: 40px 32px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+
+    &-large {
+      position: absolute;
+      top: 80%;
+      left: 0;
+      width: 100%;
+      padding: 40px 32px;
+
+      background-color: rgba(0, 0, 0, 0.5);
+
+      transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      transform: translateY(100%);
+  }
+}
+
+.wrapper {
+  padding-top: 120px;
+}
+
+.video__item--1,
+.video__item--2,
+.video__item--3,
+.video__item--5,
+.video__item--6,
+.video__item--7 {
+
+  &:hover .overlay {
+    transform: translateY(-12%);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.video__item--4 {
+
+  &:hover .overlay-large {
+    transform: translateY(-12%);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+// GRIDS
+.parent {
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+
+  gap: 10px;
+  height: 2556px;
+}
+
+.video__item {
+  
+  &--1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+
+    grid-row-end: 2;
+    grid-column-end: 2;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--2 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 2;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--3 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+
+    grid-row-end: 4;
+    grid-column-end: 2;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--4 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+
+    grid-row-end: 6;
+    grid-column-end: 2;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--5 {
+    grid-row-start: 6;
+    grid-column-start: 1;
+
+    grid-row-end: 7;
+    grid-column-end: 2;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--6 {
+    grid-row-start: 7;
+    grid-column-start: 1;
+
+    grid-row-end: 8;
+    grid-column-end: 2;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  &--7 {
+    grid-row-start: 8;
+    grid-column-start: 1;
+
+    grid-row-end: 9;
+    grid-column-end: 2;
+
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+// TABLET ================== /
+@media screen and (min-width: 768px) {
+  .parent {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+    height: 1285px;
+  }
+
+  .video__item {
+    &--1 {
+      grid-row-start: 1;
+      grid-column-start: 1;
+
+      grid-row-end: 2;
+      grid-column-end: 2;
+    }
+
+    &--2 {
+      grid-row-start: 1;
+      grid-column-start: 2;
+
+      grid-row-end: 2;
+      grid-column-end: 3;
+    }
+
+    &--3 {
+      grid-row-start: 2;
+      grid-column-start: 1;
+
+      grid-row-end: 3;
+      grid-column-end: 2;
+    }
+
+    &--4 {
+      grid-row-start: 2;
+      grid-column-start: 2;
+
+      grid-row-end: 4;
+      grid-column-end: 3;
+    }
+
+    &--5 {
+      grid-row-start: 3;
+      grid-column-start: 1;
+
+      grid-row-end: 4;
+      grid-column-end: 2;
+    }
+
+    &--6 {
+      grid-row-start: 4;
+      grid-column-start: 1;
+
+      grid-row-end: 5;
+      grid-column-end: 2;
+    }
+
+    &--7 {
+      grid-row-start: 4;
+      grid-column-start: 2;
+
+      grid-row-end: 5;
+      grid-column-end: 3;
+    }
+  }
+}
+// /TABLET ================== /
+
+// DESKTOP ================== /
+@media screen and (min-width: 1200px) {
+  .parent {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    height: 643px;
+  }
+
+  .video__item {
+    &--1 {
+      grid-row-start: 1;
+      grid-column-start: 1;
+
+      grid-row-end: 2;
+      grid-column-end: 3;
+    }
+
+    &--2 {
+      grid-row-start: 1;
+      grid-column-start: 3;
+
+      grid-row-end: 2;
+      grid-column-end: 4;
+    }
+
+    &--3 {
+      grid-row-start: 1;
+      grid-column-start: 4;
+
+      grid-row-end: 2;
+      grid-column-end: 5;
+    }
+
+    &--4 {
+      grid-row-start: 1;
+      grid-column-start: 5;
+
+      grid-row-end: 3;
+      grid-column-end: 7;
+    }
+
+    &--5 {
+      grid-row-start: 2;
+      grid-column-start: 1;
+
+      grid-row-end: 3;
+      grid-column-end: 2;
+    }
+    &--6 {
+      grid-row-start: 2;
+      grid-column-start: 2;
+
+      grid-row-end: 3;
+      grid-column-end: 3;
+    }
+    &--7 {
+      grid-row-start: 2;
+      grid-column-start: 3;
+
+      grid-row-end: 3;
+      grid-column-end: 5;
+    }
+  }
+}
+// /DESKTOP ================== /

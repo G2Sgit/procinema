@@ -5,6 +5,7 @@ import Container from "@/components/Container/Container";
 import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
 import HomePageContent from "../components/HomePageComponents/HomePage";
 import Header from "@/components/Header/Header";
+import SowrealSection from "@/components/HomePageComponents/ShowrealSection";
 import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
 import FeedbackSection from "@/components/HomePageComponents/FeedbackSection";
 
@@ -19,6 +20,7 @@ const HomePage = () => {
     <>
       <Header isHomePage />
       <MainHero />
+      <SowrealSection />
       <Section>
 
         <Container content="content">
@@ -26,7 +28,6 @@ const HomePage = () => {
           <AboutStatisticSection />
         </Container>
       </Section>
-      
       
       <FeedbackSection />
 
