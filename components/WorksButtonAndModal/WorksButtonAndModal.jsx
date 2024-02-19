@@ -6,7 +6,7 @@ import css from "./WorksButtonAndModal.module.scss"
 
 import ModalWorks from "./ModalWorks/ModalWorks";
 
-const WorksButtonAndModal = () => {
+const WorksButtonAndModal = ({url}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openHandler = () => {
@@ -21,7 +21,7 @@ const WorksButtonAndModal = () => {
       <button type="button" className={css.button} onClick={openHandler}>
       <CiPlay1 size={40}/>
       </button>
-      {isOpen && <ModalWorks closeHandler={closeHandler} />}
+      {isOpen && <ModalWorks closeHandler={closeHandler} url={url}/>}
     </>
   );
 };

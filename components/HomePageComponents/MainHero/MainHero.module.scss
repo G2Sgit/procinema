@@ -80,16 +80,18 @@
 }
 
 .subtitle {
-  font-family: var(--contax-sans);
+display: none;
+  
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-family: var(--contax-sans);
   text-align: center;
   font-size: 24px;
   line-height: 36.77px;
   font-weight: 100;
   margin-bottom: 40px;
   color: var(--lightTextColor);
-
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
   }
 }
 
@@ -131,7 +133,8 @@
   // padding-top: 100px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://video.procinemastudio.com/images/image_hero_mobile.png);
+  background-position: 47%;
+  background-image: url(https://video.procinemastudio.com/images/female_hand_cover.jpg);
 
   @media screen and (min-width: 768px) {
     justify-content: center;
@@ -188,7 +191,7 @@
   overflow: hidden;
   position: relative;
   z-index: 4;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .content_wrapper {
@@ -228,4 +231,43 @@ padding-bottom: 120px;
   opacity: 0.3;
   mix-blend-mode: multiply;
   z-index: -1;
+}
+
+
+.content_tabl_desct{
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.content_mobile{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+margin-bottom: 100px;
+
+
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.subtitleMobile{
+background-color: white;
+color: black;
+text-align: center;
+width: 150px;
+font-weight: bold;
+font-family: inherit;
+font-size: 15px;
+}
+
+.logoText{
+  text-align: center;
+
 }
