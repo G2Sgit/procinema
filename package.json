@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
-    "basiclightbox": "^5.0.4",
     "dotenv": "^16.3.1",
     "next": "14.0.3",
     "next-cloudinary": "^5.16.0",
