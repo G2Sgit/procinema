@@ -20,15 +20,13 @@ const HomePage = () => {
     <>
       <Header isHomePage />
       <MainHero />
-      <SowrealSection />
-      <Section>
-
+      <Section topSection>
         <Container content="content">
           <HomePageContent />
           <AboutStatisticSection />
         </Container>
       </Section>
-      
+      <SowrealSection />
       <FeedbackSection />
 
     </>

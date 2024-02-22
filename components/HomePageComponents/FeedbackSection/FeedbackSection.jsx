@@ -49,7 +49,7 @@ const FeedbackSection = () => {
         className="aspect-[2/1]"
       > */}
         <Section>
-          <Container>
+          <div className={css.container}>
             <h2 className={css.title}>WHAT CLIENTS SAY?</h2>
             <UnderlinedHeading
               tag="h3"
@@ -62,7 +62,7 @@ const FeedbackSection = () => {
             </p>
             <FeedbackSlider feedbacks={sectionContent} />
             <LeaveFeedback />
-          </Container>
+          </div>
         </Section>
       {/* </ParallaxBanner> */}
     </div>
