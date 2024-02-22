@@ -11,13 +11,13 @@
 
 .img-video {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
 
   padding: 20px;
 
-  background-color: var(--lightContactsBackgroundColor);
-  background-image: url(https://video.procinemastudio.com/images/bg_works.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -32,10 +32,10 @@
 
 .overlay {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 0;
     width: 100%;
-    padding: 40px 32px;
+    padding: 35px 32px;
 
     background-color: rgba(0, 0, 0, 0.5);
 
@@ -44,10 +44,10 @@
 
     &-large {
       position: absolute;
-      top: 80%;
+      top: 61%;
       left: 0;
       width: 100%;
-      padding: 40px 32px;
+      padding: 120px 32px;
 
       background-color: rgba(0, 0, 0, 0.5);
 
@@ -57,8 +57,76 @@
 }
 
 .wrapper {
-  padding-top: 120px;
+background-color: black;
 }
+
+.video__item--1{
+background-image: url(https://picsum.photos/768/1024);
+width: 100%;
+height: 100%;
+background-size: cover;
+border-radius: 16px;
+
+}
+.video__item--2{
+  background-image: url(https://picsum.photos/763/1024);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 16px;
+
+  }
+
+  .video__item--3{
+    background-image: url(https://picsum.photos/761/1024);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 16px;
+
+
+    }
+
+
+    .video__item--4{
+      background-image: url(https://picsum.photos/765/1024);
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      border-radius: 16px;
+
+
+      }
+
+
+      .video__item--5{
+        background-image: url(https://picsum.photos/767/1024);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        border-radius: 16px;
+
+        }
+
+        .video__item--6{
+          background-image: url(https://picsum.photos/770/1024);
+          width: 100%;
+          height: 100%;
+          background-size: cover;
+          border-radius: 16px;
+
+
+          }
+
+          .video__item--7{
+            background-image: url(https://picsum.photos/769/1024);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            border-radius: 16px;
+
+
+            }
 
 .video__item--1,
 .video__item--2,
@@ -83,13 +151,16 @@
 
 // GRIDS
 .parent {
+  background-color: black;
   display: grid;
 
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
 
-  gap: 10px;
+  gap: 15px;
   height: 2556px;
+
+  padding:15px
 }
 
 .video__item {
@@ -307,3 +378,17 @@
   }
 }
 // /DESKTOP ================== /
+
+
+.section{
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+
+
+  }
+
+
+}
