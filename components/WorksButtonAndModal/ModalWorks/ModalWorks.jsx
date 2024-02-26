@@ -1,13 +1,7 @@
-// "use client";
-
 import ModalHeading from "@/components/ModalHeading/ModalHeading";
 import css from "./ModalWorks.module.scss";
-// import { IoMdClose } from "react-icons/io";
 
-const ModalWorks = ({
-  // closeHandler,
-  url,
-}) => {
+const ModalWorks = ({ url }) => {
   return (
     <>
       {/* <div className={css.backdrop}>
@@ -18,7 +12,6 @@ const ModalWorks = ({
           </button>
         </div> */}
 
-      {/* <div className={css.iframeContainer}></div> */}
       {/* <h2>
         <a href="https://vimeo.com/912707190">
           Documentary short film&nbsp;&quot;Road to the dream&quot; (2021)
@@ -27,7 +20,6 @@ const ModalWorks = ({
         <a href="https://vimeo.com">Vimeo</a>.
       </h2> */}
 
-      {/* <ModalHeading  title={} subtitle={}/> */}
       <iframe
         src={`https://player.vimeo.com/video/912707190?h=${url}`}
         class={css.responsiveiframe}
@@ -35,10 +27,6 @@ const ModalWorks = ({
         allow="autoplay; fullscreen; picture-in-picture"
         allowfullscreen
       ></iframe>
-
-      {/* 
-      </div>
-    </div> */}
     </>
   );
 };

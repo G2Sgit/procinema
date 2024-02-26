@@ -5,6 +5,8 @@ import Container from "@/components/Container/Container";
 import UnderlinedHeading from "@/components/UnderlinedHeading/UnderlinedHeading";
 import FeedbackSlider from "./FeedbackSlider/FeedbackSlider";
 import LeaveFeedback from "./LeaveFeedback/LeaveFeedback";
+import { getFeedbacks } from "@/services/api";
+import { useQuery } from "@tanstack/react-query";
 
 // import { ParallaxBanner } from "react-scroll-parallax";
 
@@ -42,6 +44,12 @@ const sectionContent = [
 ];
 
 const FeedbackSection = () => {
+  const { data } = useQuery({
+    queryKey: ["feedbacks"],
+    queryFn: () => getFeedbacks(),
+    staleTime: 10 * 1000,
+  });
+  console.log(data);
   return (
     <div className={css.wrapper}>
       {/* <ParallaxBanner
@@ -60,7 +68,9 @@ const FeedbackSection = () => {
           {/* <p className={css.page_description_text}>
              Here you can leave your feedback
             </p> */}
-          <FeedbackSlider feedbacks={sectionContent} />
+          <FeedbackSlider
+            feedbacks={data.items?.length === 0 ? sectionContent : data.items}
+          />
           <LeaveFeedback />
         </Container>
       </Section>

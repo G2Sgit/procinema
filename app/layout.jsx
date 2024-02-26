@@ -3,6 +3,7 @@ import "./globals.scss";
 import localFont from "next/font/local";
 
 import Footer from "@/components/Footer/Footer";
+import Providers from "@/services/providers";
 
 //============================================ Fonts =====================================================
 
@@ -58,8 +59,10 @@ export default function RootLayout({ children, modal }) {
       <body
         className={`${sixCaps.variable}  ${openSans.variable} ${contaxSans.className}`}
       >
-        {modal}
-        {children}
+        <Providers>
+          {modal}
+          {children}
+        </Providers>
         <Footer />
       </body>
     </html>
