@@ -29,7 +29,7 @@ const ContactsForm = ({ isInModal }) => {
   const PROJECT_URL = "http://procinemastudio.com";
 
   const url = new URL(pathname, PROJECT_URL);
-
+  console.log();
   url.searchParams.set("modal", "true");
 
   /////// query mutation

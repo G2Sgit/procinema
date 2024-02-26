@@ -1,5 +1,8 @@
-const PROJECT_FETCH_URL = process.env.PROJECT_FETCH_URL;
+// const PROJECT_FETCH_URL = process.env.PROJECT_FETCH_URL;
+const PROJECT_FETCH_URL = "https://api.procinemastudio.com";
+
 console.log(PROJECT_FETCH_URL, "PROJECT_FETCH_URL");
+
 const buildUrl = (...paths) => {
   const path = `${PROJECT_FETCH_URL}/v1/${paths.join("/")}`;
   return path;
