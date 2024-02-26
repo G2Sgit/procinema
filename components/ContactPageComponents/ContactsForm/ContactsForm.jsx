@@ -26,7 +26,7 @@ const ContactsForm = ({ isInModal }) => {
   ///////// url to redirect
   const router = useRouter();
   const pathname = usePathname();
-  const PROJECT_URL = "http://localhost:3000";
+  const PROJECT_URL = "http://procinemastudio.com";
 
   const url = new URL(pathname, PROJECT_URL);
 
