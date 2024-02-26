@@ -64,6 +64,7 @@ const FeedbackSection = () => {
           <LeaveFeedback />
         </Container>
       </Section>
+
       {/* </ParallaxBanner> */}
     </div>
   );

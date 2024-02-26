@@ -26,14 +26,13 @@ const HomePage = (props) => {
       <Header isHomePage />
       <main>
         <MainHero />
-        <Section>
+        <Section topSection>
           <Container content="content">
             <HomePageContent />
             <AboutStatisticSection />
           </Container>
         </Section>
         <SowrealSection />
-
         <FeedbackSection />
       </main>
       {showModal && (
