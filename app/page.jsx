@@ -21,8 +21,8 @@ export const metadata = {
 const HomePage = async (props) => {
   // const { searchParams } = props;
   const showModal = props.searchParams?.modal === "true";
-  const type = searchParams?.type;
-  const status = searchParams?.status;
+  const type = props.searchParams?.type;
+  const status = props.searchParams?.status;
 
   const queryClient = getQueryClient();
   await queryClient.prefetchQuery({
