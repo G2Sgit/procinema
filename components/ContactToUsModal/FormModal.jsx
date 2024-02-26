@@ -14,7 +14,6 @@ export default function FormModal({ type, status }) {
       show={true}
       onClose={() => {
         router.back();
-        console.log("back");
       }}
     >
       {type && (

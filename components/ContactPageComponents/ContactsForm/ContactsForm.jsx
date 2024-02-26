@@ -27,9 +27,9 @@ const ContactsForm = ({ isInModal }) => {
   const router = useRouter();
   const pathname = usePathname();
   const PROJECT_URL = "http://procinemastudio.com";
+  // const PROJECT_URL = "http://localhost:3000";
 
   const url = new URL(pathname, PROJECT_URL);
-  console.log();
   url.searchParams.set("modal", "true");
 
   /////// query mutation

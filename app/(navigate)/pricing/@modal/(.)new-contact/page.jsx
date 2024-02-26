@@ -9,8 +9,8 @@ import ModalHeading from "@/components/ModalHeading/ModalHeading";
 
 export default function Page({ props }) {
   const router = useRouter();
-  const { searchParams } = props;
-  console.log(searchParams);
+  // const { searchParams } = props;
+
   return (
     <Modal show={true} onClose={() => router.back()}>
       <ModalHeading

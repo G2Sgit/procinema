@@ -63,7 +63,6 @@ export default function FeedbackSlider({ feedbacks }) {
     <div className={css.feedbackSlider}>
       <Slider {...settings} ref={sliderRef}>
         {feedbacks.map((item) => {
-          console.log(item);
           return <FeedbackItem item={item} key={item._id} />;
         })}
       </Slider>

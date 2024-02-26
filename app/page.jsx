@@ -19,8 +19,8 @@ export const metadata = {
 };
 
 const HomePage = async (props) => {
-  const { searchParams } = props;
-  const showModal = searchParams?.modal === "true";
+  // const { searchParams } = props;
+  const showModal = props.searchParams?.modal === "true";
   const type = searchParams?.type;
   const status = searchParams?.status;
 
@@ -53,7 +53,6 @@ const HomePage = async (props) => {
           <ContactToUsModal type={type} status={status} show={showModal} />
         )}
       </HydrationBoundary>
-
     </>
   );
 };
