@@ -49,7 +49,6 @@ const FeedbackSection = () => {
     queryFn: () => getFeedbacks(),
     staleTime: 10 * 1000,
   });
-  console.log(data);
   return (
     <div className={css.wrapper}>
       {/* <ParallaxBanner

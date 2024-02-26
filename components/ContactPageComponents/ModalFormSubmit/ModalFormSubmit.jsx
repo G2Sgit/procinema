@@ -9,7 +9,6 @@ const ModalFormSubmit = ({
   closeFormModal,
   closeHandler,
 }) => {
-  console.log("submit", submit);
   const onClickHandler = () => {
     if (closeFormModal) {
       closeFormModal();
