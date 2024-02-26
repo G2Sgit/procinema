@@ -53,6 +53,7 @@ const HomePage = async (props) => {
           <ContactToUsModal type={type} status={status} show={showModal} />
         )}
       </HydrationBoundary>
+
     </>
   );
 };

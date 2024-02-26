@@ -3,24 +3,12 @@
 import VideoReact from "@/components/VideoReact/VideoReact";
 import WorksButtonAndModal from "@/components/WorksButtonAndModal/WorksButtonAndModal";
 import Link from "next/link";
+
 import Section from "@/components/Section/Section";
 import Image from "next/image";
 
 import css from "./ShowrealSection.module.scss";
 import { GrPlayFill } from "react-icons/gr";
-// background-image: url(https://picsum.photos/768/1024);
-
-// background-image: url(https://picsum.photos/763/1024);
-
-// background-image: url(https://picsum.photos/761/1024);
-
-// background-image: url(https://picsum.photos/765/1024);
-
-// background-image: url(https://picsum.photos/767/1024);
-
-// background-image: url(https://picsum.photos/770/1024);
-
-// background-image: url(https://picsum.photos/769/1024);
 
 const videos = [
   {
@@ -127,6 +115,7 @@ const ShowrealSection = () => {
               </div>
             );
           })}
+
         </div>
       </Section>
     </div>

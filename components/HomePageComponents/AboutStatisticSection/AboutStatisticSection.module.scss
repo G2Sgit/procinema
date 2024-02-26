@@ -51,7 +51,6 @@
 .counter__item{
 color: black;
 
-
 border-color: black;
 box-shadow: 3px 3px 9px 0px rgba(0, 0, 0, 0.3);
 border: 1px solid black;
@@ -119,6 +118,8 @@ padding: 44px 24px 44px 24px;
 
 
     line-height: 70px;
+
+    text-align: center;
 }
 
 
@@ -127,5 +128,7 @@ padding: 44px 24px 44px 24px;
     font-size: 20px;
     font-weight: 500;
     line-height: calc(27 / 14);
+
+    text-align: center;
 }
 
