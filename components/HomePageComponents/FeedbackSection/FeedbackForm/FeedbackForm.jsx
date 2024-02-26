@@ -27,7 +27,7 @@ const NewFeedbackForm = ({ isInModal }) => {
 
   const router = useRouter();
   const pathname = usePathname();
-  const PROJECT_URL = "http://localhost:3000";
+  const PROJECT_URL = "http://procinemastudio.com";
 
   const url = new URL(pathname ? pathname : "", PROJECT_URL);
   url.searchParams.set("modal", "true");
