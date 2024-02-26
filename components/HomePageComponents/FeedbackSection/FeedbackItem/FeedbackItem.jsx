@@ -3,11 +3,7 @@ import css from "./FeedbackItem.module.scss";
 import Image from "next/image";
 
 export default function FeedbackItem({ item }) {
-  const {
-    // avatar,
-    name,
-    text,
-  } = item;
+  const { name, text } = item;
   return (
     <div className={css.feedbackItem}>
       <div className={css.text}>
