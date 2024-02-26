@@ -9,8 +9,8 @@ export const metadata = {
 const PricingPage = (props) => {
   // const { searchParams } = props;
   const showModal = props?.searchParams?.modal === "true";
-  const type = searchParams?.type;
-  const status = searchParams?.status;
+  const type = props?.searchParams?.type;
+  const status = props?.searchParams?.status;
   return (
     <>
       <Pricing />
