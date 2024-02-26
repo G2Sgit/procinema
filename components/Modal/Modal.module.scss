@@ -1,0 +1,56 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  opacity: 0.75;
+  transition: opacity 250ms ease-in;
+}
+
+.wrapper {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  // fixed inset-0 z-50 flex items-center
+}
+
+.modal {
+  position: relative;
+  overflow: hidden;
+  max-width: 90%;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: all 250ms ease-in;
+  margin: 0 auto;
+  color: var(--secondaryTextColor);
+  padding: 12px 32px 32px 32px;
+  // className="relative transform overflow-hidden rounded-lg bg-white shadow-xl transition-all p-7 mx-auto sm:my-10 sm:w-full sm:max-w-2xl"
+}
+
+.modalVideo {
+  background-color: black;
+  & svg {
+    fill: white;
+  }
+}
+.button {
+  background: none;
+
+  margin-left: auto;
+  padding: 5px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  transition: all 250ms ease-in;
+  border-radius: 50%;
+
+  &:hover,
+  :focus,
+  :active {
+    transform: scale(0.9);
+  }
+}

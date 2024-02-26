@@ -7,7 +7,9 @@ import * as Yup from "yup";
 import { postContactMessage } from "../../../services/postContactMessage";
 import ModalFormSubmit from "../ModalFormSubmit/ModalFormSubmit";
 
-const ContactsForm = () => {
+import { useRouter, usePathname } from "next/navigation";
+
+const ContactsForm = ({ isInModal }) => {
   const validationSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, "Your name is too short")
@@ -20,6 +22,13 @@ const ContactsForm = () => {
       .min(20, "Message is too short - should be 20 chars minimum."),
   });
 
+  ///////// url
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const url = new URL(pathname, "http://localhost:3000");
+  url.searchParams.set("modal", "true");
+
   const {
     reset,
     register,
@@ -27,29 +36,40 @@ const ContactsForm = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(validationSchema) });
 
-  const [ isSuccess, setIsSuccess ] = useState(false);
-  const [ isError, setIsError ] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const closeSuccessMessage = () => {
-    setIsSuccess(false)
-  }
+    setIsSuccess(false);
+  };
   const closeErrorMessage = () => {
-    setIsError(false)
-  }
+    setIsError(false);
+  };
+  console.log(pathname);
 
   return (
     <form
-      className={css.form}
+      className={`${css.form} ${isInModal && css.modal}`}
       onSubmit={handleSubmit(async (data) => {
         try {
           await postContactMessage(data);
           reset();
-          setIsSuccess(true)
+
+          if (isInModal) {
+            url.searchParams.set("status", "ok");
+            router.replace(url.toString());
+          } else {
+            setIsSuccess(true);
+          }
         } catch (error) {
-          console.log(error)
-          setIsError(true)
+          console.log(error);
+          if (isInModal) {
+            url.searchParams.set("status", "false");
+            router.replace(url.toString());
+          } else {
+            setIsError(true);
+          }
         }
-        
       })}
     >
       <div className={css["input-thumb"]}>
@@ -89,8 +109,21 @@ const ContactsForm = () => {
           Send Message
         </button>
       </div>
-      {isSuccess && <ModalFormSubmit submit="success" text="Success" buttonText="OK" closeHandler={closeSuccessMessage} />}
-      {isError && <ModalFormSubmit text="Error. Try again later" buttonText="OK" closeHandler={closeErrorMessage}/>}
+      {isSuccess && (
+        <ModalFormSubmit
+          submit="success"
+          text="Success"
+          buttonText="OK"
+          closeHandler={closeSuccessMessage}
+        />
+      )}
+      {isError && (
+        <ModalFormSubmit
+          text="Error. Try again later"
+          buttonText="OK"
+          closeHandler={closeErrorMessage}
+        />
+      )}
     </form>
   );
 };

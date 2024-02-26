@@ -1,4 +1,4 @@
-import ServicesList from "../../components/PostServicesPageComponents/ServicesList/ServicesList";
+import ServicesList from "../../../components/PostServicesPageComponents/ServicesList/ServicesList";
 import Header from "@/components/Header/Header";
 
 export const metadata = {
@@ -9,8 +9,6 @@ export const metadata = {
 const PostServicesPage = () => {
   return (
     <>
-      <Header />
-
       <ServicesList />
     </>
   );

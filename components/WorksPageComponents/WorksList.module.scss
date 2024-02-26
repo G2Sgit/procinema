@@ -9,10 +9,8 @@
   overflow: hidden;
 }
 
-
 .wrapper {
   padding-top: 84px;
-
 }
 
 .top_container {
@@ -38,19 +36,21 @@
 // }
 
 .work_item {
-  display: flex;
-  flex-direction: column;
+  & a {
+    display: flex;
+    flex-direction: column;
 
-  align-items: center;
+    align-items: center;
 
-  &:not(:last-child) {
-    margin-bottom: 80px;
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
   }
 }
 
 .showreelTitle {
   // position: relative;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 100%;
   font-size: 35px;
   font-weight: 300;
@@ -85,34 +85,29 @@
   background-size: cover;
   display: flex;
   align-items: flex-end;
-height: 270px;
+  height: 270px;
 
   @media screen and (min-width: 768px) {
     height: 432px;
   }
 
-
   @media screen and (min-width: 1200px) {
     height: 675px;
   }
-
 }
 
-
-.showreelOnCardItems{
+.showreelOnCardItems {
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
   align-items: center;
-width: 100%;
-padding-bottom: 20px;
-padding-left: 34px;
-padding-right: 34px;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-left: 34px;
+  padding-right: 34px;
 
-
-@media screen and (min-width: 768px) {
-  padding-bottom: 60px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
