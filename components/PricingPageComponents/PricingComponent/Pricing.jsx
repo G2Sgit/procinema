@@ -19,7 +19,7 @@ const Pricing = () => {
             <UnderlinedHeading tag="h2" text="pricing" position="center" />
 
             <p className={css.page_description_text}>
-            *The prices could be discussed in an individual way.
+              *The prices could be discussed in an individual way.
             </p>
           </div>
         </Container>
@@ -31,31 +31,31 @@ const Pricing = () => {
               <ul className={css.descrButtonswrapper}>
                 <li className={css.pricingCardWrapper}>
                   <h3 className={css.cardTitle}>DOCUMENTARY film</h3>
-<div className={css.pricesWrapper}>
-  <ul className={css.listOfPrices}>
-                    <li className={css.servicePrice}>
-                      <p className={css.servicePriceText}>
-                        <span>
-                          <strong>
-                            $ <span className={css.priceNumber}>500 </span>
-                          </strong>
-                        </span>
-                        <span>/20-25 min long</span>
-                      </p>
-                    </li>
-                    <li className={css.servicePrice}>
-                      <p className={css.servicePriceText}>
-                        <span>
-                          <strong>
-                            $ <span className={css.priceNumber}>700 </span>
-                          </strong>
-                        </span>
-                        <span>/30-60 min long</span>
-                      </p>
-                    </li>
-                  </ul>
+                  <div className={css.pricesWrapper}>
+                    <ul className={css.listOfPrices}>
+                      <li className={css.servicePrice}>
+                        <p className={css.servicePriceText}>
+                          <span>
+                            <strong>
+                              $ <span className={css.priceNumber}>500 </span>
+                            </strong>
+                          </span>
+                          <span>/20-25 min long</span>
+                        </p>
+                      </li>
+                      <li className={css.servicePrice}>
+                        <p className={css.servicePriceText}>
+                          <span>
+                            <strong>
+                              $ <span className={css.priceNumber}>700 </span>
+                            </strong>
+                          </span>
+                          <span>/30-60 min long</span>
+                        </p>
+                      </li>
+                    </ul>
                   </div>
-                  
+
                   <p className={css.cardParagraph}>Services:</p>
                   <ul className={css.listOfDef}>
                     <li className={css.serviceDef}>
@@ -89,7 +89,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                  <ContactUsButtonAndModal/>
+                    <ContactUsButtonAndModal />
                   </div>
                 </li>
 
@@ -106,28 +106,28 @@ const Pricing = () => {
                     COMMERCIAL/ MUSIC VIDEO/ TRAILER
                   </h3>
                   <div className={css.pricesWrapper}>
-                  <ul className={css.listOfPrices}>
-                    <li className={css.servicePrice}>
-                      <p className={css.servicePriceText}>
-                        <span>
-                          <strong>
-                            $ <span className={css.priceNumber}>120 </span>
-                          </strong>
-                        </span>
-                        <span>/1 min long</span>
-                      </p>
-                    </li>
-                    <li className={css.servicePrice}>
-                      <p className={css.servicePriceText}>
-                        <span>
-                          <strong>
-                            $ <span className={css.priceNumber}>200 </span>
-                          </strong>
-                        </span>
-                        <span>/2 min long</span>
-                      </p>
-                    </li>
-                  </ul>
+                    <ul className={css.listOfPrices}>
+                      <li className={css.servicePrice}>
+                        <p className={css.servicePriceText}>
+                          <span>
+                            <strong>
+                              $ <span className={css.priceNumber}>120 </span>
+                            </strong>
+                          </span>
+                          <span>/1 min long</span>
+                        </p>
+                      </li>
+                      <li className={css.servicePrice}>
+                        <p className={css.servicePriceText}>
+                          <span>
+                            <strong>
+                              $ <span className={css.priceNumber}>200 </span>
+                            </strong>
+                          </span>
+                          <span>/2 min long</span>
+                        </p>
+                      </li>
+                    </ul>
                   </div>
                   <p className={css.cardParagraph}>Services:</p>
                   <ul className={css.listOfDef}>
@@ -166,7 +166,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                  <ContactUsButtonAndModal/>
+                    <ContactUsButtonAndModal />
                   </div>
                 </li>
                 {/* <li className={css.buttonsWrapper}>
@@ -180,18 +180,18 @@ const Pricing = () => {
                 <li className={css.pricingCardWrapper}>
                   <h3 className={css.cardTitle}>MOTION DESIGN template</h3>
                   <div className={css.pricesWrapper}>
-                  <ul className={css.listOfPrices}>
-                    <li className={css.servicePrice}>
-                      <p className={css.servicePriceText}>
-                        <span>
-                          <strong>
-                            $ <span className={css.priceNumber}>100 </span>
-                          </strong>
-                        </span>
-                        <span>/4-7 sec long</span>
-                      </p>
-                    </li>
-                  </ul>
+                    <ul className={css.listOfPrices}>
+                      <li className={css.servicePrice}>
+                        <p className={css.servicePriceText}>
+                          <span>
+                            <strong>
+                              $ <span className={css.priceNumber}>100 </span>
+                            </strong>
+                          </span>
+                          <span>/4-7 sec long</span>
+                        </p>
+                      </li>
+                    </ul>
                   </div>
                   <p className={css.cardParagraph}>Services:</p>
                   <ul className={css.listOfDef}>
@@ -224,7 +224,7 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className={css.buttonsWrapper}>
-                  <ContactUsButtonAndModal/>
+                    <ContactUsButtonAndModal />
                   </div>
                 </li>
                 {/* <li className={css.buttonsWrapper}>

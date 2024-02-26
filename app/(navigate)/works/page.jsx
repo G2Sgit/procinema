@@ -1,5 +1,5 @@
 import Header from "@/components/Header/Header";
-import WorksList from "../../components/WorksPageComponents/WorksList";
+import WorksList from "../../../components/WorksPageComponents/WorksList";
 
 export const metadata = {
   title: "Works",
@@ -9,7 +9,6 @@ export const metadata = {
 const WorksPage = () => {
   return (
     <>
-      <Header />
       <WorksList />
     </>
   );

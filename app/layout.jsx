@@ -1,6 +1,5 @@
 import { Six_Caps, Open_Sans } from "next/font/google";
 import "./globals.scss";
-import { Providers } from "./providers";
 import localFont from "next/font/local";
 
 import Footer from "@/components/Footer/Footer";
@@ -52,16 +51,15 @@ const contaxSans = localFont({
 
 //=======================================================================================================
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, modal }) {
   return (
     <html lang="en">
       <meta name="robots" content="noindex, nofollow" />
       <body
         className={`${sixCaps.variable}  ${openSans.variable} ${contaxSans.className}`}
       >
-        <main>
-          <Providers>{children}</Providers>
-        </main>
+        {modal}
+        {children}
         <Footer />
       </body>
     </html>

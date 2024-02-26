@@ -48,22 +48,23 @@ const FeedbackSection = () => {
         layers={[{ image: "/shuttler.jpg", speed: -20 }]}
         className="aspect-[2/1]"
       > */}
-        <Section>
-          <div className={css.container}>
-            <h2 className={css.title}>WHAT CLIENTS SAY?</h2>
-            <UnderlinedHeading
-              tag="h3"
-              // text="Here you can leave your feedback"
-              position="center"
-              color="black"
-            />
-             <p className={css.page_description_text}>
+      <Section>
+        <Container>
+          <h2 className={css.title}>WHAT CLIENTS SAY?</h2>
+          <UnderlinedHeading
+            tag="h3"
+            // text="Here you can leave your feedback"
+            position="center"
+            color="black"
+          />
+          {/* <p className={css.page_description_text}>
              Here you can leave your feedback
-            </p>
-            <FeedbackSlider feedbacks={sectionContent} />
-            <LeaveFeedback />
-          </div>
-        </Section>
+            </p> */}
+          <FeedbackSlider feedbacks={sectionContent} />
+          <LeaveFeedback />
+        </Container>
+      </Section>
+
       {/* </ParallaxBanner> */}
     </div>
   );

@@ -2,16 +2,22 @@ import css from "./ModalFormSubmit.module.scss";
 import { HiMiniDocumentCheck } from "react-icons/hi2";
 import { HiMiniXCircle } from "react-icons/hi2";
 
-const ModalFormSubmit = ({ submit, text, buttonText, closeFormModal, closeHandler }) => {
+const ModalFormSubmit = ({
+  submit,
+  text,
+  buttonText,
+  closeFormModal,
+  closeHandler,
+}) => {
+  console.log("submit", submit);
   const onClickHandler = () => {
     if (closeFormModal) {
       closeFormModal();
       closeHandler();
     } else {
-      closeHandler()
+      closeHandler();
     }
-  } 
-
+  };
 
   return (
     <div className={css.backdrop}>

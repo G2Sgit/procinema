@@ -8,7 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { postContactMessage } from "../../../services/postContactMessage";
 import ModalFormSubmit from "../../ContactPageComponents/ModalFormSubmit/ModalFormSubmit";
-import { IoMdClose } from "react-icons/io";;
+import { IoMdClose } from "react-icons/io";
 
 const ModalContactForm = ({ closeHandler }) => {
   const validationSchema = Yup.object().shape({
@@ -45,7 +45,7 @@ const ModalContactForm = ({ closeHandler }) => {
       <div className={css.modal}>
         <div className={css.buttonCloseWrapper} onClick={closeHandler}>
           <button className={css.buttonClose}>
-            <IoMdClose style={{ color: 'black' }} size={30} />
+            <IoMdClose style={{ color: "black" }} size={30} />
           </button>
         </div>
 
