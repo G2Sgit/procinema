@@ -1,5 +1,5 @@
 import Pricing from "@/components/PricingPageComponents/PricingComponent/Pricing";
-import ContactToUsModal from "@/components/FormModal/FormModal";
+import ContactToUsModal from "@/components/ContactToUsModal/FormModal";
 
 export const metadata = {
   title: "Pricing",

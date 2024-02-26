@@ -4,10 +4,11 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
-import { postContactMessage } from "../../../services/postContactMessage";
 import ModalFormSubmit from "../ModalFormSubmit/ModalFormSubmit";
 
 import { useRouter, usePathname } from "next/navigation";
+import { createMessage } from "@/services/api";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
 const ContactsForm = ({ isInModal }) => {
   const validationSchema = Yup.object().shape({
@@ -22,12 +23,26 @@ const ContactsForm = ({ isInModal }) => {
       .min(20, "Message is too short - should be 20 chars minimum."),
   });
 
-  ///////// url
+  ///////// url to redirect
   const router = useRouter();
   const pathname = usePathname();
+  const PROJECT_URL = "http://localhost:3000";
 
-  const url = new URL(pathname, "http://localhost:3000");
+  const url = new URL(pathname, PROJECT_URL);
+
   url.searchParams.set("modal", "true");
+
+  /////// query mutation
+
+  const queryClient = useQueryClient();
+  const { mutateAsync, isPending } = useMutation({
+    mutationFn: createMessage,
+    onSuccess: () => {
+      queryClient.invalidateQueries({
+        queryKey: ["messages"],
+      });
+    },
+  });
 
   const {
     reset,
@@ -45,31 +60,36 @@ const ContactsForm = ({ isInModal }) => {
   const closeErrorMessage = () => {
     setIsError(false);
   };
-  console.log(pathname);
+
+  const handleSubmitForm = async (values) => {
+    try {
+      await mutateAsync({
+        ...values,
+      });
+      reset();
+
+      if (isInModal) {
+        url.searchParams.set("status", "ok");
+        router.replace(url.toString());
+      } else {
+        setIsSuccess(true);
+      }
+    } catch (error) {
+      console.log(error);
+      if (isInModal) {
+        url.searchParams.set("status", "false");
+        router.replace(url.toString());
+      } else {
+        setIsError(true);
+      }
+    }
+  };
 
   return (
     <form
       className={`${css.form} ${isInModal && css.modal}`}
       onSubmit={handleSubmit(async (data) => {
-        try {
-          await postContactMessage(data);
-          reset();
-
-          if (isInModal) {
-            url.searchParams.set("status", "ok");
-            router.replace(url.toString());
-          } else {
-            setIsSuccess(true);
-          }
-        } catch (error) {
-          console.log(error);
-          if (isInModal) {
-            url.searchParams.set("status", "false");
-            router.replace(url.toString());
-          } else {
-            setIsError(true);
-          }
-        }
+        handleSubmitForm(data);
       })}
     >
       <div className={css["input-thumb"]}>
@@ -105,7 +125,7 @@ const ContactsForm = ({ isInModal }) => {
         )}
       </div>
       <div className={css.buttonWrapper}>
-        <button className={css.button} type="submit">
+        <button className={css.button} type="submit" disable={isPending}>
           Send Message
         </button>
       </div>
