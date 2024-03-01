@@ -7,7 +7,6 @@ export default function LeaveFeedback() {
   return (
     <>
       <div className={css.wrapper}>
-        <p>You can leave a feedback here</p>
         <FeedbackButton />
       </div>
     </>

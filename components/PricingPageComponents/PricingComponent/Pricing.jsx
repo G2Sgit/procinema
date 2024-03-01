@@ -19,7 +19,7 @@ const Pricing = () => {
             <UnderlinedHeading tag="h2" text="pricing" position="center" />
 
             <p className={css.page_description_text}>
-              *The prices could be discussed in an individual way.
+            Prices can be discussed individually.
             </p>
           </div>
         </Container>
@@ -40,17 +40,17 @@ const Pricing = () => {
                               $ <span className={css.priceNumber}>500 </span>
                             </strong>
                           </span>
-                          <span>/20-25 min long</span>
+                          <span>/20-30 min long</span>
                         </p>
                       </li>
                       <li className={css.servicePrice}>
                         <p className={css.servicePriceText}>
                           <span>
                             <strong>
-                              $ <span className={css.priceNumber}>700 </span>
+                              $ <span className={css.priceNumber}>900 </span>
                             </strong>
                           </span>
-                          <span>/30-60 min long</span>
+                          <span>/50-60 min long</span>
                         </p>
                       </li>
                     </ul>
@@ -178,7 +178,7 @@ const Pricing = () => {
             <li>
               <ul className={css.descrButtonswrapper}>
                 <li className={css.pricingCardWrapper}>
-                  <h3 className={css.cardTitle}>MOTION DESIGN template</h3>
+                  <h3 className={css.cardTitle}>MOTION GRAPHICS template</h3>
                   <div className={css.pricesWrapper}>
                     <ul className={css.listOfPrices}>
                       <li className={css.servicePrice}>
@@ -202,18 +202,12 @@ const Pricing = () => {
                         visual static animation
                       </p>
                     </li>
-                    <li className={css.serviceDef}>
-                      <MdRadioButtonChecked />
-                      <p className={css.serviceDefText}>
-                        Licensed sound design
-                      </p>
-                    </li>
                   </ul>
 
                   <ul className={css.listOfSecondDef}>
                     <li className={css.serviceDef}>
                       <MdOutlineRunningWithErrors />
-                      <p className={css.serviceDefText}>2-4 days turnaround</p>
+                      <p className={css.serviceDefText}>2 days turnaround</p>
                     </li>
 
                     <li className={css.serviceDef}>

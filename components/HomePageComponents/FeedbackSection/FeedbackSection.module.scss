@@ -54,3 +54,17 @@
 
 
 }
+
+.description {
+
+text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27.58px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+    }
+  
+}

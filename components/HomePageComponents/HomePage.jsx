@@ -14,7 +14,7 @@ const HomePage = () => {
         />
 
         <p className={css.page_description_text}>
-        Procinema is a post-production service studio based in Kyiv, Ukraine. With more than 10 years of professional experience in the video industry our team provides clients with high quality services and individual approach to each one.
+        Procinema is a post-production service studio based in Kyiv, Ukraine. With over 10 years of professional experience in video editing, our team provides high quality services to each client individually.
         </p>
       </div>
     </>

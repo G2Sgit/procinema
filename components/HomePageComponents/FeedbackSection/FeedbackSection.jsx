@@ -7,6 +7,7 @@ import FeedbackSlider from "./FeedbackSlider/FeedbackSlider";
 import LeaveFeedback from "./LeaveFeedback/LeaveFeedback";
 import { getFeedbacks } from "@/services/api";
 import { useQuery } from "@tanstack/react-query";
+import FeedbackButton from "./FeedbackButton/FeedBackButton";
 
 // import { ParallaxBanner } from "react-scroll-parallax";
 
@@ -67,6 +68,7 @@ const FeedbackSection = () => {
           {/* <p className={css.page_description_text}>
              Here you can leave your feedback
             </p> */}
+                    <p className={css.description}>You can leave a feedback here</p>
           <FeedbackSlider
             feedbacks={data.items?.length === 0 ? sectionContent : data.items}
           />

@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   gap: 34px;
   margin-top: 20px;
   position: relative;
@@ -16,7 +16,7 @@
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
   }
 
   p {
@@ -29,3 +29,4 @@
     }
   }
 }
+
