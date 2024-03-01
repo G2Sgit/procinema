@@ -39,7 +39,7 @@ const HomePage = async (props) => {
         <Header isHomePage />
         <main>
           <MainHero />
-          <Section>
+          <Section topSection="topSection">
             <Container content="content">
               <HomePageContent />
               <AboutStatisticSection />

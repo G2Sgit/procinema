@@ -2,7 +2,9 @@ import UnderlinedHeading from "@/components/UnderlinedHeading/UnderlinedHeading"
 import css from "./ServicesList.module.scss";
 import Section from "@/components/Section/Section";
 import Container from "@/components/Container/Container";
-import VideoReact from "@/components/VideoReact/VideoReact";
+import Image from 'next/image';
+
+// import VideoReact from "@/components/VideoReact/VideoReact";
 
 const ServicesList = () => {
   return (
@@ -41,39 +43,46 @@ const ServicesList = () => {
                   position="left"
                 />
                 <p className={css.description_text}>
-                  During video editing, raw footage can be combined into a
-                  cohesive narrative, the pacing and flow of the video can be
-                  controlled, errors can be fixed, image and sound quality can
-                  be improved, and the final product can be polished and
-                  engaging. Among the most popular video editing programs we use
-                  are Final Cut Pro, Adobe Premiere Pro, After Effects, and
-                  Adobe Audition.<br />
+                  Video editing transforms raw footage into a cohesive
+                  narrative, controls the video&#39;s pace and flow, fixes errors,
+                  enhances image quality, and creates a polished, enjoyable
+                  final product. Among the most popular video editing programs
+                  we use are Final Cut Pro, Adobe Premiere Pro, After Effects,
+                  and Adobe Audition.
+                  <br />
                   Video editing combines technical skills with creative vision
                   to engage, inform, and entertain audiences.
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/1_video_editing_43m.mov" placeholderImg="https://video.procinemastudio.com/images/1_video_editing_frame.png" />
+                <Image src="https://video.procinemastudio.com/images/1_video_editing.jpg" 
+        alt="1_video_editing.jpg"
+        width="960"
+        height="540"/>
               </div>
             </li>
             <li className={css.service_unit}>
               <div className={css.service_unit_info_right}>
-                <h2 className={css.unit_title}>Custom MOTION DESIGN</h2>
+                <h2 className={css.unit_title}>MOTION GRAPHICS</h2>
                 <UnderlinedHeading
                   tag="h4"
                   // text="POST-PRODUCTION, PERMITS, DRONE, EQUIPMENT, COLOR GRADING, LOCATION SCOUTING, CASTING"
                   position="left"
                 />
                 <p className={css.description_text}>
-                  With motion graphics, you can communicate with your audience
-                  and add depth to your film. Combined with effective copy and
-                  music, they can convey a message. Our company uses them for
-                  creating ads, movie titles, explainer videos, and information
-                  sharing.
+                  A great storytelling tool is motion graphics. The message is
+                  conveyed in the quickest way, grabbing and holding the
+                  viewer&#39;s attention easily. The right animation design can
+                  greatly improve your commercial, regardless of whether you&#39;re
+                  in business, IT solutions, education, healthcare, social
+                  networks, or entertainment.
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/2_motion_design_21m.mov" placeholderImg="https://video.procinemastudio.com/images/2_motion_design_frame.png"/>
+              <Image src="https://video.procinemastudio.com/images/2_motion_graphics.jpg" 
+        alt="2_motion_graphics"
+        width="960"
+        height="540"/>
               </div>
             </li>
             <li className={css.service_unit}>
@@ -102,7 +111,10 @@ const ServicesList = () => {
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact url="https://video.procinemastudio.com/video/3_color_correction_43m.mov" placeholderImg="https://video.procinemastudio.com/images/3_color_correction_frame.png"/>
+              <Image src="https://video.procinemastudio.com/images/3_сolor.jpg" 
+        alt="3_сolor.jpg"
+        width="960"
+        height="540"/>
               </div>
             </li>
             <li className={css.service_unit}>
@@ -133,7 +145,10 @@ const ServicesList = () => {
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact  url="https://video.procinemastudio.com/video/4_visual_effects_43m.mov" placeholderImg="https://video.procinemastudio.com/images/4_visual_effects_frame.png"/>
+              <Image src="https://video.procinemastudio.com/images/4_visual_effects.jpg" 
+        alt="4_visual_effects.jpg"
+        width="960"
+        height="540"/>
               </div>
             </li>
             <li className={css.service_unit}>
@@ -147,11 +162,21 @@ const ServicesList = () => {
                   position="left"
                 />
                 <p className={css.description_text}>
-                The audio component of video editing is crucial. Our team can adjust audio levels, troubleshoot issues with audio quality, add sound design and background music.
+                  The audio component of video editing is crucial. Our team can
+                  adjust audio levels, troubleshoot issues with audio quality,
+                  add sound design and background music.
                 </p>
               </div>
               <div className={css.unit_picture_thumb}>
-                <VideoReact height="100%" url="https://video.procinemastudio.com/video/5_music_33m.mov" placeholderImg="https://video.procinemastudio.com/images/5_music_frame.png"/>
+              <Image src="https://video.procinemastudio.com/images/5_sound_design_music.jpg" 
+        alt="5_sound_design_music.jpg"
+        width="960"
+        height="540"/>
+                {/* <VideoReact
+                  height="100%"
+                  url="https://video.procinemastudio.com/video/5_music_33m.mov"
+                  placeholderImg="https://video.procinemastudio.com/images/5_music_frame.png"
+                /> */}
                 {/* <video autoPlay className={css.video} muted loop playsinline>
                   <source src="https://video.procinemastudio.com/video/5_music_33m.mov" />
                 </video> */}

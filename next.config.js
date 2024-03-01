@@ -8,8 +8,15 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "video.procinemastudio.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };
+
 
 module.exports = nextConfig;

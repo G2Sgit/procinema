@@ -20,7 +20,7 @@ const NewFeedbackForm = ({ isInModal }) => {
       .required("Please enter your bussines type or website adress"),
     text: Yup.string()
       .required("Please enter your message")
-      .min(20, "Message is too short - should be 20 chars minimum."),
+      .min(20, "Message is too short - should be 20 chars minimum.")
   });
 
   /////// url to replace

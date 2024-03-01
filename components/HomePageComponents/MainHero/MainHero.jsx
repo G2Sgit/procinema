@@ -22,8 +22,7 @@ const MainHero = () => {
   <div className={css.content_tabl_desct}>
           <h1 className={css.title}>Welcome to Procinema</h1>
           <p className={css.subtitle}>
-            We are a professional post-production studio <br />
-            with a quality approach
+          Professional post-production studio with a full range of video editing services
           </p>
           </div>
           <div className={css.content_mobile}>

@@ -75,14 +75,14 @@
     }
   }
   
-  .button:after {
-    filter: blur(25px);
+  // .button:after {
+  //   filter: blur(25px);
 
 
-  @media screen and (min-width: 1200px) {
-    filter: blur(50px);
-  }
-  }
+  // @media screen and (min-width: 1200px) {
+  //   filter: blur(50px);
+  // }
+  // }
   
   .subtitle {
     font-family: var(--contax-sans);

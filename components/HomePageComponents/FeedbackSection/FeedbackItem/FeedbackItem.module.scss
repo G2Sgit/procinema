@@ -13,13 +13,20 @@
   color: var(--secondaryTextColor);
   padding: 16px 16px 16px 16px;
 
+
+  max-width: 100%; /* Или установите конкретное значение */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Используйте ellipsis при необходимости обрезки текста */
+
+
+
   @media screen and (min-width: 768px) {
     // height: 250px;
     padding: 24px 24px 24px 24px;
   }
 
   & p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.14;
     padding: 0;
