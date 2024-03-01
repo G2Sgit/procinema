@@ -26,6 +26,7 @@ const WorksList = () => {
           <WorkItem
             url="https://player.vimeo.com/video/917397396?h=791ce3d358"
             heading="Video editing | Showreel (2023)"
+            fiveK
           />
         </Container>
       </Section>
