@@ -15,9 +15,6 @@ const NewFeedbackForm = ({ isInModal }) => {
     email: Yup.string()
       .email("This is an ERROR email")
       .required("Please enter your email"),
-    bussinesType: Yup.string()
-      .min(2, "Please enter your bussines type or website adress")
-      .required("Please enter your bussines type or website adress"),
     text: Yup.string()
       .required("Please enter your message")
       .min(20, "Message is too short - should be 20 chars minimum.")
@@ -96,19 +93,6 @@ const NewFeedbackForm = ({ isInModal }) => {
           {...register("email")}
         />
         {errors.email && <p className={css.error}>{errors.email.message}</p>}
-      </div>
-
-      <div className={css["input-thumb"]}>
-        <input
-          className={css.input}
-          type="text"
-          name="bussinesType"
-          placeholder="Bussines type"
-          {...register("bussinesType")}
-        />
-        {errors.bussinesType && (
-          <p className={css.error}>{errors.bussinesType.message}</p>
-        )}
       </div>
 
       <div className={css["textarea-thumb"]}>

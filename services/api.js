@@ -33,7 +33,6 @@ export const createFeedback = async (data, init) => {
       body: JSON.stringify({
         user_name: name,
         user_email: email,
-        user_businessType: bussinesType,
         text: text,
       }),
       headers: {
