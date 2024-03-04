@@ -1,0 +1,8 @@
+User-agent: *
+Allow: *.js
+Allow: *.css
+Allow: *.svg
+Allow: *.png
+Allow: *.jpg
+Allow: *.webp
+Disallow: *modal=true&type=*
