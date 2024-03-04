@@ -133,6 +133,11 @@
   }
 }
 
-.button::after {
-  filter: blur(10px);
-}
+  // .button:after {
+  //   filter: blur(25px);
+
+
+  // @media screen and (min-width: 1200px) {
+  //   filter: blur(50px);
+  // }
+  // }

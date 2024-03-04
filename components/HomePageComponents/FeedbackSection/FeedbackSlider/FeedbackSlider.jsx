@@ -69,7 +69,7 @@ export default function FeedbackSlider({ feedbacks }) {
 
       <div className={css.controls}>
         <button type="button" className={css.prev} onClick={handlePrev}>
-          <FaChevronLeft />
+          <FaChevronLeft style={{ color: "black" }}/>
         </button>
 
         <div className={css.counter}>
@@ -78,7 +78,7 @@ export default function FeedbackSlider({ feedbacks }) {
           </span>
         </div>
         <button type="button" className={css.next} onClick={handleNext}>
-          <FaChevronRight className={css.next1} />
+          <FaChevronRight className={css.next1} style={{ color: "black" }}/>
           <FaChevronRight className={css.next2} style={{ color: "black" }} />
           <FaChevronRight className={css.next3} style={{ color: "black" }} />
         </button>
