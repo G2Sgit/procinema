@@ -45,7 +45,7 @@ const Navigation = ({ isOpen, setIsOpen }) => {
              
             ${pathname === "/" && css.nav_link_main}`}
               href="/postServices"
-              // onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsOpen(!isOpen)}
             >
               Post services
             </Link>
@@ -60,7 +60,7 @@ const Navigation = ({ isOpen, setIsOpen }) => {
               } 
             ${pathname === "/" && css.nav_link_main}`}
               href="/works"
-              // onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsOpen(!isOpen)}
             >
               Works
             </Link>
@@ -75,7 +75,7 @@ const Navigation = ({ isOpen, setIsOpen }) => {
               } 
             ${pathname === "/" && css.nav_link_main}`}
               href="/pricing"
-              // onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsOpen(!isOpen)}
             >
               Pricing
             </Link>
@@ -90,7 +90,7 @@ const Navigation = ({ isOpen, setIsOpen }) => {
               } 
             ${pathname === "/" && css.nav_link_main}`}
               href="/contact"
-              // onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsOpen(!isOpen)}
             >
               Contact
             </Link>
