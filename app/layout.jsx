@@ -55,7 +55,7 @@ const contaxSans = localFont({
 export default function RootLayout({ children, modal }) {
   return (
     <html lang="en">
-      <meta name="robots" content="noindex, nofollow" />
+      <meta name="robots" content="index, follow" />
       <body
         className={`${sixCaps.variable}  ${openSans.variable} ${contaxSans.className}`}
       >
