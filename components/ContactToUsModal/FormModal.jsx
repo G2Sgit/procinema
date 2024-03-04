@@ -22,7 +22,7 @@ export default function FormModal({ type, status }) {
           subtitle={
             type === "new-contact"
               ? "We will contact you as soon as possible"
-              : "Share your feelings about working with Proсinema Studio"
+              : "Share your feelings about working with Procinema Studio"
           }
         />
       )}
