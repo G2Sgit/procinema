@@ -5,7 +5,7 @@ import Container from "@/components/Container/Container";
 import MainHero from "@/components/HomePageComponents/MainHero/MainHero";
 import HomePageContent from "../components/HomePageComponents/HomePage";
 import Header from "@/components/Header/Header";
-import SowrealSection from "@/components/HomePageComponents/ShowrealSection";
+// import SowrealSection from "@/components/HomePageComponents/ShowrealSection";
 import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
 import FeedbackSection from "@/components/HomePageComponents/FeedbackSection";
 import ContactToUsModal from "@/components/ContactToUsModal/FormModal";
@@ -45,7 +45,7 @@ const HomePage = async (props) => {
               <AboutStatisticSection />
             </Container>
           </Section>
-          <SowrealSection />
+          {/* <SowrealSection /> */}
 
           <FeedbackSection />
         </main>

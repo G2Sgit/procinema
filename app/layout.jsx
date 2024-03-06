@@ -1,3 +1,4 @@
+import { GoogleTagManager } from '@next/third-parties/google'
 import { Six_Caps, Open_Sans } from "next/font/google";
 import "./globals.scss";
 import localFont from "next/font/local";
@@ -65,6 +66,7 @@ export default function RootLayout({ children, modal }) {
         </Providers>
         <Footer />
       </body>
+      <GoogleTagManager gtmId="G-8REW3DCGB6" />
     </html>
   );
 }
