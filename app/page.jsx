@@ -14,7 +14,7 @@ import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import getQueryClient from "@/services/getQueryClient";
 
 export const metadata = {
-  title: "PROCINEMA",
+  title: "Procinema Post-production Studio | Professional video editing",
   description: "Procinema studio home page",
 };
 
