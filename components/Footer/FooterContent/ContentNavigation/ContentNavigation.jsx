@@ -8,7 +8,7 @@ const ContentNavigation = () => {
           <a href="/">Home</a>
         </li>
         <li className={css.link}>
-          <a href="/postServices">Post services</a>
+          <a href="/postservices">Post services</a>
         </li>
         <li className={css.link}>
           <a href="/works">Works</a>

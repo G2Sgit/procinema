@@ -8,8 +8,7 @@ const WorkItem = ({ url, heading, fiveK }) => {
         src={url}
         className={fiveK?`${css.responsiveIframeFiveK}`:`${css.responsiveIframe}`}
         frameBorder="0"
-        allow="autoplay; fullScreen; picture-in-picture"
-        allowFullScreen
+        allow="autoplay; fullscreen; picture-in-picture"
       ></iframe>
     </>
   );

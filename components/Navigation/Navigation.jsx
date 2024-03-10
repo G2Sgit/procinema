@@ -38,13 +38,13 @@ const Navigation = ({ isOpen, setIsOpen }) => {
               className={`${css.nav_link}
             
              ${
-               pathname === "/postServices" && pathname !== "/"
+               pathname === "/postservices" && pathname !== "/"
                  ? css.active_link
                  : null
              } 
              
             ${pathname === "/" && css.nav_link_main}`}
-              href="/postServices"
+              href="/postservices"
               onClick={() => setIsOpen(!isOpen)}
             >
               Post services

@@ -130,7 +130,7 @@ const NavigationLine = ({ isHomePage }) => {
   }, [isFixed, visible, isHomePage]);
 
   return (
-    <div className={classList}>
+    <section className={classList}>
       <Container>
         <div className={css.fixedNav}>
           {isMobile && <Logo />}
@@ -143,7 +143,7 @@ const NavigationLine = ({ isHomePage }) => {
         isOpen={isOpen}
         isHomePage={isHomePage}
       />
-    </div>
+    </section>
   );
 };
 
