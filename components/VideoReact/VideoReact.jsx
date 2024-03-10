@@ -17,7 +17,7 @@ const VideoReact = ({ url, placeholderImg }) => {
       muted="true"
       suppressHydrationWarning
 playsInline
-light={placeholderImg}
+// light={placeholderImg}
     />
   );
 };
