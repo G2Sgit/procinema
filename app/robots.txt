@@ -9,3 +9,5 @@ Disallow: *modal=true&type=*
 Disallow: *.otf
 Disallow: *.woff2
 Disallow: *.ico
+Disallow: */video/*
+Disallow: https://video.procinemastudio.com/ 
