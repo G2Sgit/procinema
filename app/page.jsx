@@ -9,13 +9,16 @@ import Header from "@/components/Header/Header";
 import AboutStatisticSection from "@/components/HomePageComponents/AboutStatisticSection";
 import FeedbackSection from "@/components/HomePageComponents/FeedbackSection";
 import ContactToUsModal from "@/components/ContactToUsModal/FormModal";
+import InstagramGallery from "@/components/InstagramGallery/InstagramGallery";
 import { getFeedbacks } from "@/services/api";
 import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 import getQueryClient from "@/services/getQueryClient";
 
 export const metadata = {
-  title: "Procinema Post-production Studio | Professional video editing | Video editor",
-  description: "10 years of professional experience in video editing. The full range of video editing services. High quality services to each client individually.",
+  title:
+    "Procinema Post-production Studio | Professional video editing | Video editor",
+  description:
+    "10 years of professional experience in video editing. The full range of video editing services. High quality services to each client individually.",
 };
 
 const HomePage = async (props) => {
@@ -46,7 +49,7 @@ const HomePage = async (props) => {
             </Container>
           </Section>
           {/* <SowrealSection /> */}
-
+          <InstagramGallery />
           <FeedbackSection />
         </main>
         {showModal && (

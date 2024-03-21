@@ -66,6 +66,7 @@ export default function RootLayout({ children, modal }) {
         </Providers>
         <Footer />
       </body>
+      <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
       <GoogleTagManager gtmId="G-8REW3DCGB6" />
     </html>
   );
