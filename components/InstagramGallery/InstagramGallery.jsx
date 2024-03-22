@@ -10,7 +10,7 @@ const InstagramGallery = function () {
         <UnderlinedHeading tag="h3" position="center" />
 
         <p className={css.page_description_text}>
-          Please watch and subscribe to us
+          Follow us on social media:
         </p>
 
         <section className={css.background}>
