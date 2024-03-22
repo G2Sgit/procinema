@@ -26,11 +26,6 @@
   }
 }
 
-.background {
-  background-color: black;
-  border-radius: 16px;
-  padding-top: 40px;
-}
 
 .page_title {
   text-align: center;
@@ -52,7 +47,11 @@
   font-size: 20px;
   font-weight: 500;
   line-height: calc(27 / 14);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
 }
 
 .visually_hidden {
@@ -64,4 +63,8 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.background{
+  padding: 6px;
 }
