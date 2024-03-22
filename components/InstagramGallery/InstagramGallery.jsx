@@ -5,12 +5,12 @@ const InstagramGallery = function () {
   return (
     <section className={css.section}>
       <section className={css.container}>
-        <h1 className={css.visually_hidden}>Instagram reels</h1>
-        <h2 className={css.page_title}>Instagram reels</h2>
+        <h1 className={css.visually_hidden}>Instagram gallery</h1>
+        <h2 className={css.page_title}>Instagram gallery</h2>
         <UnderlinedHeading tag="h3" position="center" />
 
         <p className={css.page_description_text}>
-          Please watch and subscribe to us
+          Follow us on social media:
         </p>
 
         <section className={css.background}>
