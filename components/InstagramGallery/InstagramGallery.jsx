@@ -9,9 +9,7 @@ const InstagramGallery = function () {
         <h2 className={css.page_title}>Instagram gallery</h2>
         <UnderlinedHeading tag="h3" position="center" />
 
-        <p className={css.page_description_text}>
-          Follow us on social media:
-        </p>
+        <p className={css.page_description_text}>Follow us on social media:</p>
 
         <section className={css.background}>
           <div

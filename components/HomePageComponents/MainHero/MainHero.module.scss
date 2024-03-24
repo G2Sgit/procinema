@@ -77,7 +77,6 @@
 
 // .button:after {
 
-
 //   // filter: blur(50px);
 
 //   // @media screen and (min-width: 768px) {
@@ -85,18 +84,17 @@
 // }
 
 .subtitle {
-display: none;
-  
+  display: none;
 
   @media screen and (min-width: 768px) {
     display: block;
     font-family: var(--contax-sans);
-  text-align: center;
-  font-size: 24px;
-  line-height: 36.77px;
-  font-weight: 100;
-  margin-bottom: 40px;
-  color: var(--lightTextColor);
+    text-align: center;
+    font-size: 24px;
+    line-height: 36.77px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    color: var(--lightTextColor);
   }
 }
 
@@ -177,9 +175,8 @@ display: none;
 .title {
   text-align: center;
   font-size: 48px;
-  line-height: 55.15px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: var(--lightTextColor);
 
   @media screen and (max-width: 768px) {
@@ -200,18 +197,15 @@ display: none;
 }
 
 .content_wrapper {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-padding-bottom: 120px;
-
+  padding-bottom: 120px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 0px;
   }
-
 }
 
 .video {
@@ -238,8 +232,7 @@ padding-bottom: 120px;
   z-index: -1;
 }
 
-
-.content_tabl_desct{
+.content_tabl_desct {
   display: none;
 
   @media screen and (min-width: 768px) {
@@ -247,36 +240,47 @@ padding-bottom: 120px;
   }
 }
 
-.content_mobile{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
-
+.content_mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.subtitleMobile{
-color: white;
-text-align: center;
-font-weight: 400;
-font-family: inherit;
-font-size: 22px;
-margin-top: 20px;
-margin-bottom: 20px;
-letter-spacing: 1px;
-font-family: var(--contax-sans);
-}
-
-.logoText{
+.logoText {
   text-align: center;
   font-family: var(--contax-sans);
   font-size: 19px;
   font-weight: 100;
   font-style: normal;
+  margin-bottom: 30px;
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+.discountOffer {
+  color: var(--lightTextColor);
+  text-align: center;
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 14px;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  font-family: var(--contax-sans);
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-family: var(--contax-sans);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0px;
+    color: var(--lightTextColor);
+  }
 }

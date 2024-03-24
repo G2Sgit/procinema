@@ -2,10 +2,11 @@ import ServicesList from "../../../components/PostServicesPageComponents/Service
 import Header from "@/components/Header/Header";
 
 export const metadata = {
-  title: "Post services",
-  description: "Procinema post services page",
+  title:
+    "Video Editing & Post Production Services | Professional video editing  | Motion Design | Color Correction | Licensed Music & Sound Design",
+  description:
+    "Procinema post-production studio offers a complete range of video editing services. Motion Design. Color Correction. Sound design. 10 years of professional experience in video editing.",
 };
-
 
 const PostServicesPage = () => {
   return (

@@ -26,7 +26,6 @@
   }
 }
 
-
 .page_title {
   text-align: center;
 
@@ -41,16 +40,15 @@
 }
 
 .page_description_text {
+  color: var(--secondaryTextColor);
   text-align: center;
-
-  color: black;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: calc(27 / 14);
-  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27.58px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 25px;
+    font-size: 22px;
   }
 }
 
@@ -65,6 +63,6 @@
   overflow: hidden;
 }
 
-.background{
+.background {
   padding: 6px;
 }
