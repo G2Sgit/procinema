@@ -16,9 +16,9 @@ import getQueryClient from "@/services/getQueryClient";
 
 export const metadata = {
   title:
-    "Procinema Post-production Studio | Professional video editing | Video editor",
+    "Video editing & Post production services | Best video editors | Professional video editing studio | Video editing company",
   description:
-    "10 years of professional experience in video editing. The full range of video editing services. High quality services to each client individually.",
+    "Professional post production services. Premium video editing. Motion Design. Color Correction. Visual Effects. Sound design. High quality approach to each client individually. Acceptable price range.",
 };
 
 const HomePage = async (props) => {

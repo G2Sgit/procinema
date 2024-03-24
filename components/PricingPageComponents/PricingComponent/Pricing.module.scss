@@ -55,7 +55,6 @@
 .pricingCardWrapper {
   flex: 1;
   background-color: #ffffff;
-  padding-top: 30px;
   padding-bottom: 30px;
   padding: 35px 20px 25px;
   border-color: black;
@@ -149,12 +148,12 @@
 }
 
 .pricingConditionsSection {
-  padding-top: 20px;
+  // padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
 
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
+    // padding-top: 60px;
     padding-bottom: 60px;
   }
 }

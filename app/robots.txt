@@ -11,3 +11,4 @@ Disallow: *.woff2
 Disallow: *.ico
 Disallow: */video/*
 Disallow: https://video.procinemastudio.com/ 
+Disallow: /contact/

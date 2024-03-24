@@ -1,10 +1,8 @@
 .form {
-  padding: 30px 10px 30px 10px;
-  width: 390px;
-  // text-align: center;
+  height: 596px;
+  min-width: 350px;
   justify-content: center;
   border: 1px solid black;
-  border-radius: 16px;
   box-sizing: border-box;
   box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
   color: #000000;
@@ -12,26 +10,26 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding: 60px 40px 40px;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
+  border-radius: 16px;
+  padding: 35px 20px 25px;
 
   @media screen and (min-width: 768px) {
+    width: 450px;
+    height: 596px;
     display: flex;
     flex-wrap: wrap;
-    max-width: 768px;
-    flex-direction: unset;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    flex-direction: unset;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   max-width: 1200px;
+  //   flex-direction: unset;
+  // }
 }
 
 //styles for modal window form
@@ -96,57 +94,56 @@
   height: 50px;
   width: 100%;
 
-  @media screen and (min-width: 768px) {
-    height: 50px;
-    width: 47%;
-    margin-bottom: 20px;
+  // @media screen and (min-width: 768px) {
+  //   height: 50px;
+  //   width: 47%;
+  //   margin-bottom: 20px;
 
-    &:nth-child(2n) {
-      margin-left: auto;
-    }
-  }
+  //   &:nth-child(2n) {
+  //     margin-left: auto;
+  //   }
+  // }
 
-  @media screen and (min-width: 1200px) {
-    height: 50px;
-    width: 47%;
-    margin-bottom: 40px;
+  // @media screen and (min-width: 1200px) {
+  //   height: 50px;
+  //   width: 47%;
+  //   margin-bottom: 40px;
 
-    &:nth-child(2n) {
-      margin-left: auto;
-    }
-  }
+  //   &:nth-child(2n) {
+  //     margin-left: auto;
+  //   }
+  // }
 }
 
 .input {
   padding: 12px 15px;
-  // border: 1px solid black;
   border: 0;
-  border-radius: 6px;
-  background-color: #f2f2f2;
+  border-radius: 12px;
   width: 100%;
+  border: 1px solid black;
 }
 
 .textarea-thumb {
   width: 100%;
-  height: 250px;
+  height: 100%;
+  border-radius: 6px;
 
   @media screen and (min-width: 768px) {
     width: 100%;
-    height: 320px;
+    height: 300px;
   }
 }
 
 .text-area {
   width: 100%;
-  height: 250px;
+  height: 100%;
   padding: 12px 15px;
-  // border: 1px solid black;
   border: 0;
-  border-radius: 6px;
-  background-color: #f2f2f2;
+  border-radius: 12px;
+  border: 1px solid black;
 
   @media screen and (min-width: 768px) {
-    height: 320px;
+    height: 300px;
   }
 }
 
@@ -243,6 +240,7 @@
 // }
 
 .buttonWrapper {
+  width: 200px;
   position: relative;
   z-index: 2;
   margin-left: auto;
