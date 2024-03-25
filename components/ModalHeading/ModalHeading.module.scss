@@ -31,8 +31,11 @@
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 36px;
+  max-width:390px;
 
   @media screen and (min-width: 768px) {
     font-size: 20px;
+    text-align: center;
+    max-width:420px;
   }
 }
