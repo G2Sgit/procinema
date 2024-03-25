@@ -1,6 +1,4 @@
 .form {
-  height: 596px;
-  min-width: 350px;
   justify-content: center;
   border: 1px solid black;
   box-sizing: border-box;
@@ -16,10 +14,10 @@
   padding: 35px 20px 25px;
 
   @media screen and (min-width: 768px) {
-    width: 450px;
-    height: 596px;
+    width: 420px;
+
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
   }
